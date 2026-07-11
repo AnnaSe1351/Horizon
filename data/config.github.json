@@ -8,44 +8,64 @@
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 1,
-    "languages": [
-      "zh",
-      "en"
-    ],
+    "languages": ["zh", "en"],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
   },
   "sources": {
+    "hackernews": {
+      "enabled": false
+    },
     "github": [
       {
-        "type": "user_events",
-        "username": "karpathy",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": true
-      },
-      {
-        "type": "repo_releases",
-        "owner": "sgl-project",
-        "repo": "sglang",
+        "type": "trending",
+        "language": "",
+        "since": "daily",
         "enabled": true
       }
     ],
-    "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 150
-    },
     "rss": [
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "爱范儿 - 科技与AI",
+        "url": "https://www.ifanr.com/feed",
+        "enabled": true,
+        "category": "ai-tech"
+      },
+      {
+        "name": "少数派 - 效率工具",
+        "url": "https://sspai.com/feed",
+        "enabled": true,
+        "category": "productivity"
+      },
+      {
+        "name": "36氪 - 商业科技",
+        "url": "https://www.36kr.com/feed",
+        "enabled": true,
+        "category": "business"
+      },
+      {
+        "name": "虎嗅 - 深度商业",
+        "url": "https://rss.huxiu.com/",
+        "enabled": true,
+        "category": "business"
+      },
+      {
+        "name": "Every.to - AI内容创作",
+        "url": "https://every.to/feed",
+        "enabled": true,
+        "category": "ai-content"
+      },
+      {
+        "name": "AI Weekly",
+        "url": "https://www.aiweekly.co/rss",
         "enabled": true,
         "category": "ai-tools"
+      },
+      {
+        "name": "APA - 心理学资讯",
+        "url": "https://www.apa.org/rss/news",
+        "enabled": true,
+        "category": "psychology"
       },
       {
         "name": "GitHub Trending - Daily",
@@ -58,31 +78,39 @@
       "enabled": true,
       "subreddits": [
         {
-          "subreddit": "MachineLearning",
+          "subreddit": "Parenting",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 10,
-          "min_score": 60
+          "min_score": 50
         },
         {
-          "subreddit": "LocalLLaMA",
+          "subreddit": "psychology",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 10,
-          "min_score": 60
+          "min_score": 50
+        },
+        {
+          "subreddit": "Entrepreneur",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 10,
+          "min_score": 50
         }
       ],
       "users": [],
-      "fetch_comments": 10
+      "fetch_comments": 5
     },
     "telegram": {
       "enabled": false
     }
   },
   "filtering": {
-    "ai_score_threshold": 8.0,
+    "ai_score_threshold": 7.0,
     "time_window_hours": 24
   },
   "webhook": {
@@ -93,8 +121,6 @@
     "platform": "feishu",
     "layout": "collapsible",
     "fallback_layout": "markdown",
-    "languages": [
-      "zh"
-    ]
+    "languages": ["zh"]
   }
 }
