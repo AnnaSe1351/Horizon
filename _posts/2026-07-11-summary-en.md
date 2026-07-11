@@ -5,147 +5,168 @@ date: 2026-07-11
 lang: en
 ---
 
-> From 18 items, 6 important content pieces were selected
+> From 18 items, 7 important content pieces were selected
 
 ---
 
-1. [GPT-5.6 Sol Ultra Claims Proof of Cycle Double Cover Conjecture](#item-1) ⭐️ 9.0/10
-2. [SGLang v0.5.15 Boosts LLM Serving with Spec V2 and NVFP4](#item-2) ⭐️ 8.0/10
-3. [Relativity Governs Chemical Bonds in Heavy Elements](#item-3) ⭐️ 8.0/10
-4. [QuadRF open-source RF visualizer detects drones and WiFi through walls](#item-4) ⭐️ 8.0/10
-5. [Apple Sues OpenAI Over Trade Secret Theft via Ex-Employees](#item-5) ⭐️ 8.0/10
-6. [Residential proxies and the scraper battle](#item-6) ⭐️ 8.0/10
+1. [Apple sues OpenAI over trade secret theft from ex-employees](#item-1) ⭐️ 9.0/10
+2. [SGLang v0.5.15 Boosts Inference with NVFP4, Spec V2, IndexShare](#item-2) ⭐️ 8.0/10
+3. [Einstein's relativity rules chemical bonds in heavy elements](#item-3) ⭐️ 8.0/10
+4. [QuadRF Open-Source RF Camera Sees Drones and WiFi Through Walls](#item-4) ⭐️ 8.0/10
+5. [Residential Proxies and Scraping Arms Race](#item-5) ⭐️ 8.0/10
+6. [SpaceX Proposes 100,000 More Starlink Satellites for 100x Bandwidth](#item-6) ⭐️ 8.0/10
+7. [GPT-5.6 Sol Claims Proof of Cycle Double Cover Conjecture](#item-7) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [GPT-5.6 Sol Ultra Claims Proof of Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 9.0/10
+## [Apple sues OpenAI over trade secret theft from ex-employees](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 9.0/10
 
-On July 10, 2026, OpenAI released a preprint claiming that its GPT-5.6 Sol Ultra model produced a proof of the Cycle Double Cover Conjecture, a long-standing open problem in graph theory. If verified, this would be a landmark AI achievement, demonstrating that large language models can solve major open mathematical problems. It could fundamentally change how mathematical research is conducted and accelerate discovery. The proof is concise and may exploit a clever trick overlooked by human experts. However, the methodology is unclear: it is unknown how many open problems were attempted before this success, and the prompt required significant hand-holding to guide the model.
+Apple has filed a lawsuit against OpenAI, accusing the company of orchestrating a pattern of trade secret theft by ex-Apple employees who joined OpenAI and allegedly stole confidential information. This lawsuit between two AI giants could reshape industry competition and intellectual property enforcement, as it highlights the risks of talent poaching and information leakage in the highly secretive AI sector. The complaint alleges that OpenAI instructed new hires to hide their employment from Apple to prolong access, and that OpenAI used stolen Apple hardware details to approach Apple's suppliers.
 
-hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
+hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
 
-**Background**: The Cycle Double Cover Conjecture, posed by Tutte, Itai and Rodeh, Szekeres, and Seymour, asserts that every bridgeless undirected graph has a collection of cycles covering each edge exactly twice. It has been open since the 1970s and is closely related to graph embeddings. The conjecture is a central problem in graph theory, and a proof would have significant implications.
+**Background**: The AI industry is fiercely competitive, with companies like Apple and OpenAI racing to develop advanced models and hardware. Trade secret theft is a serious concern, as proprietary information can provide significant competitive advantages. This case echoes previous high-profile lawsuits, such as Waymo vs. Uber over self-driving car technology.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
-<li><a href="https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf">Introduction A PROOF OF THE CYCLE DOUBLE COV</a></li>
+**Discussion**: Commenters largely condemn OpenAI, with many arguing that the company's culture of copyright violation extends to trade secrets, and predicting severe legal consequences. Some warn businesses against using OpenAI models due to potential IP theft risks.
 
-</ul>
-</details>
-
-**Discussion**: Commenters are impressed but cautious, emphasizing the need for verification. They question whether the result was a one-shot success or one of many attempts, and note that the extensive prompt engineering suggests the model did not act entirely autonomously.
-
-**Tags**: `#AI`, `#mathematics`, `#proof`, `#GPT`, `#graph theory`
+**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
 
 ---
 
 <a id="item-2"></a>
-## [SGLang v0.5.15 Boosts LLM Serving with Spec V2 and NVFP4](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
+## [SGLang v0.5.15 Boosts Inference with NVFP4, Spec V2, IndexShare](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
 
-SGLang v0.5.15 enables Speculative Decoding V2 by default, introduces IndexShare MTP for up to 1.9x lower draft-step cost, and tunes GLM-5.2 NVFP4 on Blackwell hardware to achieve 500+ tok/s/user on 8x B300. These optimizations significantly enhance LLM inference throughput and latency, especially for large models and long-context scenarios, and SGLang continues to push the frontier of open-source serving engines. Spec V2 eliminates D2H/H2D syncs and fuses metadata ops, achieving +11% end-to-end TPS, while IndexShare MTP reuses indexer top-k across draft steps to reduce compute.
+SGLang v0.5.15 introduces tuned GLM-5.2 NVFP4 on Blackwell GPUs, sets Speculative Decoding V2 as default for an 11% end-to-end throughput increase, and adds IndexShare MTP to reduce draft-step costs by up to 1.9x on long contexts. These optimizations directly improve the efficiency and cost-effectiveness of serving large language models in production, making high-throughput inference more accessible for demanding applications like agent systems and long-context processing. Spec V2 achieves zero-overhead scheduling via CUDA-graphable DSA draft-extend, and Breakable CUDA Graph is now the default capture path. Additionally, FlashInfer autotune now covers draft-model graphs, and several new model supports are added.
 
 github · Fridge003 · Jul 10, 22:58
 
-**Background**: Speculative decoding accelerates LLM inference by using a smaller draft model to predict multiple tokens, which are then verified by the main model. Multi-Token Prediction (MTP) extends this by predicting several future tokens simultaneously. NVFP4 is a 4-bit floating-point format from NVIDIA for Blackwell architecture, designed for efficient low-precision inference with a two-level scaling strategy.
+**Background**: NVFP4 is a 4-bit floating-point quantization format introduced with NVIDIA's Blackwell architecture, offering higher dynamic range than integer quantization. IndexShare is a cross-layer reuse technique that runs a sparse-attention indexer only once every four layers, reducing per-token FLOPs. Breakable CUDA Graph allows inserting graph breaks to reduce kernel-launch overhead, improving performance for dynamic workloads.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.sglang.io/docs/advanced_features/speculative_decoding">Speculative Decoding - SGLang Documentation</a></li>
-<li><a href="https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/">The next generation of speculative decoding: DFlash and Spec V2</a></li>
-<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog</a></li>
+<li><a href="https://build.nvidia.com/spark/nvfp4-quantization">NVFP4 Quantization | DGX Spark</a></li>
+<li><a href="https://docs.sglang.io/docs/advanced_features/breakable_cuda_graph">Breakable CUDA Graph - SGLang Documentation</a></li>
+<li><a href="https://articles.phantom-byte.com/the-1m-context-mirage-what-indexshare-actually-delivers.html">1M Context Mirage: What IndexShare Delivers - PhantomByte</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#SGLang`, `#LLM serving`, `#performance optimization`, `#speculative decoding`, `#NVIDIA Blackwell`
+**Tags**: `#sglang`, `#LLM serving`, `#GPU optimization`, `#inference`, `#performance`
 
 ---
 
 <a id="item-3"></a>
-## [Relativity Governs Chemical Bonds in Heavy Elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
+## [Einstein's relativity rules chemical bonds in heavy elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
 
-New research published in Science demonstrates that Einstein's theory of relativity dictates the formation of chemical bonds in heavy elements like bismuth and gold. This finding deepens our understanding of heavy element chemistry, with potential applications in replacing toxic lead with bismuth in solar cells and other materials. For heavy elements, inner electrons move at a significant fraction of the speed of light, leading to spin-orbit coupling that affects bonding, as detailed in the study.
+New research published in Science confirms that relativistic effects, particularly spin-orbit coupling, govern chemical bonding in heavy elements like bismuth and mercury. This finding deepens the understanding of heavy-element chemistry and could guide the development of safer alternatives to toxic lead in solar cells and other technologies. The study highlights spin-orbit coupling, a relativistic interaction where an electron's spin and orbital motion are no longer independent, as the dominant factor in heavy-element bonding.
 
 hackernews · hhs · Jul 10, 22:30 · [Discussion](https://news.ycombinator.com/item?id=48866134)
 
-**Background**: Relativistic effects in chemistry are known to explain phenomena like the color of gold and mercury's liquid state at room temperature. This study extends the concept to chemical bonding, showing that relativity determines bond formation in heavy elements.
+**Background**: Relativistic effects become significant for heavy elements because their inner electrons move at a sizable fraction of the speed of light. For example, mercury's inner electrons reach about 60% of light speed, causing its outer electrons to contract and making mercury liquid at room temperature. Spin-orbit coupling is a relativistic correction that splits atomic energy levels and alters chemical properties.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://en.wikipedia.org/wiki/Spin-orbit_coupling">Spin-orbit coupling</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry - Wikipedia</a></li>
-<li><a href="https://pubs.acs.org/doi/10.1021/acsomega.7b00802">Relativistic Effects in the Electronic Structure of Atoms | ACS Omega</a></li>
-<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9783527667550.ch16">Relativistic Effects in Chemistry - Relativistic Quantum Chemistry - Wiley Online Library</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments noted that relativistic effects in heavy elements are already known (e.g., gold's color, mercury's liquidity), but praised the new focus on bonding. Some questioned the novelty, while others appreciated the extension to bismuth for solar cells.
+**Discussion**: Commenters noted that some relativistic effects on heavy elements (e.g., gold's color) were already known, but the study's direct confirmation for chemical bonding was appreciated. A few questioned the novelty, while others praised the continued validation of Einstein's theory. One commenter asked about lead usage in solar cells, sparking a search query.
 
-**Tags**: `#physics`, `#chemistry`, `#relativity`, `#heavy elements`, `#chemical bonding`
+**Tags**: `#physics`, `#chemistry`, `#relativity`, `#heavy elements`, `#chemical bonds`
 
 ---
 
 <a id="item-4"></a>
-## [QuadRF open-source RF visualizer detects drones and WiFi through walls](https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/) ⭐️ 8.0/10
+## [QuadRF Open-Source RF Camera Sees Drones and WiFi Through Walls](https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/) ⭐️ 8.0/10
 
-QuadRF, a 4x4 MIMO software-defined radio (SDR) phased-array development kit, has been demonstrated as an open-source RF visualizer capable of detecting drone signals and WiFi networks through walls, with a community post showing the device in action. This brings affordable phased-array RF sensing to hobbyists and researchers, enabling practical applications like drone detection, RF interference hunting, and security auditing without expensive equipment. QuadRF operates as a 4x4 MIMO SDR with phased-array capabilities, allowing beamforming and spatial awareness of RF signals; the creator noted that camera alignment and gain settings could be improved, and the project is fully open-source for customization.
+QuadRF, an open-source RF visualization tool based on a 4x4 MIMO SDR tile and Raspberry Pi 5, can now detect drones and map WiFi signals through walls in real time. This democratizes phased-array RF technology for education, security auditing, and RF forensics, enabling enthusiasts and professionals to visualize wireless environments affordably. QuadRF uses four antennas to create a real-time 'RF camera' that color-codes transmitters by frequency; the software is open-source, but the RF core implementation is protected as a hybrid open model.
 
 hackernews · speckx · Jul 10, 15:59 · [Discussion](https://news.ycombinator.com/item?id=48861717)
 
-**Background**: Software-defined radio (SDR) uses digital signal processing to replace traditional analog radio hardware, allowing flexible reconfiguration for different frequencies and protocols. Phased-array systems combine multiple antennas to steer beams electronically, enabling direction finding and spatial filtering. QuadRF brings these technologies together in an open-source kit.
+**Background**: Software-defined radio (SDR) digitizes radio signals for processing, while phased-array antenna systems steer beams electronically. QuadRF combines these principles in a compact, low-cost platform, making advanced RF imaging accessible outside specialized labs.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://github.com/dustinbowers/QuadRF">GitHub - dustinbowers/QuadRF</a></li>
 <li><a href="https://www.crowdsupply.com/scale-rf/quadrf">QuadRF | Crowd Supply</a></li>
-<li><a href="https://moonrf.com/docs/">QuadRF Documentation</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Software-defined_radio">Software-defined radio</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The QuadRF creator engaged directly in the comments, answering questions and pointing to demo videos. Commenters discussed potential low-frequency (3-30 MHz) use for RFI hunting in amateur radio, and drew parallels to thermal cameras and sound localization applications.
+**Discussion**: The community was highly engaged, with the creator answering questions and suggesting UI improvements. Users discussed extending the concept to sound localization and lower frequency bands, and expressed curiosity about government capabilities.
 
-**Tags**: `#RF`, `#open-source`, `#drone detection`, `#WiFi`, `#SDR`
+**Tags**: `#RF sensing`, `#open-source hardware`, `#drone detection`, `#WiFi mapping`, `#radio frequency`
 
 ---
 
 <a id="item-5"></a>
-## [Apple Sues OpenAI Over Trade Secret Theft via Ex-Employees](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
+## [Residential Proxies and Scraping Arms Race](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/) ⭐️ 8.0/10
 
-Apple has filed a lawsuit against OpenAI, accusing the AI company of stealing trade secrets through former Apple employees who reportedly emailed confidential information and instructed others to conceal their positions when leaving Apple. This high-profile lawsuit between two tech giants could set a precedent for intellectual property protection in the AI industry, potentially impacting OpenAI's hardware partnerships and business practices. It also highlights ongoing tensions over data and IP theft in generative AI. Apple discovered a pattern where OpenAI recruits emailed themselves confidential information upon leaving Apple, including one Mr. Tan. OpenAI also allegedly used confidential Apple hardware information to approach Apple suppliers and instructed new hires on avoiding scrutiny.
-
-hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
-
-**Background**: Trade secret lawsuits involve the misappropriation of confidential business information that provides a competitive advantage. Apple has a history of aggressively protecting its intellectual property, and this suit echoes the Waymo vs. Uber case that led to Uber's self-driving project being shut down. The outcome could influence how AI companies recruit from competitors.
-
-**Discussion**: Commenters are largely critical of OpenAI, calling it a company built on copyright violation and predicting severe consequences, including the potential end of OpenAI's hardware ambitions. Some warn businesses using OpenAI models to be cautious about data security. The sentiment is that this lawsuit appears 'open and shut' given Apple's resources.
-
-**Tags**: `#AI`, `#Legal`, `#Trade Secrets`, `#OpenAI`, `#Apple`
-
----
-
-<a id="item-6"></a>
-## [Residential proxies and the scraper battle](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/) ⭐️ 8.0/10
-
-An LWN article examines the escalating cat-and-mouse game between websites and scrapers using residential proxies, highlighting the challenges of distinguishing bots from humans and community-proposed countermeasures. This issue affects the openness of the web, AI data acquisition, and the balance between protecting websites and preserving access for legitimate users and researchers. Residential proxies route traffic through real ISP-assigned IPs, making them hard to block. Proposed solutions like proof-of-work (e.g., Anubis) may be bypassed by using vast botnets of residential devices.
+An LWN article details the escalating conflict between web scrapers using residential proxies and site owners deploying anti-scraping defenses, exploring solutions like proof-of-work and improved public data archives. Residential proxies enable scrapers to bypass IP-based blocking, threatening small websites and the open web, while proposed countermeasures like proof-of-work may be circumvented by botnets, highlighting the need for balanced, sustainable approaches. Residential proxies route traffic through real home IP addresses, making detection difficult; the article notes that proof-of-work can be subverted using millions of compromised devices, and suggests that a better common crawl could reduce scraping incentives.
 
 hackernews · chmaynard · Jul 10, 19:38 · [Discussion](https://news.ycombinator.com/item?id=48864252)
 
-**Background**: A residential proxy is a proxy server that uses IP addresses assigned to real residential devices, often from hacked or user-installed apps. This allows scrapers to appear as regular users, complicating anti-bot measures. The web scraping ecosystem involves a constant arms race between data collectors and site owners.
+**Background**: Web scraping is automated data extraction from websites. Residential proxies are IP addresses from real residential devices, often obtained through apps installed on users' phones without their knowledge. Anti-scraping measures include CAPTCHAs, rate limiting, and IP blacklisting, but scrapers continuously adapt.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://grokipedia.com/page/Residential_proxy">Residential proxy</a></li>
-<li><a href="https://trustytech.io/residential-proxy/">Residential Proxy Service Ratings | TrustyTech</a></li>
-<li><a href="https://decodo.com/proxies/residential-proxies">Residential Proxies From $2/GB – 115M+ IPs</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters note that mobile app stores make it trivial for apps to install residential proxies without user awareness, fueling the problem. Some argue that aggressive anti-scraping rhetoric may harm the open web and empower centralized gatekeepers like Cloudflare.
+**Discussion**: Commenters note the ease of installing residential proxies via app stores, the failure of mobile OS network permission controls, and the moral ambiguity of both scrapers and defenders. Some advocate for a better common crawl to reduce the advantage of AI labs and prevent the open web from being controlled by entities like Cloudflare.
 
-**Tags**: `#web scraping`, `#residential proxies`, `#anti-bot`, `#AI data`, `#open web`
+**Tags**: `#web scraping`, `#residential proxies`, `#anti-bot`, `#internet policy`, `#security`
+
+---
+
+<a id="item-6"></a>
+## [SpaceX Proposes 100,000 More Starlink Satellites for 100x Bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
+
+SpaceX has filed plans with the FCC to deploy up to 100,000 additional Starlink satellites, aiming to increase network capacity by 100 times. This would dramatically expand satellite internet capacity, potentially bridging the digital divide for underserved regions, but also raises serious concerns about space debris, light pollution, and the privatization of the night sky. The proposed Gen2 constellation would leverage laser inter-satellite links and advanced phased array antennas; the current Starlink fleet consists of approximately 4,000 satellites, so a 100,000-satellite expansion represents a massive leap.
+
+hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
+
+**Background**: Starlink is a satellite internet constellation operated by SpaceX, providing broadband service via low Earth orbit satellites. Laser inter-satellite links allow satellites to communicate with each other in space, reducing reliance on ground stations. Phased array antennas enable the user terminal to electronically track moving satellites without mechanical parts.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/abs/2103.00056">[2103.00056] Laser Inter - Satellite Links in a Starlink Constellation</a></li>
+<li><a href="https://newspaceeconomy.ca/2026/05/29/how-does-starlink-use-satellite-laser-communications/">How Does Starlink Use Satellite Laser ... | New Space Economy</a></li>
+<li><a href="https://hackaday.com/2020/11/25/literally-tearing-apart-a-spacex-starlink-antenna/">Literally Tearing Apart A SpaceX Starlink Antenna | Hackaday</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments reflect a polarized view: some users express sadness over the altering of the night sky and increased light pollution, while others highlight the life-changing benefits of reliable internet in rural areas. There is also debate about Starlink's relevance in regions where fiber is becoming cheaper, with arguments that its true value lies in developing nations lacking existing infrastructure.
+
+**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#bandwidth`, `#space policy`
+
+---
+
+<a id="item-7"></a>
+## [GPT-5.6 Sol Claims Proof of Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 8.0/10
+
+On July 10, 2026, OpenAI released a preprint claiming that its GPT-5.6 Sol Ultra model generated a proof of the Cycle Double Cover Conjecture, a long-standing open problem in graph theory. If verified, this would mark the first time an AI autonomously proves a major conjecture, potentially revolutionizing automated theorem proving and accelerating mathematical discovery. The proof is extremely concise, suggesting a clever trick missed by human experts, but the methodology is unclear—specifically, how many problems were attempted before success and the exact reasoning steps.
+
+hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
+
+**Background**: The Cycle Double Cover Conjecture, proposed independently by Szekeres and Seymour in the 1970s, states that every bridgeless graph has a collection of cycles covering each edge exactly twice. It is a central open problem in graph theory with connections to graph embeddings. GPT-5.6 Sol is OpenAI's latest model, featuring enhanced reasoning and an 'ultra' mode that uses sub-agents for complex tasks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
+<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT - 5 . 6 Sol : a next-generation model | OpenAI</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments express skepticism: some question the success rate and worry about cherry-picking, while others note the impressive conciseness of the proof but lack of autonomous theory-building.
+
+**Tags**: `#AI`, `#mathematics`, `#GPT-5`, `#proof`, `#conjecture`
 
 ---
