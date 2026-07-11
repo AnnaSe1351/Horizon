@@ -5,168 +5,204 @@ date: 2026-07-11
 lang: zh
 ---
 
-> 从 18 条内容中筛选出 7 条重要资讯。
+> 从 108 条内容中筛选出 10 条重要资讯。
 
 ---
 
-1. [苹果起诉 OpenAI，指控前员工窃取商业机密](#item-1) ⭐️ 9.0/10
-2. [SGLang v0.5.15 通过 NVFP4、Spec V2 和 IndexShare 提升推理性能](#item-2) ⭐️ 8.0/10
-3. [爱因斯坦相对论支配重元素化学键](#item-3) ⭐️ 8.0/10
-4. [开源射频相机 QuadRF 可穿透墙壁探测无人机和 WiFi](#item-4) ⭐️ 8.0/10
-5. [住宅代理与爬虫军备竞赛](#item-5) ⭐️ 8.0/10
-6. [SpaceX 计划再发射 10 万颗星链卫星以实现百倍带宽](#item-6) ⭐️ 8.0/10
-7. [GPT-5.6 Sol 声称证明循环双重覆盖猜想](#item-7) ⭐️ 8.0/10
+1. [Circle 获 OCC 批准设立信托银行](#item-1) ⭐️ 8.0/10
+2. [警惕算力泡沫：万亿投资七成空转](#item-2) ⭐️ 8.0/10
+3. [中国首次实施无人车交通法规](#item-3) ⭐️ 8.0/10
+4. [中国初创公司鹰瞰智翼完成 A 轮融资，仿生扑翼机器人进入量产](#item-4) ⭐️ 7.0/10
+5. [智谱 CEO 内部信：聚焦 AGI 前沿，超越万亿市值](#item-5) ⭐️ 7.0/10
+6. [标准之战：中国能打破东亚文明的枷锁吗？](#item-6) ⭐️ 7.0/10
+7. [Claude 11 天重写百万行代码，引发争议](#item-7) ⭐️ 7.0/10
+8. [东北小城杀入商业航天卡位战](#item-8) ⭐️ 7.0/10
+9. [Codex 大改版因 Token 费用高遭用户抨击](#item-9) ⭐️ 7.0/10
+10. [AI 行业今夏最大赌注即将揭晓](#item-10) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [苹果起诉 OpenAI，指控前员工窃取商业机密](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 9.0/10
+## [Circle 获 OCC 批准设立信托银行](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
 
-苹果已对 OpenAI 提起诉讼，指控该公司策划了一系列前苹果员工窃取商业机密的行为，这些员工加入 OpenAI 并据称窃取了机密信息。 这两家 AI 巨头之间的诉讼可能重塑行业竞争和知识产权执法，凸显了在高度机密的 AI 领域人才挖角和信息泄露的风险。 诉状称 OpenAI 指示新员工向苹果隐瞒其雇佣关系以延长访问权限，并且 OpenAI 使用窃取的苹果硬件信息联系苹果的供应商。
+美国货币监理署（OCC）有条件批准了 Circle 设立国民信托银行的申请，使其能够直接管理 USDC 稳定币的储备资产。 这一里程碑减少了 Circle 对第三方银行和托管机构的依赖，可能提升稳定币生态系统的运营效率和信任度。 新银行命名为 Circle 国民信托银行，但不得开展吸收存款或发放贷款等商业银行业务。
 
-hackernews · stock_toaster · 7月10日 20:47 · [社区讨论](https://news.ycombinator.com/item?id=48865019)
+rss · 36氪 - 商业科技 · 7月11日 05:10
 
-**背景**: 人工智能行业竞争激烈，像苹果和 OpenAI 这样的公司都在竞相开发先进模型和硬件。商业机密窃取是一个严重的问题，因为专有信息可以提供显著的竞争优势。此案与之前备受关注的诉讼相似，例如 Waymo 诉 Uber 关于自动驾驶技术的案件。
+**背景**: 国民信托银行是一种联邦特许的托管机构。此前 Circle 依赖第三方托管 USDC 储备资产。USDC 流通量超过 730 亿美元。
 
-**社区讨论**: 评论者大多谴责 OpenAI，许多人认为该公司侵犯版权的文化延伸到了商业机密，并预测将面临严重的法律后果。一些人警告企业不要使用 OpenAI 模型，因为存在知识产权被盗的风险。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-125.html">OCC Announces Conditional Approvals for Five National Trust Bank Charter Applications | OCC</a></li>
 
-**标签**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
+</ul>
+</details>
+
+**标签**: `#stablecoin`, `#regulation`, `#Circle`, `#USDC`, `#OCC`
 
 ---
 
 <a id="item-2"></a>
-## [SGLang v0.5.15 通过 NVFP4、Spec V2 和 IndexShare 提升推理性能](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
+## [警惕算力泡沫：万亿投资七成空转](https://www.huxiu.com/article/4874555.html?f=rss) ⭐️ 8.0/10
 
-SGLang v0.5.15 引入了针对 Blackwell GPU 优化的 GLM-5.2 NVFP4，将 Speculative Decoding V2 设为默认（端到端吞吐量提升 11%），并新增 IndexShare MTP，在长上下文中将草稿步骤成本降低最多 1.9 倍。 这些优化直接提升了生产环境中服务大语言模型的效率和成本效益，使高吞吐推理更易于应用于代理系统和长上下文处理等要求严苛的任务。 Spec V2 通过可 CUDA 图化的 DSA 草稿扩展实现了零开销调度，Breakable CUDA Graph 现已成为默认捕获路径。此外，FlashInfer 自动调优现已覆盖草稿模型图，并新增了多个模型支持。
+一篇文章警告称，投入数万亿的算力可能因闲置而大量浪费，约 70%的算力空转，预示潜在泡沫。 如果泡沫破裂，将导致巨额投资损失，影响 AI 基础设施行业及相关股票，如英伟达。 文章引用数据显示全球 AI 基础设施利用率仅为 30-55%，许多 GPU 因调度不当或峰值预留而闲置。
 
-github · Fridge003 · 7月10日 22:58
+rss · 虎嗅 - 深度商业 · 7月11日 12:37
 
-**背景**: NVFP4 是伴随 NVIDIA Blackwell 架构推出的 4 位浮点量化格式，相比整数量化具有更高的动态范围。IndexShare 是一种跨层复用技术，每四层仅运行一次稀疏注意力索引器，从而减少每 token 的 FLOPs。Breakable CUDA Graph 允许插入图断点以减少内核启动开销，提升动态工作负载的性能。
+**背景**: AI 热潮推动了对 GPU 和数据中心的大量投资，但实际利用率仍较低。历史上，类似的基础设施过度投资曾导致泡沫，如互联网泡沫。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://build.nvidia.com/spark/nvfp4-quantization">NVFP4 Quantization | DGX Spark</a></li>
-<li><a href="https://docs.sglang.io/docs/advanced_features/breakable_cuda_graph">Breakable CUDA Graph - SGLang Documentation</a></li>
-<li><a href="https://articles.phantom-byte.com/the-1m-context-mirage-what-indexshare-actually-delivers.html">1M Context Mirage: What IndexShare Delivers - PhantomByte</a></li>
+<li><a href="https://vexxhost.com/blog/gpu-utilization-ai-infrastructure/">Why GPUs Sit Idle: The Hidden Efficiency Problem in AI Infrastructure</a></li>
+<li><a href="https://cointeeth.com/news/a-big-bubble-caused-by-nvidia-is-about-to-burst">A big bubble caused by Nvidia is about to burst</a></li>
+<li><a href="https://www.linkedin.com/posts/hammerheadai_the-sleeping-giant-tapping-into-the-hidden-activity-7414412716716711936-Hpps">Unlocking AI Scale with Idle Data Center Capacity | LinkedIn</a></li>
 
 </ul>
 </details>
 
-**标签**: `#sglang`, `#LLM serving`, `#GPU optimization`, `#inference`, `#performance`
+**标签**: `#computing power`, `#AI infrastructure`, `#investment bubble`, `#data centers`, `#technology`
 
 ---
 
 <a id="item-3"></a>
-## [爱因斯坦相对论支配重元素化学键](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
+## [中国首次实施无人车交通法规](https://www.huxiu.com/article/4874554.html?f=rss) ⭐️ 8.0/10
 
-发表在《科学》杂志上的新研究证实，相对论效应，特别是自旋-轨道耦合，支配着铋和汞等重元素的化学键合。 这一发现加深了对重元素化学的理解，并可能指导开发用于太阳能电池等技术的无毒铅替代品。 该研究强调自旋-轨道耦合——一种相对论相互作用，其中电子的自旋和轨道运动不再独立——是重元素键合的主导因素。
+中国实施了首个针对自动驾驶汽车的综合性交通法规，为公共道路上的测试和运营建立了法律框架。 这项法规为全球最大汽车市场的自动驾驶治理树立了先例，可能加速无人驾驶汽车的部署，并重塑科技巨头和汽车制造商之间的竞争格局。 这些法规涵盖了安全要求、责任分配和运行设计域等关键方面，可能针对在指定区域内无需人工干预即可运行的 L4 级自动驾驶汽车。
 
-hackernews · hhs · 7月10日 22:30 · [社区讨论](https://news.ycombinator.com/item?id=48866134)
+rss · 虎嗅 - 深度商业 · 7月11日 12:32
 
-**背景**: 对于重元素，相对论效应变得显著，因为其内层电子以光速的很大一部分运动。例如，汞的内层电子速度达到光速的约 60%，导致其外层电子收缩，使汞在室温下呈液态。自旋-轨道耦合是一种相对论修正，它会分裂原子能级并改变化学性质。
+**背景**: 自动驾驶汽车从 0 级到 5 级分级，其中 L4 级代表高度自动化，汽车可在特定条件下无需人工输入完成所有驾驶任务。中国一直积极建设自动驾驶测试区，例如北京自动驾驶测试区，作为国内首个封闭式自动驾驶评估场地。新法规正式规定了在公共道路上部署此类车辆的规则，解决了安全性和法律不确定性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Spin-orbit_coupling">Spin-orbit coupling</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry - Wikipedia</a></li>
+<li><a href="https://autonews.gasgoo.com/china_news/70013760.html">Beijing first autonomous vehicle testing area starts operation - Gasgoo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Self-driving_car">Self- driving car - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出，重元素的一些相对论效应（如金的颜色）早已已知，但该研究对化学键的直接确认受到赞赏。少数人质疑其新颖性，而其他人则赞扬对爱因斯坦理论的持续验证。一位评论者询问铅在太阳能电池中的使用，引发了搜索查询。
-
-**标签**: `#physics`, `#chemistry`, `#relativity`, `#heavy elements`, `#chemical bonds`
+**标签**: `#autonomous vehicles`, `#regulations`, `#China`, `#policy`, `#tech industry`
 
 ---
 
 <a id="item-4"></a>
-## [开源射频相机 QuadRF 可穿透墙壁探测无人机和 WiFi](https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/) ⭐️ 8.0/10
+## [中国初创公司鹰瞰智翼完成 A 轮融资，仿生扑翼机器人进入量产](https://36kr.com/p/3889516712065799?f=rss) ⭐️ 7.0/10
 
-QuadRF 是一款基于 4x4 MIMO SDR 模块和 Raspberry Pi 5 的开源射频可视化工具，现已能实时穿透墙壁探测无人机并绘制 WiFi 信号分布。 这降低了相控阵射频技术的门槛，可用于教育、安全审计和射频取证，让爱好者和专业人士能以低成本可视化无线环境。 QuadRF 利用四根天线创建实时“射频相机”，按频率对发射源进行颜色编码；其软件开源，但射频核心实现采用混合开放模型保护。
+中国初创公司“鹰瞰智翼”由上海交通大学 00 后博士生创立，三个月内完成数千万元 A 轮融资，其首款消费级扑翼机器人“Eagle X”已进入量产阶段，该机器人能够理解并利用流体动力学。 这标志着仿生机器人领域的重要进展，将具身智能与流体动力学相结合，有望在消费级和工业级无人机领域开辟新应用，具有更安静、更安全、更自然的飞行特性。 该公司自主研发的流体仿真引擎 Vortrix 可在虚拟环境中进行强化学习训练，并零样本迁移到真实硬件。第二代产业级机器人具有约 15 个自由度，能够主动操控气流。
 
-hackernews · speckx · 7月10日 15:59 · [社区讨论](https://news.ycombinator.com/item?id=48861717)
+rss · 36氪 - 商业科技 · 7月11日 01:00
 
-**背景**: 软件定义无线电（SDR）将射频信号数字化以便处理，而相控阵天线系统可电子操控波束方向。QuadRF 将这两者结合在一个紧凑低成本的平台中，使先进的射频成像技术走出专业实验室。
+**背景**: 具身智能是指通过物理身体在现实世界中感知和行动的 AI 系统，能够与环境交互。仿生扑翼机器人模仿鸟类飞行，与传统旋翼无人机相比具有噪音低、安全性高的优势。流体仿真引擎允许机器人在仿真中学习复杂的气动行为，然后再部署到真实硬件。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/dustinbowers/QuadRF">GitHub - dustinbowers/QuadRF</a></li>
-<li><a href="https://www.crowdsupply.com/scale-rf/quadrf">QuadRF | Crowd Supply</a></li>
+<li><a href="https://36kr.com/p/3889516712065799">36氪首发 | 三个月融三轮，上交大00...</a></li>
+<li><a href="http://www.broadview.com.cn/article/420497">被众多AI大佬看好的 具 身 智 能 到底是什么？ 它凭什么成为下一个AI...</a></li>
+<li><a href="https://news.sciencenet.cn/htmlnews/2025/9/551131.shtm">仿 生 扑 翼 机 器 人 ，完美复刻鸟类起飞—新闻—科学网</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区讨论非常活跃，项目创建者亲自回答问题并建议改进用户界面。用户们还探讨了将这一概念扩展到声音定位和更低频段，并对政府可能具备的更强能力表示好奇。
-
-**标签**: `#RF sensing`, `#open-source hardware`, `#drone detection`, `#WiFi mapping`, `#radio frequency`
+**标签**: `#robotics`, `#biomimetic`, `#startup`, `#drone`, `#AI`
 
 ---
 
 <a id="item-5"></a>
-## [住宅代理与爬虫军备竞赛](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/) ⭐️ 8.0/10
+## [智谱 CEO 内部信：聚焦 AGI 前沿，超越万亿市值](https://36kr.com/newsflashes/3891162734689031?f=rss) ⭐️ 7.0/10
 
-一篇 LWN 文章详细介绍了使用住宅代理的网络爬虫与网站所有者部署反爬虫防御之间不断升级的冲突，探讨了工作量证明和改进公共数据归档等解决方案。 住宅代理使爬虫能够绕过基于 IP 的封锁，威胁到小型网站和开放网络，而工作量证明等拟议对策可能被僵尸网络绕过，凸显了寻找平衡、可持续方法的必要性。 住宅代理通过真实家庭 IP 地址路由流量，使得检测变得困难；文章指出，工作量证明可以被数百万被攻陷的设备破坏，并建议更好的公共爬虫可以减少爬取动机。
+7 月 11 日，智谱 AI CEO 唐杰发布内部信，宣布公司将战略转向长程任务、完全自治的智能体系统、自我进化与极致安全治理等 AGI 基础研究领域，而非短期应用变现。 这一转向标志着智谱对 AGI 基础设施的长期投资，有望使其成为下一代 AI 能力的领导者。这也反映了行业趋势：主流 AI 实验室优先考虑研究而非短期产品收入。 内部信主题为《巨浪已来》，指出智谱市值较半年前上市初期涨了 10 倍，并于 2026 年 6 月跻身“万亿港元俱乐部”。唐杰强调不追求短期应用变现。
 
-hackernews · chmaynard · 7月10日 19:38 · [社区讨论](https://news.ycombinator.com/item?id=48864252)
+rss · 36氪 - 商业科技 · 7月11日 11:35
 
-**背景**: 网络爬虫是从网站自动提取数据。住宅代理是来自真实住宅设备的 IP 地址，通常通过用户在不知情的情况下安装的应用程序获得。反爬虫措施包括验证码、速率限制和 IP 黑名单，但爬虫不断适应。
+**背景**: AGI（人工通用智能）旨在创造具有人类认知能力的系统。“长程任务”指需要持续推理的复杂多步问题；“自治智能体”是能自主感知、规划并行动的 AI 系统。“自我进化”描述 AI 通过交互和学习随时间改进自身的能力。智谱以其 GLM 系列模型闻名，该模型已在多个核心指标上追赶甚至超越 GPT-5.5 和 Claude Opus 4.8 等领先模型。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Residential_proxy">Residential proxy</a></li>
+<li><a href="https://36kr.com/p/3891132709206784">独家 | 智 谱 创始人唐杰发内部信：「 GLM ...</a></li>
+<li><a href="https://www.amazonaws.cn/what-is/artificial-intelligence-self-evolution/">什么是人工智能自我进化_人工智能自我进化为什么很重要-亚马逊云科技</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出，通过应用商店安装住宅代理非常容易，移动操作系统网络权限控制失效，以及爬虫和防御方都存在道德模糊性。一些人主张建立更好的公共爬虫，以减少 AI 实验室的优势，并防止开放网络被 Cloudflare 等实体控制。
-
-**标签**: `#web scraping`, `#residential proxies`, `#anti-bot`, `#internet policy`, `#security`
+**标签**: `#AGI`, `#智谱`, `#智能体`, `#公司战略`, `#人工智能`
 
 ---
 
 <a id="item-6"></a>
-## [SpaceX 计划再发射 10 万颗星链卫星以实现百倍带宽](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
+## [标准之战：中国能打破东亚文明的枷锁吗？](https://www.huxiu.com/article/4874521.html?f=rss) ⭐️ 7.0/10
 
-SpaceX 已向 FCC 提交计划，拟再部署多达 10 万颗星链卫星，旨在将网络容量提升 100 倍。 这将大幅提升卫星互联网容量，有望弥合欠发达地区的数字鸿沟，但也引发了对太空碎片、光污染以及夜空私有化的严重担忧。 拟议的 Gen2 星座将利用激光星间链路和先进的相控阵天线；目前星链约有 4000 颗卫星，因此增加 10 万颗卫星是一个巨大的飞跃。
+本文探讨了中国在全球技术标准竞争中的战略挑战，质疑中国能否克服东亚文明传承下来的文化和体制约束。 技术标准决定市场准入和技术领导地位；中国制定标准的能力影响全球技术格局及其自身经济发展。 文章可能分析了标准争夺的历史案例（如电信或人工智能领域），并评估了中国在标准制定组织中的当前策略。
 
-hackernews · CrankyBear · 7月10日 17:51 · [社区讨论](https://news.ycombinator.com/item?id=48863064)
+rss · 虎嗅 - 深度商业 · 7月11日 09:29
 
-**背景**: 星链是由 SpaceX 运营的卫星互联网星座，通过低地球轨道卫星提供宽带服务。激光星间链路允许卫星在太空中相互通信，减少了对地面站的依赖。相控阵天线使用户终端无需机械部件即可电子跟踪移动中的卫星。
+**背景**: 技术标准对于互操作性和市场主导地位至关重要。国家和公司都争相让自己的技术成为全球标准。中国在 5G、人工智能和物联网等领域大力投资标准开发，但面临现有参与者和地缘政治紧张局势的挑战。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2103.00056">[2103.00056] Laser Inter - Satellite Links in a Starlink Constellation</a></li>
-<li><a href="https://newspaceeconomy.ca/2026/05/29/how-does-starlink-use-satellite-laser-communications/">How Does Starlink Use Satellite Laser ... | New Space Economy</a></li>
-<li><a href="https://hackaday.com/2020/11/25/literally-tearing-apart-a-spacex-starlink-antenna/">Literally Tearing Apart A SpaceX Starlink Antenna | Hackaday</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区评论反映了两极分化的观点：一些用户对夜空改变和光污染增加表示悲伤，而另一些用户则强调可靠互联网在农村地区带来的改变生活的益处。还有关于星链在光纤越来越便宜地区的相关性辩论，有观点认为其真正价值在于缺乏现有基础设施的发展中国家。
-
-**标签**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#bandwidth`, `#space policy`
+**标签**: `#standards`, `#China`, `#technology competition`, `#geopolitics`, `#East Asia`
 
 ---
 
 <a id="item-7"></a>
-## [GPT-5.6 Sol 声称证明循环双重覆盖猜想](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 8.0/10
+## [Claude 11 天重写百万行代码，引发争议](https://www.huxiu.com/article/4874482.html?f=rss) ⭐️ 7.0/10
 
-2026 年 7 月 10 日，OpenAI 发布预印本，声称其 GPT-5.6 Sol Ultra 模型生成了图论中长期未决的循环双重覆盖猜想的证明。 如果得到验证，这将是 AI 首次自主证明重要猜想，可能彻底改变自动定理证明并加速数学发现。 该证明极为简洁，暗示了人类专家遗漏的巧妙技巧，但方法不明确——特别是成功前尝试了多少问题以及确切的推理步骤。
+Anthropic 公司的 Claude AI 在短短 11 天内重写了百万行代码，展示了 AI 辅助软件工程的重大飞跃。 这一成就可能彻底改变软件工程领域，但同时也引发了关于 AI 取代人类开发者、代码质量和伦理的担忧。 Claude AI 利用其大型语言模型能力，自动分析和重写代码，提高了效率，但也可能引入错误和安全隐患。
 
-hackernews · scrlk · 7月10日 18:29 · [社区讨论](https://news.ycombinator.com/item?id=48863490)
+rss · 虎嗅 - 深度商业 · 7月11日 05:13
 
-**背景**: 循环双重覆盖猜想由 Szekeres 和 Seymour 分别在 1970 年代独立提出，声称每个无桥图都有一组循环，每条边恰好被覆盖两次。它是图论中的核心未解决问题，与图嵌入有关。GPT-5.6 Sol 是 OpenAI 的最新模型，具备增强推理能力和使用子代理处理复杂任务的“ultra”模式。
+**背景**: Claude 是 Anthropic 开发的一系列大型语言模型，旨在成为安全、准确的 AI 助手。AI 辅助代码生成技术近年来发展迅速，但如此大规模地自动重写百万行代码尚属首次。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT - 5 . 6 Sol : a next-generation model | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude ( AI ) - Wikipedia</a></li>
+<li><a href="https://claude.com/">Claude</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论表示怀疑：有人质疑成功率并担心挑选性报告，而其他人则注意到证明的简洁性令人印象深刻，但缺乏自主理论构建。
+**标签**: `#AI`, `#code generation`, `#Claude`, `#software engineering`
 
-**标签**: `#AI`, `#mathematics`, `#GPT-5`, `#proof`, `#conjecture`
+---
+
+<a id="item-8"></a>
+## [东北小城杀入商业航天卡位战](https://www.huxiu.com/article/4874466.html?f=rss) ⭐️ 7.0/10
+
+中国东北一座小城战略性进入快速发展的商业航天领域，加入全国航天产业竞争行列。 此举凸显中国航天产业从传统中心向地方分散的趋势，可能推动区域经济发展，并加剧商业发射市场的竞争。 报道未指明具体城市，但强调其在商业航天供应链中的战略性“卡位”，可能聚焦制造或发射服务。
+
+rss · 虎嗅 - 深度商业 · 7月11日 03:14
+
+**背景**: 中国的商业航天正在蓬勃发展，民营公司和地方政府争相抢占市场份额。东北地区作为传统工业基地，正寻求通过航天等高科技产业实现经济转型。
+
+**标签**: `#commercial aerospace`, `#China`, `#regional development`, `#space industry`
+
+---
+
+<a id="item-9"></a>
+## [Codex 大改版因 Token 费用高遭用户抨击](https://www.huxiu.com/article/4874462.html?f=rss) ⭐️ 7.0/10
+
+OpenAI 的 Codex 工具进行了一次重大更新，但用户反应不佳，同时 GPT-5.6 的高 Token 费用也受到批评。 这次用户的不满凸显了对 AI 定价日益敏感的态度，以及为软件工程师和 AI 从业者提供经济高效编码工具的重要性。 据报道，这次更新名为 GPT-5.6，引入了新功能，但显著增加了 Token 消耗，导致用户成本上升。
+
+rss · 虎嗅 - 深度商业 · 7月11日 02:42
+
+**背景**: OpenAI Codex 是一款 AI 编码工具，帮助开发者自动化代码生成和审查等任务。Token 费用是一种定价模式，用户根据 AI 模型处理的 Token 数量付费，对于大型或复杂任务，费用可能迅速增加。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software... | OpenAI</a></li>
+<li><a href="https://medium.com/geekculture/mastering-token-costs-in-chatgpt-and-other-large-language-models-e724e36b4dca">Optimizing Token Costs in AI : ChatGPT & LLM | Geek Culture</a></li>
+
+</ul>
+</details>
+
+**标签**: `#Codex`, `#GPT`, `#AI`, `#token costs`, `#software engineering`
+
+---
+
+<a id="item-10"></a>
+## [AI 行业今夏最大赌注即将揭晓](https://www.huxiu.com/article/4874456.html?f=rss) ⭐️ 7.0/10
+
+一篇中文行业分析文章预测，AI 领域一项重大高风险赌注将在今年夏天尘埃落定，可能涉及关键技术发布或战略举措。 这一赌注可能重塑 AI 行业的竞争格局，影响未来数年的投资流向、产品路线图和市场领导地位。 文章强调了该赌注的极端性，暗示结果非此即彼——要么是变革性成功，要么是代价高昂的失败——对整个生态系统都有影响。
+
+rss · 虎嗅 - 深度商业 · 7月11日 02:09
+
+**标签**: `#AI`, `#industry analysis`, `#gamble`, `#technology trends`
 
 ---

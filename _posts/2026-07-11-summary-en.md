@@ -5,168 +5,204 @@ date: 2026-07-11
 lang: en
 ---
 
-> From 18 items, 7 important content pieces were selected
+> From 108 items, 10 important content pieces were selected
 
 ---
 
-1. [Apple sues OpenAI over trade secret theft from ex-employees](#item-1) ⭐️ 9.0/10
-2. [SGLang v0.5.15 Boosts Inference with NVFP4, Spec V2, IndexShare](#item-2) ⭐️ 8.0/10
-3. [Einstein's relativity rules chemical bonds in heavy elements](#item-3) ⭐️ 8.0/10
-4. [QuadRF Open-Source RF Camera Sees Drones and WiFi Through Walls](#item-4) ⭐️ 8.0/10
-5. [Residential Proxies and Scraping Arms Race](#item-5) ⭐️ 8.0/10
-6. [SpaceX Proposes 100,000 More Starlink Satellites for 100x Bandwidth](#item-6) ⭐️ 8.0/10
-7. [GPT-5.6 Sol Claims Proof of Cycle Double Cover Conjecture](#item-7) ⭐️ 8.0/10
+1. [Circle Gets OCC Approval to Establish Trust Bank](#item-1) ⭐️ 8.0/10
+2. [Warning of Computing Power Bubble: Trillions Invested, 70% Idle](#item-2) ⭐️ 8.0/10
+3. [China enacts first traffic rules for autonomous vehicles](#item-3) ⭐️ 8.0/10
+4. [Chinese Startup Eagle Wing Intelligence Raises Series A for Biomimetic Robots](#item-4) ⭐️ 7.0/10
+5. [Zhipu CEO Internal Letter: Focus on AGI Frontiers Beyond Trillion Club](#item-5) ⭐️ 7.0/10
+6. [Can China Break the Shackles of East Asian Civilization in the Standards War?](#item-6) ⭐️ 7.0/10
+7. [Claude Rewrites Millions Lines of Code in 11 Days, Stirs Controversy](#item-7) ⭐️ 7.0/10
+8. [Small NE China City Enters Commercial Aerospace Race](#item-8) ⭐️ 7.0/10
+9. [Codex Major Update Faces Backlash Over Token Costs](#item-9) ⭐️ 7.0/10
+10. [AI Industry's Biggest Bet This Summer](#item-10) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Apple sues OpenAI over trade secret theft from ex-employees](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 9.0/10
+## [Circle Gets OCC Approval to Establish Trust Bank](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
 
-Apple has filed a lawsuit against OpenAI, accusing the company of orchestrating a pattern of trade secret theft by ex-Apple employees who joined OpenAI and allegedly stole confidential information. This lawsuit between two AI giants could reshape industry competition and intellectual property enforcement, as it highlights the risks of talent poaching and information leakage in the highly secretive AI sector. The complaint alleges that OpenAI instructed new hires to hide their employment from Apple to prolong access, and that OpenAI used stolen Apple hardware details to approach Apple's suppliers.
+The OCC conditionally approved Circle's application to establish a national trust bank, enabling direct management of USDC stablecoin reserves. This milestone reduces Circle's reliance on third-party banks and custodians, potentially increasing operational efficiency and trust in the stablecoin ecosystem. The new bank, named Circle National Trust Bank, cannot engage in commercial banking activities such as accepting deposits or issuing loans.
 
-hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
+rss · 36氪 - 商业科技 · Jul 11, 05:10
 
-**Background**: The AI industry is fiercely competitive, with companies like Apple and OpenAI racing to develop advanced models and hardware. Trade secret theft is a serious concern, as proprietary information can provide significant competitive advantages. This case echoes previous high-profile lawsuits, such as Waymo vs. Uber over self-driving car technology.
+**Background**: A national trust bank is a federally chartered institution that holds assets in trust. Previously, Circle relied on third parties for USDC reserve custody. USDC circulation exceeds $73 billion.
 
-**Discussion**: Commenters largely condemn OpenAI, with many arguing that the company's culture of copyright violation extends to trade secrets, and predicting severe legal consequences. Some warn businesses against using OpenAI models due to potential IP theft risks.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-125.html">OCC Announces Conditional Approvals for Five National Trust Bank Charter Applications | OCC</a></li>
 
-**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
+</ul>
+</details>
+
+**Tags**: `#stablecoin`, `#regulation`, `#Circle`, `#USDC`, `#OCC`
 
 ---
 
 <a id="item-2"></a>
-## [SGLang v0.5.15 Boosts Inference with NVFP4, Spec V2, IndexShare](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
+## [Warning of Computing Power Bubble: Trillions Invested, 70% Idle](https://www.huxiu.com/article/4874555.html?f=rss) ⭐️ 8.0/10
 
-SGLang v0.5.15 introduces tuned GLM-5.2 NVFP4 on Blackwell GPUs, sets Speculative Decoding V2 as default for an 11% end-to-end throughput increase, and adds IndexShare MTP to reduce draft-step costs by up to 1.9x on long contexts. These optimizations directly improve the efficiency and cost-effectiveness of serving large language models in production, making high-throughput inference more accessible for demanding applications like agent systems and long-context processing. Spec V2 achieves zero-overhead scheduling via CUDA-graphable DSA draft-extend, and Breakable CUDA Graph is now the default capture path. Additionally, FlashInfer autotune now covers draft-model graphs, and several new model supports are added.
+An article warns that trillions of yuan invested in computing power may be largely wasted, with about 70% of capacity sitting idle, signaling a potential bubble. If the bubble bursts, it could lead to massive investment losses and affect the AI infrastructure industry and related stocks, such as Nvidia. The article cites data showing global AI infrastructure utilization is only 30-55%, and many GPUs sit idle due to poor scheduling or peak reservation practices.
 
-github · Fridge003 · Jul 10, 22:58
+rss · 虎嗅 - 深度商业 · Jul 11, 12:37
 
-**Background**: NVFP4 is a 4-bit floating-point quantization format introduced with NVIDIA's Blackwell architecture, offering higher dynamic range than integer quantization. IndexShare is a cross-layer reuse technique that runs a sparse-attention indexer only once every four layers, reducing per-token FLOPs. Breakable CUDA Graph allows inserting graph breaks to reduce kernel-launch overhead, improving performance for dynamic workloads.
+**Background**: The AI boom has driven massive investment in GPUs and data centers, but actual utilization rates remain low. Historically, similar overinvestment in infrastructure has led to bubbles, such as the dot-com bubble.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://build.nvidia.com/spark/nvfp4-quantization">NVFP4 Quantization | DGX Spark</a></li>
-<li><a href="https://docs.sglang.io/docs/advanced_features/breakable_cuda_graph">Breakable CUDA Graph - SGLang Documentation</a></li>
-<li><a href="https://articles.phantom-byte.com/the-1m-context-mirage-what-indexshare-actually-delivers.html">1M Context Mirage: What IndexShare Delivers - PhantomByte</a></li>
+<li><a href="https://vexxhost.com/blog/gpu-utilization-ai-infrastructure/">Why GPUs Sit Idle: The Hidden Efficiency Problem in AI Infrastructure</a></li>
+<li><a href="https://cointeeth.com/news/a-big-bubble-caused-by-nvidia-is-about-to-burst">A big bubble caused by Nvidia is about to burst</a></li>
+<li><a href="https://www.linkedin.com/posts/hammerheadai_the-sleeping-giant-tapping-into-the-hidden-activity-7414412716716711936-Hpps">Unlocking AI Scale with Idle Data Center Capacity | LinkedIn</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#sglang`, `#LLM serving`, `#GPU optimization`, `#inference`, `#performance`
+**Tags**: `#computing power`, `#AI infrastructure`, `#investment bubble`, `#data centers`, `#technology`
 
 ---
 
 <a id="item-3"></a>
-## [Einstein's relativity rules chemical bonds in heavy elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 8.0/10
+## [China enacts first traffic rules for autonomous vehicles](https://www.huxiu.com/article/4874554.html?f=rss) ⭐️ 8.0/10
 
-New research published in Science confirms that relativistic effects, particularly spin-orbit coupling, govern chemical bonding in heavy elements like bismuth and mercury. This finding deepens the understanding of heavy-element chemistry and could guide the development of safer alternatives to toxic lead in solar cells and other technologies. The study highlights spin-orbit coupling, a relativistic interaction where an electron's spin and orbital motion are no longer independent, as the dominant factor in heavy-element bonding.
+China has implemented its first comprehensive traffic regulations specifically for autonomous vehicles, establishing legal frameworks for testing and operation on public roads. This regulation sets a precedent for autonomous vehicle governance in the world's largest auto market, potentially accelerating the deployment of driverless cars and reshaping the competitive landscape among tech giants and automakers. The regulations cover key aspects such as safety requirements, liability assignment, and operational design domains, likely targeting Level 4 autonomous vehicles that can operate without human intervention in defined areas.
 
-hackernews · hhs · Jul 10, 22:30 · [Discussion](https://news.ycombinator.com/item?id=48866134)
+rss · 虎嗅 - 深度商业 · Jul 11, 12:32
 
-**Background**: Relativistic effects become significant for heavy elements because their inner electrons move at a sizable fraction of the speed of light. For example, mercury's inner electrons reach about 60% of light speed, causing its outer electrons to contract and making mercury liquid at room temperature. Spin-orbit coupling is a relativistic correction that splits atomic energy levels and alters chemical properties.
+**Background**: Autonomous vehicles are categorized into levels from 0 to 5, with Level 4 representing high automation where the car can handle all driving tasks in specific conditions without human input. China has been actively developing AV testing zones, such as the Beijing autonomous vehicle testing area, which opened as the country's first closed facility for AV evaluation. The new regulation formalizes the rules for deploying such vehicles on public roads, addressing safety and legal uncertainties.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Spin-orbit_coupling">Spin-orbit coupling</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry - Wikipedia</a></li>
+<li><a href="https://autonews.gasgoo.com/china_news/70013760.html">Beijing first autonomous vehicle testing area starts operation - Gasgoo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Self-driving_car">Self- driving car - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that some relativistic effects on heavy elements (e.g., gold's color) were already known, but the study's direct confirmation for chemical bonding was appreciated. A few questioned the novelty, while others praised the continued validation of Einstein's theory. One commenter asked about lead usage in solar cells, sparking a search query.
-
-**Tags**: `#physics`, `#chemistry`, `#relativity`, `#heavy elements`, `#chemical bonds`
+**Tags**: `#autonomous vehicles`, `#regulations`, `#China`, `#policy`, `#tech industry`
 
 ---
 
 <a id="item-4"></a>
-## [QuadRF Open-Source RF Camera Sees Drones and WiFi Through Walls](https://www.jeffgeerling.com/blog/2026/quadrf-can-spot-drones-and-see-wifi-through-my-wall/) ⭐️ 8.0/10
+## [Chinese Startup Eagle Wing Intelligence Raises Series A for Biomimetic Robots](https://36kr.com/p/3889516712065799?f=rss) ⭐️ 7.0/10
 
-QuadRF, an open-source RF visualization tool based on a 4x4 MIMO SDR tile and Raspberry Pi 5, can now detect drones and map WiFi signals through walls in real time. This democratizes phased-array RF technology for education, security auditing, and RF forensics, enabling enthusiasts and professionals to visualize wireless environments affordably. QuadRF uses four antennas to create a real-time 'RF camera' that color-codes transmitters by frequency; the software is open-source, but the RF core implementation is protected as a hybrid open model.
+Eagle Wing Intelligence, a Chinese startup founded by a Shanghai Jiao Tong University PhD student, has raised tens of millions of RMB in Series A funding within three months and is mass-producing its first consumer flapping-wing robot 'Eagle X,' which uses fluid dynamics understanding. This marks a significant step in biomimetic robotics, bridging embodied intelligence with fluid dynamics, potentially opening new applications in consumer and industrial drones with quieter, safer, and more natural flight. The company's proprietary fluid simulation engine Vortrix enables reinforcement learning training in virtual environments, with zero-shot transfer to real hardware. The second-generation industrial robot features about 15 degrees of freedom for active airflow manipulation.
 
-hackernews · speckx · Jul 10, 15:59 · [Discussion](https://news.ycombinator.com/item?id=48861717)
+rss · 36氪 - 商业科技 · Jul 11, 01:00
 
-**Background**: Software-defined radio (SDR) digitizes radio signals for processing, while phased-array antenna systems steer beams electronically. QuadRF combines these principles in a compact, low-cost platform, making advanced RF imaging accessible outside specialized labs.
+**Background**: Embodied intelligence refers to AI systems that perceive and act in the physical world through a body, enabling interaction with the environment. Flapping-wing robots mimic bird flight, offering advantages in noise and safety compared to traditional quadcopters. Fluid simulation engines allow robots to learn complex aerodynamic behaviors in simulation before deployment.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/dustinbowers/QuadRF">GitHub - dustinbowers/QuadRF</a></li>
-<li><a href="https://www.crowdsupply.com/scale-rf/quadrf">QuadRF | Crowd Supply</a></li>
+<li><a href="https://36kr.com/p/3889516712065799">36氪首发 | 三个月融三轮，上交大00...</a></li>
+<li><a href="http://www.broadview.com.cn/article/420497">被众多AI大佬看好的 具 身 智 能 到底是什么？ 它凭什么成为下一个AI...</a></li>
+<li><a href="https://news.sciencenet.cn/htmlnews/2025/9/551131.shtm">仿 生 扑 翼 机 器 人 ，完美复刻鸟类起飞—新闻—科学网</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community was highly engaged, with the creator answering questions and suggesting UI improvements. Users discussed extending the concept to sound localization and lower frequency bands, and expressed curiosity about government capabilities.
-
-**Tags**: `#RF sensing`, `#open-source hardware`, `#drone detection`, `#WiFi mapping`, `#radio frequency`
+**Tags**: `#robotics`, `#biomimetic`, `#startup`, `#drone`, `#AI`
 
 ---
 
 <a id="item-5"></a>
-## [Residential Proxies and Scraping Arms Race](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/) ⭐️ 8.0/10
+## [Zhipu CEO Internal Letter: Focus on AGI Frontiers Beyond Trillion Club](https://36kr.com/newsflashes/3891162734689031?f=rss) ⭐️ 7.0/10
 
-An LWN article details the escalating conflict between web scrapers using residential proxies and site owners deploying anti-scraping defenses, exploring solutions like proof-of-work and improved public data archives. Residential proxies enable scrapers to bypass IP-based blocking, threatening small websites and the open web, while proposed countermeasures like proof-of-work may be circumvented by botnets, highlighting the need for balanced, sustainable approaches. Residential proxies route traffic through real home IP addresses, making detection difficult; the article notes that proof-of-work can be subverted using millions of compromised devices, and suggests that a better common crawl could reduce scraping incentives.
+Zhipu AI CEO Tang Jie issued an internal letter on July 11, announcing the company's strategic shift towards foundational AGI research areas including long-horizon tasks, fully autonomous agent systems, self-evolution, and extreme safety governance, rather than short-term application monetization. This shift signals a long-term investment in AGI infrastructure, potentially positioning Zhipu as a leader in next-generation AI capabilities. It reflects a broader industry trend where major AI labs prioritize research over immediate product revenue. The internal letter titled "The Giant Wave Has Arrived" notes that Zhipu's market value has increased 10x since its IPO six months ago, joining the "trillion Hong Kong dollar club" in June 2026. Tang emphasized that the company will not chase short-term app commercialization.
 
-hackernews · chmaynard · Jul 10, 19:38 · [Discussion](https://news.ycombinator.com/item?id=48864252)
+rss · 36氪 - 商业科技 · Jul 11, 11:35
 
-**Background**: Web scraping is automated data extraction from websites. Residential proxies are IP addresses from real residential devices, often obtained through apps installed on users' phones without their knowledge. Anti-scraping measures include CAPTCHAs, rate limiting, and IP blacklisting, but scrapers continuously adapt.
+**Background**: AGI (Artificial General Intelligence) aims to create systems with human-like cognitive abilities. "Long-horizon tasks" refer to complex, multi-step problems requiring sustained reasoning, while "autonomous agents" are AI systems that can perceive, plan, and act independently. "Self-evolution" describes AI that improves itself over time through interaction and learning. Zhipu is known for its GLM series of models, which have achieved competitive performance against leading models like GPT-5.5 and Claude Opus 4.8.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Residential_proxy">Residential proxy</a></li>
+<li><a href="https://36kr.com/p/3891132709206784">独家 | 智 谱 创始人唐杰发内部信：「 GLM ...</a></li>
+<li><a href="https://www.amazonaws.cn/what-is/artificial-intelligence-self-evolution/">什么是人工智能自我进化_人工智能自我进化为什么很重要-亚马逊云科技</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters note the ease of installing residential proxies via app stores, the failure of mobile OS network permission controls, and the moral ambiguity of both scrapers and defenders. Some advocate for a better common crawl to reduce the advantage of AI labs and prevent the open web from being controlled by entities like Cloudflare.
-
-**Tags**: `#web scraping`, `#residential proxies`, `#anti-bot`, `#internet policy`, `#security`
+**Tags**: `#AGI`, `#智谱`, `#智能体`, `#公司战略`, `#人工智能`
 
 ---
 
 <a id="item-6"></a>
-## [SpaceX Proposes 100,000 More Starlink Satellites for 100x Bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
+## [Can China Break the Shackles of East Asian Civilization in the Standards War?](https://www.huxiu.com/article/4874521.html?f=rss) ⭐️ 7.0/10
 
-SpaceX has filed plans with the FCC to deploy up to 100,000 additional Starlink satellites, aiming to increase network capacity by 100 times. This would dramatically expand satellite internet capacity, potentially bridging the digital divide for underserved regions, but also raises serious concerns about space debris, light pollution, and the privatization of the night sky. The proposed Gen2 constellation would leverage laser inter-satellite links and advanced phased array antennas; the current Starlink fleet consists of approximately 4,000 satellites, so a 100,000-satellite expansion represents a massive leap.
+This article discusses China's strategic challenges in the global competition for technical standards, questioning whether China can overcome perceived cultural and systemic constraints inherited from East Asian civilization. Technical standards determine market access and technological leadership; China's ability to set standards affects global tech dynamics and its own economic development. The article likely analyzes historical examples of standards battles (e.g., in telecommunications or AI) and evaluates China's current strategies in standard-setting organizations.
 
-hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
+rss · 虎嗅 - 深度商业 · Jul 11, 09:29
 
-**Background**: Starlink is a satellite internet constellation operated by SpaceX, providing broadband service via low Earth orbit satellites. Laser inter-satellite links allow satellites to communicate with each other in space, reducing reliance on ground stations. Phased array antennas enable the user terminal to electronically track moving satellites without mechanical parts.
+**Background**: Technical standards are crucial for interoperability and market dominance. Countries and companies compete to have their technologies adopted as global standards. China has invested heavily in standards development in areas like 5G, AI, and IoT, but faces challenges from incumbent players and geopolitical tensions.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2103.00056">[2103.00056] Laser Inter - Satellite Links in a Starlink Constellation</a></li>
-<li><a href="https://newspaceeconomy.ca/2026/05/29/how-does-starlink-use-satellite-laser-communications/">How Does Starlink Use Satellite Laser ... | New Space Economy</a></li>
-<li><a href="https://hackaday.com/2020/11/25/literally-tearing-apart-a-spacex-starlink-antenna/">Literally Tearing Apart A SpaceX Starlink Antenna | Hackaday</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments reflect a polarized view: some users express sadness over the altering of the night sky and increased light pollution, while others highlight the life-changing benefits of reliable internet in rural areas. There is also debate about Starlink's relevance in regions where fiber is becoming cheaper, with arguments that its true value lies in developing nations lacking existing infrastructure.
-
-**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#bandwidth`, `#space policy`
+**Tags**: `#standards`, `#China`, `#technology competition`, `#geopolitics`, `#East Asia`
 
 ---
 
 <a id="item-7"></a>
-## [GPT-5.6 Sol Claims Proof of Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 8.0/10
+## [Claude Rewrites Millions Lines of Code in 11 Days, Stirs Controversy](https://www.huxiu.com/article/4874482.html?f=rss) ⭐️ 7.0/10
 
-On July 10, 2026, OpenAI released a preprint claiming that its GPT-5.6 Sol Ultra model generated a proof of the Cycle Double Cover Conjecture, a long-standing open problem in graph theory. If verified, this would mark the first time an AI autonomously proves a major conjecture, potentially revolutionizing automated theorem proving and accelerating mathematical discovery. The proof is extremely concise, suggesting a clever trick missed by human experts, but the methodology is unclear—specifically, how many problems were attempted before success and the exact reasoning steps.
+Anthropic's Claude AI has rewritten millions of lines of code in just 11 days, demonstrating a significant leap in AI-assisted software engineering. This achievement could revolutionize software engineering practices, but it has also sparked concerns about AI replacing human developers, code quality, and ethical implications. Claude AI leveraged its large language model capabilities to automatically analyze and rewrite code, improving efficiency but potentially introducing errors and security vulnerabilities.
 
-hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
+rss · 虎嗅 - 深度商业 · Jul 11, 05:13
 
-**Background**: The Cycle Double Cover Conjecture, proposed independently by Szekeres and Seymour in the 1970s, states that every bridgeless graph has a collection of cycles covering each edge exactly twice. It is a central open problem in graph theory with connections to graph embeddings. GPT-5.6 Sol is OpenAI's latest model, featuring enhanced reasoning and an 'ultra' mode that uses sub-agents for complex tasks.
+**Background**: Claude is a series of large language models developed by Anthropic, designed as a safe and accurate AI assistant. AI-assisted code generation has advanced rapidly, but rewriting millions of lines of code autonomously at this scale is unprecedented.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Cycle_double_cover_conjecture">Cycle double cover conjecture</a></li>
-<li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">Previewing GPT - 5 . 6 Sol : a next-generation model | OpenAI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude ( AI ) - Wikipedia</a></li>
+<li><a href="https://claude.com/">Claude</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express skepticism: some question the success rate and worry about cherry-picking, while others note the impressive conciseness of the proof but lack of autonomous theory-building.
+**Tags**: `#AI`, `#code generation`, `#Claude`, `#software engineering`
 
-**Tags**: `#AI`, `#mathematics`, `#GPT-5`, `#proof`, `#conjecture`
+---
+
+<a id="item-8"></a>
+## [Small NE China City Enters Commercial Aerospace Race](https://www.huxiu.com/article/4874466.html?f=rss) ⭐️ 7.0/10
+
+A small city in Northeast China has strategically positioned itself to compete in the rapidly growing commercial aerospace sector, joining the nationwide race for space industry leadership. This move highlights the decentralization of China's space industry beyond traditional hubs, potentially spurring regional economic development and increasing competition in the commercial launch market. The specific city is not named in the report, but the news emphasizes its strategic 'card-positioning' (卡位) in the commercial aerospace supply chain, likely focusing on manufacturing or launch services.
+
+rss · 虎嗅 - 深度商业 · Jul 11, 03:14
+
+**Background**: Commercial aerospace in China has been booming, with private companies and local governments vying for market share. Northeast China, historically an industrial base, is seeking economic transformation through high-tech sectors like space.
+
+**Tags**: `#commercial aerospace`, `#China`, `#regional development`, `#space industry`
+
+---
+
+<a id="item-9"></a>
+## [Codex Major Update Faces Backlash Over Token Costs](https://www.huxiu.com/article/4874462.html?f=rss) ⭐️ 7.0/10
+
+OpenAI's Codex tool received a major update that was poorly received by users, who also criticized the high token costs associated with GPT-5.6. This backlash highlights growing user sensitivity to AI pricing and the importance of cost-effective coding tools for software engineers and AI practitioners. The update, reportedly called GPT-5.6, introduced new features but significantly increased token consumption, leading to higher costs for users.
+
+rss · 虎嗅 - 深度商业 · Jul 11, 02:42
+
+**Background**: OpenAI Codex is an AI coding tool that helps developers automate tasks like code generation and review. Token costs refer to the pricing model where users pay based on the number of tokens processed by the AI model, which can escalate quickly with large or complex tasks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software... | OpenAI</a></li>
+<li><a href="https://medium.com/geekculture/mastering-token-costs-in-chatgpt-and-other-large-language-models-e724e36b4dca">Optimizing Token Costs in AI : ChatGPT & LLM | Geek Culture</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Codex`, `#GPT`, `#AI`, `#token costs`, `#software engineering`
+
+---
+
+<a id="item-10"></a>
+## [AI Industry's Biggest Bet This Summer](https://www.huxiu.com/article/4874456.html?f=rss) ⭐️ 7.0/10
+
+A Chinese industry analysis article predicts a major high-stakes gamble in the AI sector will be resolved this summer, likely involving a key technology release or strategic move. This bet could reshape competitive dynamics in the AI industry, influencing investment flows, product roadmaps, and market leadership for years to come. The article highlights the extreme nature of the gamble, suggesting a binary outcome—either a transformative success or a costly failure—with implications for the entire ecosystem.
+
+rss · 虎嗅 - 深度商业 · Jul 11, 02:09
+
+**Tags**: `#AI`, `#industry analysis`, `#gamble`, `#technology trends`
 
 ---
