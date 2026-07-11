@@ -9,200 +9,203 @@ lang: en
 
 ---
 
-1. [Circle Gets OCC Approval to Establish Trust Bank](#item-1) ⭐️ 8.0/10
-2. [Warning of Computing Power Bubble: Trillions Invested, 70% Idle](#item-2) ⭐️ 8.0/10
-3. [China enacts first traffic rules for autonomous vehicles](#item-3) ⭐️ 8.0/10
-4. [Chinese Startup Eagle Wing Intelligence Raises Series A for Biomimetic Robots](#item-4) ⭐️ 7.0/10
-5. [Zhipu CEO Internal Letter: Focus on AGI Frontiers Beyond Trillion Club](#item-5) ⭐️ 7.0/10
-6. [Can China Break the Shackles of East Asian Civilization in the Standards War?](#item-6) ⭐️ 7.0/10
-7. [Claude Rewrites Millions Lines of Code in 11 Days, Stirs Controversy](#item-7) ⭐️ 7.0/10
-8. [Small NE China City Enters Commercial Aerospace Race](#item-8) ⭐️ 7.0/10
-9. [Codex Major Update Faces Backlash Over Token Costs](#item-9) ⭐️ 7.0/10
-10. [AI Industry's Biggest Bet This Summer](#item-10) ⭐️ 7.0/10
+1. [ZhiPu's Tang Jie Reveals Next Bets After Coding Success](#item-1) ⭐️ 8.0/10
+2. [Circle Receives OCC Approval to Establish a Trust Bank](#item-2) ⭐️ 8.0/10
+3. [China's First Unmanned Vehicle Traffic Rules Spark Industry Shakeout](#item-3) ⭐️ 8.0/10
+4. [Claude Rewrites a Million Lines of Code in 11 Days, Sparking Controversy](#item-4) ⭐️ 8.0/10
+5. [Apple Sues OpenAI Over Alleged Trade Secret Theft](#item-5) ⭐️ 8.0/10
+6. [China Tops Global Power Technology Innovation Ranking](#item-6) ⭐️ 7.0/10
+7. [Tencent in talks to become top Manus shareholder at $2B valuation](#item-7) ⭐️ 7.0/10
+8. [Could AI Invent Relativity Given 1901's World?](#item-8) ⭐️ 7.0/10
+9. [OpenAI's 48-Hour Release Spree Shows Startup Agility at Trillion-Dollar Scale](#item-9) ⭐️ 7.0/10
+10. [AI Companions and the Crisis of Intimacy in the AI Era](#item-10) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Circle Gets OCC Approval to Establish Trust Bank](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
+## [ZhiPu's Tang Jie Reveals Next Bets After Coding Success](https://36kr.com/p/3891132709206784?f=rss) ⭐️ 8.0/10
 
-The OCC conditionally approved Circle's application to establish a national trust bank, enabling direct management of USDC stablecoin reserves. This milestone reduces Circle's reliance on third-party banks and custodians, potentially increasing operational efficiency and trust in the stablecoin ecosystem. The new bank, named Circle National Trust Bank, cannot engage in commercial banking activities such as accepting deposits or issuing loans.
+ZhiPu founder Tang Jie published an internal letter on July 11, 2026, detailing the company's successful bet on coding and reasoning AI, which led to a 10x market cap increase, and announcing a strategic pivot to long-horizon tasks, autonomous agent systems, and self-evolution. This reveals a major Chinese AI company's strategic evolution from chat to coding and now to autonomous systems, highlighting a key trend in AI commercialization and the race towards AGI. It also shows how betting on the right technical direction can yield massive market returns. ZhiPu's GLM-5.2 model matches top models like Claude Opus 4.8 and GPT-5.5 on core benchmarks. Its MaaS platform ARR reached 17 billion RMB (up 60x year-over-year), and the company's market cap surpassed Baidu and Xiaomi.
 
-rss · 36氪 - 商业科技 · Jul 11, 05:10
+rss · 36氪 - 商业科技 · Jul 11, 11:28
 
-**Background**: A national trust bank is a federally chartered institution that holds assets in trust. Previously, Circle relied on third parties for USDC reserve custody. USDC circulation exceeds $73 billion.
+**Background**: GLM (General Language Model) is a series of open-weight large language models developed by Chinese company Z.ai (ZhiPu). Model-as-a-Service (MaaS) delivers AI models via cloud APIs for on-demand access. Coding and reasoning capabilities have become critical for AI agents and commercial applications, as demonstrated by Anthropic's success.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-125.html">OCC Announces Conditional Approvals for Five National Trust Bank Charter Applications | OCC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GLM_(AI)">GLM (AI) - Wikipedia</a></li>
+<li><a href="https://www.redhat.com/en/topics/ai/what-is-models-as-a-service">What is Model-as-a-Service?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#stablecoin`, `#regulation`, `#Circle`, `#USDC`, `#OCC`
+**Tags**: `#AI`, `#coding`, `#reasoning`, `#strategy`, `#China`
 
 ---
 
 <a id="item-2"></a>
-## [Warning of Computing Power Bubble: Trillions Invested, 70% Idle](https://www.huxiu.com/article/4874555.html?f=rss) ⭐️ 8.0/10
+## [Circle Receives OCC Approval to Establish a Trust Bank](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
 
-An article warns that trillions of yuan invested in computing power may be largely wasted, with about 70% of capacity sitting idle, signaling a potential bubble. If the bubble bursts, it could lead to massive investment losses and affect the AI infrastructure industry and related stocks, such as Nvidia. The article cites data showing global AI infrastructure utilization is only 30-55%, and many GPUs sit idle due to poor scheduling or peak reservation practices.
+Circle announced that the U.S. Office of the Comptroller of the Currency (OCC) approved its application to establish a trust bank, named Circle National Trust Bank, allowing it to directly manage reserve assets backing its USDC stablecoin. This regulatory approval enables Circle to bypass third-party banks and custodians for reserve management, potentially increasing trust and operational efficiency for the $73 billion USDC stablecoin, which could reshape stablecoin custody standards. The trust bank license allows Circle to act as a fiduciary for reserve assets but does not permit commercial banking activities such as accepting deposits or issuing loans. USDC's circulating supply exceeds $73 billion.
 
-rss · 虎嗅 - 深度商业 · Jul 11, 12:37
+rss · 36氪 - 商业科技 · Jul 11, 05:10
 
-**Background**: The AI boom has driven massive investment in GPUs and data centers, but actual utilization rates remain low. Historically, similar overinvestment in infrastructure has led to bubbles, such as the dot-com bubble.
+**Background**: The OCC is an independent bureau within the U.S. Treasury that charters and supervises all national banks and federal thrift institutions. A trust bank, or trust company, acts as a fiduciary managing assets on behalf of others, often for trusts and custodial purposes. Previously, Circle relied on third-party banks to hold the cash and Treasury assets backing USDC.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://vexxhost.com/blog/gpu-utilization-ai-infrastructure/">Why GPUs Sit Idle: The Hidden Efficiency Problem in AI Infrastructure</a></li>
-<li><a href="https://cointeeth.com/news/a-big-bubble-caused-by-nvidia-is-about-to-burst">A big bubble caused by Nvidia is about to burst</a></li>
-<li><a href="https://www.linkedin.com/posts/hammerheadai_the-sleeping-giant-tapping-into-the-hidden-activity-7414412716716711936-Hpps">Unlocking AI Scale with Idle Data Center Capacity | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Office_of_the_Comptroller_of_the_Currency">Office of the Comptroller of the Currency - Wikipedia</a></li>
+<li><a href="https://www.usa.gov/agencies/office-of-the-comptroller-of-the-currency">Office of the Comptroller of the Currency (OCC) | USAGov</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#computing power`, `#AI infrastructure`, `#investment bubble`, `#data centers`, `#technology`
+**Tags**: `#stablecoins`, `#regulation`, `#Circle`, `#USDC`, `#crypto`
 
 ---
 
 <a id="item-3"></a>
-## [China enacts first traffic rules for autonomous vehicles](https://www.huxiu.com/article/4874554.html?f=rss) ⭐️ 8.0/10
+## [China's First Unmanned Vehicle Traffic Rules Spark Industry Shakeout](https://www.huxiu.com/article/4874554.html?f=rss) ⭐️ 8.0/10
 
-China has implemented its first comprehensive traffic regulations specifically for autonomous vehicles, establishing legal frameworks for testing and operation on public roads. This regulation sets a precedent for autonomous vehicle governance in the world's largest auto market, potentially accelerating the deployment of driverless cars and reshaping the competitive landscape among tech giants and automakers. The regulations cover key aspects such as safety requirements, liability assignment, and operational design domains, likely targeting Level 4 autonomous vehicles that can operate without human intervention in defined areas.
+China's first nationwide traffic regulations for unmanned vehicles took effect on July 1, 2026, covering all types of unmanned delivery vehicles with a three-tier access permission system. This regulation establishes a unified national standard for the unmanned vehicle industry, accelerating the industry shakeout where only technologically advanced and compliant companies will survive. The three-tier permission system classifies vehicles based on technical capabilities and operating environments, and testing vehicles are restricted to designated areas and time slots to avoid peak hours and crowded zones.
 
 rss · 虎嗅 - 深度商业 · Jul 11, 12:32
 
-**Background**: Autonomous vehicles are categorized into levels from 0 to 5, with Level 4 representing high automation where the car can handle all driving tasks in specific conditions without human input. China has been actively developing AV testing zones, such as the Beijing autonomous vehicle testing area, which opened as the country's first closed facility for AV evaluation. The new regulation formalizes the rules for deploying such vehicles on public roads, addressing safety and legal uncertainties.
+**Background**: Unmanned vehicles require clear road rights to legally operate on public roads. Prior to this regulation, policies varied across regions. In 2021, Beijing issued the country's first "Unmanned Delivery Vehicle Management Implementation Rules," granting initial road permits. The new national regulation provides a unified framework covering all vehicle types, marking a significant step toward legalizing autonomous driving.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://autonews.gasgoo.com/china_news/70013760.html">Beijing first autonomous vehicle testing area starts operation - Gasgoo</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Self-driving_car">Self- driving car - Wikipedia</a></li>
+<li><a href="https://www.360che.com/law/260518/201142.html">无人送货车约束法规定了！26年最新无人送货车法规全景</a></li>
+<li><a href="https://www.beijing.gov.cn/zhengce/zcjd/zcwd/wrjsnhfsll/">无人驾驶车能合法“上路”了！_首都之窗_北京市人民政府门户网站</a></li>
+<li><a href="https://www.xingshentech.com/Media/info/10857?fid=n1:1:1">无人配送车可以上公开道路吗？</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#autonomous vehicles`, `#regulations`, `#China`, `#policy`, `#tech industry`
+**Tags**: `#无人驾驶`, `#政策法规`, `#人工智能`, `#智能交通`
 
 ---
 
 <a id="item-4"></a>
-## [Chinese Startup Eagle Wing Intelligence Raises Series A for Biomimetic Robots](https://36kr.com/p/3889516712065799?f=rss) ⭐️ 7.0/10
+## [Claude Rewrites a Million Lines of Code in 11 Days, Sparking Controversy](https://www.huxiu.com/article/4874482.html?f=rss) ⭐️ 8.0/10
 
-Eagle Wing Intelligence, a Chinese startup founded by a Shanghai Jiao Tong University PhD student, has raised tens of millions of RMB in Series A funding within three months and is mass-producing its first consumer flapping-wing robot 'Eagle X,' which uses fluid dynamics understanding. This marks a significant step in biomimetic robotics, bridging embodied intelligence with fluid dynamics, potentially opening new applications in consumer and industrial drones with quieter, safer, and more natural flight. The company's proprietary fluid simulation engine Vortrix enables reinforcement learning training in virtual environments, with zero-shot transfer to real hardware. The second-generation industrial robot features about 15 degrees of freedom for active airflow manipulation.
+Anthropic's AI model Claude autonomously rewrote over one million lines of code in just 11 days, demonstrating unprecedented scalability in AI-driven code refactoring. This event signals a paradigm shift in software engineering, where AI can handle large-scale codebase modernization at a fraction of human time and cost, potentially reshaping developer roles and project timelines. Claude is trained using 'constitutional AI' to align with ethical guidelines; the feat was accomplished by analyzing, refactoring, and modernizing a legacy codebase without breaking functionality.
 
-rss · 36氪 - 商业科技 · Jul 11, 01:00
+rss · 虎嗅 - 深度商业 · Jul 11, 05:13
 
-**Background**: Embodied intelligence refers to AI systems that perceive and act in the physical world through a body, enabling interaction with the environment. Flapping-wing robots mimic bird flight, offering advantages in noise and safety compared to traditional quadcopters. Fluid simulation engines allow robots to learn complex aerodynamic behaviors in simulation before deployment.
+**Background**: Claude is a family of large language models developed by Anthropic, known for their strong reasoning and code generation capabilities. AI-driven code refactoring tools are emerging to automatically identify dead code, suggest improvements, and rewrite large sections, reducing technical debt and accelerating maintenance.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://36kr.com/p/3889516712065799">36氪首发 | 三个月融三轮，上交大00...</a></li>
-<li><a href="http://www.broadview.com.cn/article/420497">被众多AI大佬看好的 具 身 智 能 到底是什么？ 它凭什么成为下一个AI...</a></li>
-<li><a href="https://news.sciencenet.cn/htmlnews/2025/9/551131.shtm">仿 生 扑 翼 机 器 人 ，完美复刻鸟类起飞—新闻—科学网</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude (AI) - Wikipedia</a></li>
+<li><a href="https://platform.claude.com/docs/en/about-claude/models/overview">Models overview - Claude Platform Docs</a></li>
+<li><a href="https://www.ibm.com/think/topics/ai-code-refactoring">What Is AI Code Refactoring? | IBM</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#robotics`, `#biomimetic`, `#startup`, `#drone`, `#AI`
+**Tags**: `#AI`, `#Claude`, `#代码生成`, `#软件工程`, `#争议`
 
 ---
 
 <a id="item-5"></a>
-## [Zhipu CEO Internal Letter: Focus on AGI Frontiers Beyond Trillion Club](https://36kr.com/newsflashes/3891162734689031?f=rss) ⭐️ 7.0/10
+## [Apple Sues OpenAI Over Alleged Trade Secret Theft](https://www.huxiu.com/article/4874471.html?f=rss) ⭐️ 8.0/10
 
-Zhipu AI CEO Tang Jie issued an internal letter on July 11, announcing the company's strategic shift towards foundational AGI research areas including long-horizon tasks, fully autonomous agent systems, self-evolution, and extreme safety governance, rather than short-term application monetization. This shift signals a long-term investment in AGI infrastructure, potentially positioning Zhipu as a leader in next-generation AI capabilities. It reflects a broader industry trend where major AI labs prioritize research over immediate product revenue. The internal letter titled "The Giant Wave Has Arrived" notes that Zhipu's market value has increased 10x since its IPO six months ago, joining the "trillion Hong Kong dollar club" in June 2026. Tang emphasized that the company will not chase short-term app commercialization.
+Apple filed a lawsuit against OpenAI, accusing it of stealing core trade secrets through a 41-page PDF complaint. This legal dispute between two tech giants could set a precedent for how AI companies use proprietary data and could impact the development of generative AI technologies. The 41-page PDF complaint details specific allegations, but the exact trade secrets claimed are not publicly disclosed. The lawsuit underscores growing tensions over intellectual property in the AI sector.
 
-rss · 36氪 - 商业科技 · Jul 11, 11:35
+rss · 虎嗅 - 深度商业 · Jul 11, 03:45
 
-**Background**: AGI (Artificial General Intelligence) aims to create systems with human-like cognitive abilities. "Long-horizon tasks" refer to complex, multi-step problems requiring sustained reasoning, while "autonomous agents" are AI systems that can perceive, plan, and act independently. "Self-evolution" describes AI that improves itself over time through interaction and learning. Zhipu is known for its GLM series of models, which have achieved competitive performance against leading models like GPT-5.5 and Claude Opus 4.8.
+**Background**: Trade secrets are confidential business information that provide a competitive edge. Apple has a history of aggressively protecting its intellectual property, while OpenAI is a leading AI research organization known for GPT models. This lawsuit reflects broader concerns about unauthorized use of proprietary data in AI training.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://36kr.com/p/3891132709206784">独家 | 智 谱 创始人唐杰发内部信：「 GLM ...</a></li>
-<li><a href="https://www.amazonaws.cn/what-is/artificial-intelligence-self-evolution/">什么是人工智能自我进化_人工智能自我进化为什么很重要-亚马逊云科技</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AGI`, `#智谱`, `#智能体`, `#公司战略`, `#人工智能`
+**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
 
 ---
 
 <a id="item-6"></a>
-## [Can China Break the Shackles of East Asian Civilization in the Standards War?](https://www.huxiu.com/article/4874521.html?f=rss) ⭐️ 7.0/10
+## [China Tops Global Power Technology Innovation Ranking](https://36kr.com/newsflashes/3890965044869637?f=rss) ⭐️ 7.0/10
 
-This article discusses China's strategic challenges in the global competition for technical standards, questioning whether China can overcome perceived cultural and systemic constraints inherited from East Asian civilization. Technical standards determine market access and technological leadership; China's ability to set standards affects global tech dynamics and its own economic development. The article likely analyzes historical examples of standards battles (e.g., in telecommunications or AI) and evaluates China's current strategies in standard-setting organizations.
+A UN report titled 'Global Power Development Index (2026)' ranked China first globally in power technology innovation, released at the United Nations High-Level Political Forum on Sustainable Development in New York on July 10. This ranking highlights China's leading role in the global energy transition and power technology advancement, potentially influencing international cooperation and investment in sustainable energy. The report is part of the Global Energy Interconnection initiative, which proposes a global electricity network to support sustainable development. The index evaluates multiple dimensions of power development.
 
-rss · 虎嗅 - 深度商业 · Jul 11, 09:29
+rss · 36氪 - 商业科技 · Jul 11, 08:35
 
-**Background**: Technical standards are crucial for interoperability and market dominance. Countries and companies compete to have their technologies adopted as global standards. China has invested heavily in standards development in areas like 5G, AI, and IoT, but faces challenges from incumbent players and geopolitical tensions.
+**Background**: The Global Energy Interconnection is a proposed global electricity network aimed at facilitating the transition to renewable energy and addressing climate change. The concept was initiated by China's State Grid Corporation and has been promoted through the United Nations. The Global Power Development Index is a new tool to measure progress across countries.
 
-**Tags**: `#standards`, `#China`, `#technology competition`, `#geopolitics`, `#East Asia`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Global_Energy_Interconnection">Global Energy Interconnection</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#power technology`, `#innovation`, `#China`, `#global ranking`
 
 ---
 
 <a id="item-7"></a>
-## [Claude Rewrites Millions Lines of Code in 11 Days, Stirs Controversy](https://www.huxiu.com/article/4874482.html?f=rss) ⭐️ 7.0/10
+## [Tencent in talks to become top Manus shareholder at $2B valuation](https://36kr.com/newsflashes/3890964192852482?f=rss) ⭐️ 7.0/10
 
-Anthropic's Claude AI has rewritten millions of lines of code in just 11 days, demonstrating a significant leap in AI-assisted software engineering. This achievement could revolutionize software engineering practices, but it has also sparked concerns about AI replacing human developers, code quality, and ethical implications. Claude AI leveraged its large language model capabilities to automatically analyze and rewrite code, improving efficiency but potentially introducing errors and security vulnerabilities.
+Tencent is reportedly in talks to become the largest shareholder of AI agent company Manus at a $2 billion valuation, leading a Chinese consortium to buy out Meta's stake, though Tencent will retain only a minority position. This deal underscores the growing strategic importance of AI agents and could reshape the competitive landscape in China's AI startup ecosystem, with Tencent gaining influence without full control. The report remains unconfirmed as Tencent has not officially responded, and the valuation of approximately $2 billion positions Manus as a significant player in the AI agent space.
 
-rss · 虎嗅 - 深度商业 · Jul 11, 05:13
+rss · 36氪 - 商业科技 · Jul 11, 08:13
 
-**Background**: Claude is a series of large language models developed by Anthropic, designed as a safe and accurate AI assistant. AI-assisted code generation has advanced rapidly, but rewriting millions of lines of code autonomously at this scale is unprecedented.
+**Background**: Manus is a general AI agent company that Meta acquired in December 2025 for an estimated $2-3 billion. AI agents are intelligent systems that combine information retrieval and text generation to autonomously execute complex tasks, representing a frontier in artificial intelligence.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude ( AI ) - Wikipedia</a></li>
-<li><a href="https://claude.com/">Claude</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Manus_(AI_agent)">Manus ( AI agent ) - Wikipedia</a></li>
+<li><a href="https://manus.vercel.app/about">Manus - AI Agent that bridges minds and actions</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#code generation`, `#Claude`, `#software engineering`
+**Tags**: `#AI`, `#Tencent`, `#M&A`, `#AI Agents`, `#Startup`
 
 ---
 
 <a id="item-8"></a>
-## [Small NE China City Enters Commercial Aerospace Race](https://www.huxiu.com/article/4874466.html?f=rss) ⭐️ 7.0/10
+## [Could AI Invent Relativity Given 1901's World?](https://www.huxiu.com/article/4874543.html?f=rss) ⭐️ 7.0/10
 
-A small city in Northeast China has strategically positioned itself to compete in the rapidly growing commercial aerospace sector, joining the nationwide race for space industry leadership. This move highlights the decentralization of China's space industry beyond traditional hubs, potentially spurring regional economic development and increasing competition in the commercial launch market. The specific city is not named in the report, but the news emphasizes its strategic 'card-positioning' (卡位) in the commercial aerospace supply chain, likely focusing on manufacturing or launch services.
+A thought experiment explores whether an AI, placed in the scientific context of 1901, could have independently discovered special relativity. This question tests the limits of AI in fundamental scientific discovery, challenging whether machine learning can replicate the creative leaps of human genius like Einstein. The article likely examines the physics puzzles of 1901—such as the Michelson-Morley null result and Maxwell's equations—and speculates how an AI might reason from incomplete data to reach relativity.
 
-rss · 虎嗅 - 深度商业 · Jul 11, 03:14
+rss · 虎嗅 - 深度商业 · Jul 11, 11:32
 
-**Background**: Commercial aerospace in China has been booming, with private companies and local governments vying for market share. Northeast China, historically an industrial base, is seeking economic transformation through high-tech sectors like space.
+**Background**: In 1901, physicists were struggling with contradictions between classical mechanics and electromagnetism, notably the failure to detect the luminiferous ether. Special relativity, published by Einstein in 1905, resolved these issues by rethinking space and time. This thought experiment asks whether an AI, trained on pre-1905 knowledge, could have achieved the same conceptual revolution.
 
-**Tags**: `#commercial aerospace`, `#China`, `#regional development`, `#space industry`
+**Tags**: `#AI`, `#physics`, `#thought experiment`, `#relativity`, `#scientific discovery`
 
 ---
 
 <a id="item-9"></a>
-## [Codex Major Update Faces Backlash Over Token Costs](https://www.huxiu.com/article/4874462.html?f=rss) ⭐️ 7.0/10
+## [OpenAI's 48-Hour Release Spree Shows Startup Agility at Trillion-Dollar Scale](https://www.huxiu.com/article/4874519.html?f=rss) ⭐️ 7.0/10
 
-OpenAI's Codex tool received a major update that was poorly received by users, who also criticized the high token costs associated with GPT-5.6. This backlash highlights growing user sensitivity to AI pricing and the importance of cost-effective coding tools for software engineers and AI practitioners. The update, reportedly called GPT-5.6, introduced new features but significantly increased token consumption, leading to higher costs for users.
+OpenAI released six products or updates in 48 hours, demonstrating unusual speed for a company of its size. This analysis offers insights into how OpenAI maintains rapid innovation, potentially influencing how other tech giants approach agility. The article focuses on OpenAI's organizational culture and speed, though it does not specify the exact products released.
 
-rss · 虎嗅 - 深度商业 · Jul 11, 02:42
+rss · 虎嗅 - 深度商业 · Jul 11, 09:23
 
-**Background**: OpenAI Codex is an AI coding tool that helps developers automate tasks like code generation and review. Token costs refer to the pricing model where users pay based on the number of tokens processed by the AI model, which can escalate quickly with large or complex tasks.
+**Background**: OpenAI was valued at over $1 trillion following its latest funding round, making it one of the most valuable private companies globally. Despite its size, it maintains a culture of rapid experimentation and frequent releases, reminiscent of early-stage startups.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software... | OpenAI</a></li>
-<li><a href="https://medium.com/geekculture/mastering-token-costs-in-chatgpt-and-other-large-language-models-e724e36b4dca">Optimizing Token Costs in AI : ChatGPT & LLM | Geek Culture</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Codex`, `#GPT`, `#AI`, `#token costs`, `#software engineering`
+**Tags**: `#OpenAI`, `#AI industry`, `#startup culture`, `#innovation`
 
 ---
 
 <a id="item-10"></a>
-## [AI Industry's Biggest Bet This Summer](https://www.huxiu.com/article/4874456.html?f=rss) ⭐️ 7.0/10
+## [AI Companions and the Crisis of Intimacy in the AI Era](https://www.huxiu.com/article/4874503.html?f=rss) ⭐️ 7.0/10
 
-A Chinese industry analysis article predicts a major high-stakes gamble in the AI sector will be resolved this summer, likely involving a key technology release or strategic move. This bet could reshape competitive dynamics in the AI industry, influencing investment flows, product roadmaps, and market leadership for years to come. The article highlights the extreme nature of the gamble, suggesting a binary outcome—either a transformative success or a costly failure—with implications for the entire ecosystem.
+This article analyzes the potential crisis of human intimacy caused by AI companions, examining how AI-driven emotional interactions may reshape interpersonal relationships. As AI companions become more prevalent, they could fundamentally alter how humans form emotional bonds, potentially leading to social isolation or redefining intimacy in ways that challenge traditional relationships. The article is part of a series on social restructuring in the AI era, using AI companions as a specific case study to explore broader changes in human interaction patterns.
 
-rss · 虎嗅 - 深度商业 · Jul 11, 02:09
+rss · 虎嗅 - 深度商业 · Jul 11, 07:24
 
-**Tags**: `#AI`, `#industry analysis`, `#gamble`, `#technology trends`
+**Background**: AI companions are conversational applications driven by natural language processing (NLP) and machine learning, designed to simulate human-like emotional interaction and provide companionship. Affective computing allows these systems to recognize and respond to human emotions, while generative dialogue agents enhance the naturalness of conversations.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://peking.bjd.com.cn/content/s68b1a6a3e4b02424b0bf802b.html">AI 研究所｜ AI 伴 侣 让人上瘾，七夕别陷 “虚拟温柔乡”</a></li>
+<li><a href="https://zouyx.github.io/posts/2026/05/16/ai-companions-rise-analysis.html">AI 伴 侣 兴起背后的 技 术 原理与产业影响解析 – Joe Zou...</a></li>
+<li><a href="https://m.163.com/dy/article/K82NPNNU0514D0JD.html">AI 伴 侣 的“温柔陷阱”|人工智能| 伴 侣 |机器人|温柔陷阱_手机网易网</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#social impact`, `#relationships`, `#human-AI interaction`, `#society`
 
 ---

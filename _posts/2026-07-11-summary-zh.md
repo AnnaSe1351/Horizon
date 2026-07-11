@@ -9,200 +9,203 @@ lang: zh
 
 ---
 
-1. [Circle 获 OCC 批准设立信托银行](#item-1) ⭐️ 8.0/10
-2. [警惕算力泡沫：万亿投资七成空转](#item-2) ⭐️ 8.0/10
-3. [中国首次实施无人车交通法规](#item-3) ⭐️ 8.0/10
-4. [中国初创公司鹰瞰智翼完成 A 轮融资，仿生扑翼机器人进入量产](#item-4) ⭐️ 7.0/10
-5. [智谱 CEO 内部信：聚焦 AGI 前沿，超越万亿市值](#item-5) ⭐️ 7.0/10
-6. [标准之战：中国能打破东亚文明的枷锁吗？](#item-6) ⭐️ 7.0/10
-7. [Claude 11 天重写百万行代码，引发争议](#item-7) ⭐️ 7.0/10
-8. [东北小城杀入商业航天卡位战](#item-8) ⭐️ 7.0/10
-9. [Codex 大改版因 Token 费用高遭用户抨击](#item-9) ⭐️ 7.0/10
-10. [AI 行业今夏最大赌注即将揭晓](#item-10) ⭐️ 7.0/10
+1. [智谱唐杰内部信揭示押注编程成功后新方向](#item-1) ⭐️ 8.0/10
+2. [Circle 获 OCC 批准设立信托银行](#item-2) ⭐️ 8.0/10
+3. [中国首部无人车交规实施引发行业洗牌](#item-3) ⭐️ 8.0/10
+4. [Claude 11 天重写百万行代码，引发争议](#item-4) ⭐️ 8.0/10
+5. [苹果起诉 OpenAI 窃取商业机密](#item-5) ⭐️ 8.0/10
+6. [中国电力技术创新全球排名第一](#item-6) ⭐️ 7.0/10
+7. [腾讯洽购 Manus，估值 20 亿美元](#item-7) ⭐️ 7.0/10
+8. [给 AI 一个 1901 年的世界，它能发明相对论吗？](#item-8) ⭐️ 7.0/10
+9. [OpenAI 48 小时六连发：万亿市值公司的初创速度](#item-9) ⭐️ 7.0/10
+10. [AI 伴侣与人工智能时代的亲密关系危机](#item-10) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Circle 获 OCC 批准设立信托银行](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
+## [智谱唐杰内部信揭示押注编程成功后新方向](https://36kr.com/p/3891132709206784?f=rss) ⭐️ 8.0/10
 
-美国货币监理署（OCC）有条件批准了 Circle 设立国民信托银行的申请，使其能够直接管理 USDC 稳定币的储备资产。 这一里程碑减少了 Circle 对第三方银行和托管机构的依赖，可能提升稳定币生态系统的运营效率和信任度。 新银行命名为 Circle 国民信托银行，但不得开展吸收存款或发放贷款等商业银行业务。
+这揭示了一家中国 AI 巨头从聊天到编程再到自治系统的战略演进，凸显了 AI 商业化及 AGI 竞赛中的关键趋势，也说明押注正确技术方向可带来巨大的市场回报。 智谱的 GLM-5.2 模型在核心指标上追平了 Claude Opus 4.8 和 GPT-5.5 等顶级模型；其 MaaS 平台年化收入达到 170 亿元（同比增长 60 倍），市值已超越百度和小米。
 
-rss · 36氪 - 商业科技 · 7月11日 05:10
+rss · 36氪 - 商业科技 · 7月11日 11:28
 
-**背景**: 国民信托银行是一种联邦特许的托管机构。此前 Circle 依赖第三方托管 USDC 储备资产。USDC 流通量超过 730 亿美元。
+**背景**: GLM（通用语言模型）是中国公司智谱（Z.ai）开发的一系列开源权重的大语言模型。模型即服务（MaaS）通过云 API 按需提供 AI 模型。编程和推理能力已成为 AI 智能体和商业应用的关键，Anthropic 的成功便是一个例证。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.occ.gov/news-issuances/news-releases/2025/nr-occ-2025-125.html">OCC Announces Conditional Approvals for Five National Trust Bank Charter Applications | OCC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GLM_(AI)">GLM (AI) - Wikipedia</a></li>
+<li><a href="https://www.redhat.com/en/topics/ai/what-is-models-as-a-service">What is Model-as-a-Service?</a></li>
 
 </ul>
 </details>
 
-**标签**: `#stablecoin`, `#regulation`, `#Circle`, `#USDC`, `#OCC`
+**标签**: `#AI`, `#coding`, `#reasoning`, `#strategy`, `#China`
 
 ---
 
 <a id="item-2"></a>
-## [警惕算力泡沫：万亿投资七成空转](https://www.huxiu.com/article/4874555.html?f=rss) ⭐️ 8.0/10
+## [Circle 获 OCC 批准设立信托银行](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
 
-一篇文章警告称，投入数万亿的算力可能因闲置而大量浪费，约 70%的算力空转，预示潜在泡沫。 如果泡沫破裂，将导致巨额投资损失，影响 AI 基础设施行业及相关股票，如英伟达。 文章引用数据显示全球 AI 基础设施利用率仅为 30-55%，许多 GPU 因调度不当或峰值预留而闲置。
+Circle 公司宣布，美国货币监理署（OCC）批准其设立信托银行，名为 Circle 国民信托银行，使其能够直接管理支持 USDC 稳定币的储备资产。 这一监管批准使 Circle 能够绕过第三方银行和托管机构进行储备管理，可能提高 730 亿美元 USDC 稳定币的信任和运营效率，或重塑稳定币托管标准。 信托银行牌照允许 Circle 担任储备资产的受托人，但不允许开展吸收存款、发放贷款等商业银行业务。USDC 流通规模已超 730 亿美元。
 
-rss · 虎嗅 - 深度商业 · 7月11日 12:37
+rss · 36氪 - 商业科技 · 7月11日 05:10
 
-**背景**: AI 热潮推动了对 GPU 和数据中心的大量投资，但实际利用率仍较低。历史上，类似的基础设施过度投资曾导致泡沫，如互联网泡沫。
+**背景**: OCC 是美国财政部内的独立机构，负责特许和监管所有国家银行及联邦储蓄机构。信托银行（或称信托公司）作为受托人，代表他人管理资产，通常用于信托和托管目的。此前，Circle 依赖第三方银行持有支持 USDC 的现金和国债资产。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://vexxhost.com/blog/gpu-utilization-ai-infrastructure/">Why GPUs Sit Idle: The Hidden Efficiency Problem in AI Infrastructure</a></li>
-<li><a href="https://cointeeth.com/news/a-big-bubble-caused-by-nvidia-is-about-to-burst">A big bubble caused by Nvidia is about to burst</a></li>
-<li><a href="https://www.linkedin.com/posts/hammerheadai_the-sleeping-giant-tapping-into-the-hidden-activity-7414412716716711936-Hpps">Unlocking AI Scale with Idle Data Center Capacity | LinkedIn</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Office_of_the_Comptroller_of_the_Currency">Office of the Comptroller of the Currency - Wikipedia</a></li>
+<li><a href="https://www.usa.gov/agencies/office-of-the-comptroller-of-the-currency">Office of the Comptroller of the Currency (OCC) | USAGov</a></li>
 
 </ul>
 </details>
 
-**标签**: `#computing power`, `#AI infrastructure`, `#investment bubble`, `#data centers`, `#technology`
+**标签**: `#stablecoins`, `#regulation`, `#Circle`, `#USDC`, `#crypto`
 
 ---
 
 <a id="item-3"></a>
-## [中国首次实施无人车交通法规](https://www.huxiu.com/article/4874554.html?f=rss) ⭐️ 8.0/10
+## [中国首部无人车交规实施引发行业洗牌](https://www.huxiu.com/article/4874554.html?f=rss) ⭐️ 8.0/10
 
-中国实施了首个针对自动驾驶汽车的综合性交通法规，为公共道路上的测试和运营建立了法律框架。 这项法规为全球最大汽车市场的自动驾驶治理树立了先例，可能加速无人驾驶汽车的部署，并重塑科技巨头和汽车制造商之间的竞争格局。 这些法规涵盖了安全要求、责任分配和运行设计域等关键方面，可能针对在指定区域内无需人工干预即可运行的 L4 级自动驾驶汽车。
+中国首部全国性无人车交通法规于 2026 年 7 月 1 日起施行，覆盖全品类无人送货车，通行权限分为三级。 该法规为无人驾驶行业设定了全国统一标准，加速了行业洗牌，只有技术领先且合规能力强的企业才能生存。 三级权限系统根据技术能力和运行环境对车辆进行分类，测试车辆需在指定区域和时段内运行，避开早晚高峰和人流密集区。
 
 rss · 虎嗅 - 深度商业 · 7月11日 12:32
 
-**背景**: 自动驾驶汽车从 0 级到 5 级分级，其中 L4 级代表高度自动化，汽车可在特定条件下无需人工输入完成所有驾驶任务。中国一直积极建设自动驾驶测试区，例如北京自动驾驶测试区，作为国内首个封闭式自动驾驶评估场地。新法规正式规定了在公共道路上部署此类车辆的规则，解决了安全性和法律不确定性。
+**背景**: 无人车需要明确的路权才能合法在公开道路行驶。此前各地政策不一，2021 年北京发布了全国首个《无人配送车管理实施细则》，颁发了首批路权许可。新全国性法规提供了统一框架，覆盖所有车型，是无人驾驶合法化的关键一步。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://autonews.gasgoo.com/china_news/70013760.html">Beijing first autonomous vehicle testing area starts operation - Gasgoo</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Self-driving_car">Self- driving car - Wikipedia</a></li>
+<li><a href="https://www.360che.com/law/260518/201142.html">无人送货车约束法规定了！26年最新无人送货车法规全景</a></li>
+<li><a href="https://www.beijing.gov.cn/zhengce/zcjd/zcwd/wrjsnhfsll/">无人驾驶车能合法“上路”了！_首都之窗_北京市人民政府门户网站</a></li>
+<li><a href="https://www.xingshentech.com/Media/info/10857?fid=n1:1:1">无人配送车可以上公开道路吗？</a></li>
 
 </ul>
 </details>
 
-**标签**: `#autonomous vehicles`, `#regulations`, `#China`, `#policy`, `#tech industry`
+**标签**: `#无人驾驶`, `#政策法规`, `#人工智能`, `#智能交通`
 
 ---
 
 <a id="item-4"></a>
-## [中国初创公司鹰瞰智翼完成 A 轮融资，仿生扑翼机器人进入量产](https://36kr.com/p/3889516712065799?f=rss) ⭐️ 7.0/10
+## [Claude 11 天重写百万行代码，引发争议](https://www.huxiu.com/article/4874482.html?f=rss) ⭐️ 8.0/10
 
-中国初创公司“鹰瞰智翼”由上海交通大学 00 后博士生创立，三个月内完成数千万元 A 轮融资，其首款消费级扑翼机器人“Eagle X”已进入量产阶段，该机器人能够理解并利用流体动力学。 这标志着仿生机器人领域的重要进展，将具身智能与流体动力学相结合，有望在消费级和工业级无人机领域开辟新应用，具有更安静、更安全、更自然的飞行特性。 该公司自主研发的流体仿真引擎 Vortrix 可在虚拟环境中进行强化学习训练，并零样本迁移到真实硬件。第二代产业级机器人具有约 15 个自由度，能够主动操控气流。
+Anthropic 的 AI 模型 Claude 在 11 天内自主重写了超过一百万行代码，展示了 AI 驱动代码重构前所未有的规模化能力。 这一事件标志着软件工程的范式转变，AI 能以极少的人力和时间处理大规模代码库现代化，可能重塑开发者角色和项目进度。 Claude 采用“合意 AI”训练以确保符合道德准则；该成就通过分析、重构和现代化遗留代码库、且不破坏功能来实现。
 
-rss · 36氪 - 商业科技 · 7月11日 01:00
+rss · 虎嗅 - 深度商业 · 7月11日 05:13
 
-**背景**: 具身智能是指通过物理身体在现实世界中感知和行动的 AI 系统，能够与环境交互。仿生扑翼机器人模仿鸟类飞行，与传统旋翼无人机相比具有噪音低、安全性高的优势。流体仿真引擎允许机器人在仿真中学习复杂的气动行为，然后再部署到真实硬件。
+**背景**: Claude 是 Anthropic 开发的一系列大型语言模型，以其强大的推理和代码生成能力而闻名。AI 驱动的代码重构工具正在兴起，能够自动识别死代码、提出改进建议并重写大量代码，从而减少技术债务并加速维护。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://36kr.com/p/3889516712065799">36氪首发 | 三个月融三轮，上交大00...</a></li>
-<li><a href="http://www.broadview.com.cn/article/420497">被众多AI大佬看好的 具 身 智 能 到底是什么？ 它凭什么成为下一个AI...</a></li>
-<li><a href="https://news.sciencenet.cn/htmlnews/2025/9/551131.shtm">仿 生 扑 翼 机 器 人 ，完美复刻鸟类起飞—新闻—科学网</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_(AI)">Claude (AI) - Wikipedia</a></li>
+<li><a href="https://platform.claude.com/docs/en/about-claude/models/overview">Models overview - Claude Platform Docs</a></li>
+<li><a href="https://www.ibm.com/think/topics/ai-code-refactoring">What Is AI Code Refactoring? | IBM</a></li>
 
 </ul>
 </details>
 
-**标签**: `#robotics`, `#biomimetic`, `#startup`, `#drone`, `#AI`
+**标签**: `#AI`, `#Claude`, `#代码生成`, `#软件工程`, `#争议`
 
 ---
 
 <a id="item-5"></a>
-## [智谱 CEO 内部信：聚焦 AGI 前沿，超越万亿市值](https://36kr.com/newsflashes/3891162734689031?f=rss) ⭐️ 7.0/10
+## [苹果起诉 OpenAI 窃取商业机密](https://www.huxiu.com/article/4874471.html?f=rss) ⭐️ 8.0/10
 
-7 月 11 日，智谱 AI CEO 唐杰发布内部信，宣布公司将战略转向长程任务、完全自治的智能体系统、自我进化与极致安全治理等 AGI 基础研究领域，而非短期应用变现。 这一转向标志着智谱对 AGI 基础设施的长期投资，有望使其成为下一代 AI 能力的领导者。这也反映了行业趋势：主流 AI 实验室优先考虑研究而非短期产品收入。 内部信主题为《巨浪已来》，指出智谱市值较半年前上市初期涨了 10 倍，并于 2026 年 6 月跻身“万亿港元俱乐部”。唐杰强调不追求短期应用变现。
+苹果公司对 OpenAI 提起诉讼，指控其通过一份 41 页的 PDF 诉状窃取了苹果的核心商业机密。 这两家科技巨头之间的法律纠纷可能为 AI 公司如何使用专有数据树立先例，并可能影响生成式 AI 技术的发展。 这份 41 页的 PDF 诉状详细列出了具体指控，但所声称的商业机密的具体内容尚未公开。该诉讼凸显了 AI 领域知识产权方面的紧张局势日益加剧。
 
-rss · 36氪 - 商业科技 · 7月11日 11:35
+rss · 虎嗅 - 深度商业 · 7月11日 03:45
 
-**背景**: AGI（人工通用智能）旨在创造具有人类认知能力的系统。“长程任务”指需要持续推理的复杂多步问题；“自治智能体”是能自主感知、规划并行动的 AI 系统。“自我进化”描述 AI 通过交互和学习随时间改进自身的能力。智谱以其 GLM 系列模型闻名，该模型已在多个核心指标上追赶甚至超越 GPT-5.5 和 Claude Opus 4.8 等领先模型。
+**背景**: 商业机密是指能够提供竞争优势的保密商业信息。苹果历来积极保护其知识产权，而 OpenAI 是以 GPT 模型闻名的领先人工智能研究机构。这起诉讼反映了 AI 训练中未经授权使用专有数据的更广泛担忧。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://36kr.com/p/3891132709206784">独家 | 智 谱 创始人唐杰发内部信：「 GLM ...</a></li>
-<li><a href="https://www.amazonaws.cn/what-is/artificial-intelligence-self-evolution/">什么是人工智能自我进化_人工智能自我进化为什么很重要-亚马逊云科技</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AGI`, `#智谱`, `#智能体`, `#公司战略`, `#人工智能`
+**标签**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
 
 ---
 
 <a id="item-6"></a>
-## [标准之战：中国能打破东亚文明的枷锁吗？](https://www.huxiu.com/article/4874521.html?f=rss) ⭐️ 7.0/10
+## [中国电力技术创新全球排名第一](https://36kr.com/newsflashes/3890965044869637?f=rss) ⭐️ 7.0/10
 
-本文探讨了中国在全球技术标准竞争中的战略挑战，质疑中国能否克服东亚文明传承下来的文化和体制约束。 技术标准决定市场准入和技术领导地位；中国制定标准的能力影响全球技术格局及其自身经济发展。 文章可能分析了标准争夺的历史案例（如电信或人工智能领域），并评估了中国在标准制定组织中的当前策略。
+一份名为《全球电力发展指数（2026）》的联合国报告将中国在电力技术创新方面列为全球第一，该报告于 7 月 10 日在纽约联合国总部举行的联合国可持续发展高级别政治论坛上发布。 这一排名凸显了中国在全球能源转型和电力技术进步中的领先地位，可能影响国际合作和可持续能源投资。 该报告是全球能源互联倡议的一部分，该倡议提出了一个支持可持续发展的全球电力网络。该指数评估了电力发展的多个维度。
 
-rss · 虎嗅 - 深度商业 · 7月11日 09:29
+rss · 36氪 - 商业科技 · 7月11日 08:35
 
-**背景**: 技术标准对于互操作性和市场主导地位至关重要。国家和公司都争相让自己的技术成为全球标准。中国在 5G、人工智能和物联网等领域大力投资标准开发，但面临现有参与者和地缘政治紧张局势的挑战。
+**背景**: 全球能源互联是一个旨在促进可再生能源转型和应对气候变化的拟议全球电力网络。该概念由中国国家电网公司发起，并通过联合国推广。《全球电力发展指数》是衡量各国进展的新工具。
 
-**标签**: `#standards`, `#China`, `#technology competition`, `#geopolitics`, `#East Asia`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Global_Energy_Interconnection">Global Energy Interconnection</a></li>
+
+</ul>
+</details>
+
+**标签**: `#power technology`, `#innovation`, `#China`, `#global ranking`
 
 ---
 
 <a id="item-7"></a>
-## [Claude 11 天重写百万行代码，引发争议](https://www.huxiu.com/article/4874482.html?f=rss) ⭐️ 7.0/10
+## [腾讯洽购 Manus，估值 20 亿美元](https://36kr.com/newsflashes/3890964192852482?f=rss) ⭐️ 7.0/10
 
-Anthropic 公司的 Claude AI 在短短 11 天内重写了百万行代码，展示了 AI 辅助软件工程的重大飞跃。 这一成就可能彻底改变软件工程领域，但同时也引发了关于 AI 取代人类开发者、代码质量和伦理的担忧。 Claude AI 利用其大型语言模型能力，自动分析和重写代码，提高了效率，但也可能引入错误和安全隐患。
+据报道，腾讯正在洽谈成为通用 AI Agent 公司 Manus 的最大股东，牵头中方资本以约 20 亿美元估值从 Meta 手中回购 Manus 全部股权，但腾讯仍将保持少数股东地位。 这笔交易凸显了 AI 智能体日益增长的战略重要性，可能重塑中国 AI 初创领域的竞争格局，腾讯在不完全控制的情况下获得影响力。 该报道尚未得到证实，腾讯未正式回应，约 20 亿美元的估值使 Manus 成为 AI 智能体领域的重要参与者。
 
-rss · 虎嗅 - 深度商业 · 7月11日 05:13
+rss · 36氪 - 商业科技 · 7月11日 08:13
 
-**背景**: Claude 是 Anthropic 开发的一系列大型语言模型，旨在成为安全、准确的 AI 助手。AI 辅助代码生成技术近年来发展迅速，但如此大规模地自动重写百万行代码尚属首次。
+**背景**: Manus 是一家通用 AI 智能体公司，Meta 于 2025 年 12 月以约 20-30 亿美元将其收购。AI 智能体是融合信息检索与文本生成、自主执行复杂任务的智能系统，代表了人工智能的前沿领域。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Claude_(language_model)">Claude ( AI ) - Wikipedia</a></li>
-<li><a href="https://claude.com/">Claude</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Manus_(AI_agent)">Manus ( AI agent ) - Wikipedia</a></li>
+<li><a href="https://manus.vercel.app/about">Manus - AI Agent that bridges minds and actions</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#code generation`, `#Claude`, `#software engineering`
+**标签**: `#AI`, `#Tencent`, `#M&A`, `#AI Agents`, `#Startup`
 
 ---
 
 <a id="item-8"></a>
-## [东北小城杀入商业航天卡位战](https://www.huxiu.com/article/4874466.html?f=rss) ⭐️ 7.0/10
+## [给 AI 一个 1901 年的世界，它能发明相对论吗？](https://www.huxiu.com/article/4874543.html?f=rss) ⭐️ 7.0/10
 
-中国东北一座小城战略性进入快速发展的商业航天领域，加入全国航天产业竞争行列。 此举凸显中国航天产业从传统中心向地方分散的趋势，可能推动区域经济发展，并加剧商业发射市场的竞争。 报道未指明具体城市，但强调其在商业航天供应链中的战略性“卡位”，可能聚焦制造或发射服务。
+一个思想实验探讨：如果将 AI 置于 1901 年的科学背景中，它能否独立发现狭义相对论。 这个问题测试了 AI 在基础科学发现中的极限，挑战机器学习能否复制爱因斯坦等人类天才的创造性飞跃。 文章可能探讨 1901 年的物理难题（如迈克尔逊-莫雷实验的零结果和麦克斯韦方程组），并推测 AI 如何从不完整的数据推理出相对论。
 
-rss · 虎嗅 - 深度商业 · 7月11日 03:14
+rss · 虎嗅 - 深度商业 · 7月11日 11:32
 
-**背景**: 中国的商业航天正在蓬勃发展，民营公司和地方政府争相抢占市场份额。东北地区作为传统工业基地，正寻求通过航天等高科技产业实现经济转型。
+**背景**: 1901 年，物理学家正为经典力学与电磁学之间的矛盾而困扰，尤其是未能探测到发光以太。爱因斯坦于 1905 年发表的狭义相对论通过重新思考时空解决了这些问题。这个思想实验提出：如果 AI 仅基于 1905 年之前的知识训练，能否实现同样的概念革命。
 
-**标签**: `#commercial aerospace`, `#China`, `#regional development`, `#space industry`
+**标签**: `#AI`, `#physics`, `#thought experiment`, `#relativity`, `#scientific discovery`
 
 ---
 
 <a id="item-9"></a>
-## [Codex 大改版因 Token 费用高遭用户抨击](https://www.huxiu.com/article/4874462.html?f=rss) ⭐️ 7.0/10
+## [OpenAI 48 小时六连发：万亿市值公司的初创速度](https://www.huxiu.com/article/4874519.html?f=rss) ⭐️ 7.0/10
 
-OpenAI 的 Codex 工具进行了一次重大更新，但用户反应不佳，同时 GPT-5.6 的高 Token 费用也受到批评。 这次用户的不满凸显了对 AI 定价日益敏感的态度，以及为软件工程师和 AI 从业者提供经济高效编码工具的重要性。 据报道，这次更新名为 GPT-5.6，引入了新功能，但显著增加了 Token 消耗，导致用户成本上升。
+OpenAI 在 48 小时内发布了六款产品或更新，展示了其作为一家万亿市值公司仍具有的初创企业般的速度。 这一分析揭示了 OpenAI 如何保持快速创新，可能影响其他科技巨头对待敏捷性的方式。 文章重点讨论了 OpenAI 的组织文化和速度，但没有具体说明发布了哪些产品。
 
-rss · 虎嗅 - 深度商业 · 7月11日 02:42
+rss · 虎嗅 - 深度商业 · 7月11日 09:23
 
-**背景**: OpenAI Codex 是一款 AI 编码工具，帮助开发者自动化代码生成和审查等任务。Token 费用是一种定价模式，用户根据 AI 模型处理的 Token 数量付费，对于大型或复杂任务，费用可能迅速增加。
+**背景**: OpenAI 在最新一轮融资后估值超过 1 万亿美元，成为全球最有价值的私营公司之一。尽管规模庞大，它仍保持着快速实验和频繁发布的文化，堪比早期初创公司。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software... | OpenAI</a></li>
-<li><a href="https://medium.com/geekculture/mastering-token-costs-in-chatgpt-and-other-large-language-models-e724e36b4dca">Optimizing Token Costs in AI : ChatGPT & LLM | Geek Culture</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Codex`, `#GPT`, `#AI`, `#token costs`, `#software engineering`
+**标签**: `#OpenAI`, `#AI industry`, `#startup culture`, `#innovation`
 
 ---
 
 <a id="item-10"></a>
-## [AI 行业今夏最大赌注即将揭晓](https://www.huxiu.com/article/4874456.html?f=rss) ⭐️ 7.0/10
+## [AI 伴侣与人工智能时代的亲密关系危机](https://www.huxiu.com/article/4874503.html?f=rss) ⭐️ 7.0/10
 
-一篇中文行业分析文章预测，AI 领域一项重大高风险赌注将在今年夏天尘埃落定，可能涉及关键技术发布或战略举措。 这一赌注可能重塑 AI 行业的竞争格局，影响未来数年的投资流向、产品路线图和市场领导地位。 文章强调了该赌注的极端性，暗示结果非此即彼——要么是变革性成功，要么是代价高昂的失败——对整个生态系统都有影响。
+本文分析了 AI 伴侣可能引发的人类亲密关系危机，探讨了 AI 驱动的情感互动如何重塑人际关系。 随着 AI 伴侣日益普及，它们可能从根本上改变人类建立情感联系的方式，可能导致社交孤立或以挑战传统关系的方式重新定义亲密关系。 本文是 AI 时代社会结构重塑系列的一部分，以 AI 伴侣为具体案例，探讨人类交往模式的更广泛变化。
 
-rss · 虎嗅 - 深度商业 · 7月11日 02:09
+rss · 虎嗅 - 深度商业 · 7月11日 07:24
 
-**标签**: `#AI`, `#industry analysis`, `#gamble`, `#technology trends`
+**背景**: AI 伴侣是由自然语言处理（NLP）和机器学习驱动的对话应用程序，旨在模拟类人的情感互动并提供陪伴。情感计算使这些系统能够识别和响应人类情绪，而生成式对话代理则提升了对话的自然度。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://peking.bjd.com.cn/content/s68b1a6a3e4b02424b0bf802b.html">AI 研究所｜ AI 伴 侣 让人上瘾，七夕别陷 “虚拟温柔乡”</a></li>
+<li><a href="https://zouyx.github.io/posts/2026/05/16/ai-companions-rise-analysis.html">AI 伴 侣 兴起背后的 技 术 原理与产业影响解析 – Joe Zou...</a></li>
+<li><a href="https://m.163.com/dy/article/K82NPNNU0514D0JD.html">AI 伴 侣 的“温柔陷阱”|人工智能| 伴 侣 |机器人|温柔陷阱_手机网易网</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI`, `#social impact`, `#relationships`, `#human-AI interaction`, `#society`
 
 ---
