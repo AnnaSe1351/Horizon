@@ -8,77 +8,187 @@
     "temperature": 0.3,
     "max_tokens": 8192,
     "throttle_sec": 1,
-    "languages": ["zh", "en"],
+    "languages": [
+      "zh",
+      "en"
+    ],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
   },
   "sources": {
-    "hackernews": {
-      "enabled": false
-    },
     "github": [
       {
-        "type": "trending",
-        "language": "",
-        "since": "daily",
+        "type": "user_events",
+        "username": "karpathy",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "vllm-project",
+        "repo": "vllm",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "sgl-project",
+        "repo": "sglang",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "owner": "triton-lang",
+        "repo": "triton",
         "enabled": true
       }
     ],
+    "hackernews": {
+      "enabled": true,
+      "fetch_top_stories": 30,
+      "min_score": 150
+    },
     "rss": [
       {
-        "name": "爱范儿 - 科技与AI",
-        "url": "https://www.ifanr.com/feed",
-        "enabled": true,
-        "category": "ai-tech"
-      },
-      {
-        "name": "少数派 - 效率工具",
-        "url": "https://sspai.com/feed",
-        "enabled": true,
-        "category": "productivity"
-      },
-      {
-        "name": "36氪 - 商业科技",
-        "url": "https://www.36kr.com/feed",
-        "enabled": true,
-        "category": "business"
-      },
-      {
-        "name": "虎嗅 - 深度商业",
-        "url": "https://rss.huxiu.com/",
-        "enabled": true,
-        "category": "business"
-      },
-      {
-        "name": "Every.to - AI内容创作",
-        "url": "https://every.to/feed",
-        "enabled": true,
-        "category": "ai-content"
-      },
-      {
-        "name": "AI Weekly",
-        "url": "https://www.aiweekly.co/rss",
+        "name": "Simon Willison",
+        "url": "https://simonwillison.net/atom/everything/",
         "enabled": true,
         "category": "ai-tools"
-      },
-      {
-        "name": "APA - 心理学资讯",
-        "url": "https://www.apa.org/rss/news",
-        "enabled": true,
-        "category": "psychology"
       },
       {
         "name": "GitHub Trending - Daily",
         "url": "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
         "enabled": true,
         "category": "github-trending"
+      },
+      {
+        "name": "Semianalysis",
+        "url": "https://newsletter.semianalysis.com/feed",
+        "enabled": true,
+        "category": "semiconductors"
+      },
+      {
+        "name": "Google News - zhongyi",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%8C%BB+%E5%85%BB%E7%94%9F&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "tcm"
+      },
+      {
+        "name": "Google News - zhongyi2",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AD%E5%8C%BB+%E8%B0%83%E7%90%86+%E6%B0%94%E8%A1%80&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "tcm"
+      },
+      {
+        "name": "Google News - xuanxue",
+        "url": "https://news.google.com/rss/search?q=%E7%8E%84%E5%AD%A6+%E5%91%BD%E7%90%86+%E5%85%AB%E5%AD%97&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "metaphysics"
+      },
+      {
+        "name": "Google News - ziwei",
+        "url": "https://news.google.com/rss/search?q=%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B0+%E8%BF%90%E7%A8%8B&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "metaphysics"
+      },
+      {
+        "name": "Google News - zhishi",
+        "url": "https://news.google.com/rss/search?q=%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9+%E8%AF%BE%E7%A8%8B+%E5%8F%98%E7%8E%B0&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "knowledge-economy"
+      },
+      {
+        "name": "Google News - geren-ip",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%AA%E4%BA%BAIP+%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C+%E8%87%AA%E5%AA%92%E4%BD%93&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "knowledge-economy"
+      },
+      {
+        "name": "Google News - xinlixue",
+        "url": "https://news.google.com/rss/search?q=%E5%BF%83%E7%90%86%E5%AD%A6+%E8%87%AA%E6%88%91%E6%88%90%E9%95%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "psychology"
+      },
+      {
+        "name": "Google News - qinmi",
+        "url": "https://news.google.com/rss/search?q=%E4%BA%B2%E5%AF%86%E5%85%B3%E7%B3%BB+%E6%83%85%E6%84%9F+%E8%87%AA%E6%88%91%E8%BE%B9%E7%95%8C&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "psychology"
+      },
+      {
+        "name": "Google News - shensheng",
+        "url": "https://news.google.com/rss/search?q=%E8%BA%AB%E5%BF%83%E7%81%B5+%E7%81%B5%E6%80%A7%E6%88%90%E9%95%BF&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "spiritual"
+      },
+      {
+        "name": "Google News - mingxiang",
+        "url": "https://news.google.com/rss/search?q=%E5%86%A5%E6%83%B3+%E6%AD%A3%E5%BF%B5+%E8%A7%89%E7%9F%A5&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "spiritual"
+      },
+      {
+        "name": "Google News - shangye",
+        "url": "https://news.google.com/rss/search?q=%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F+%E5%88%9B%E4%B8%9A+%E6%96%B0%E8%B5%9B%E9%81%93&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "business"
+      },
+      {
+        "name": "Google News - yiren",
+        "url": "https://news.google.com/rss/search?q=%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8+%E5%89%AF%E4%B8%9A&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "business"
+      },
+      {
+        "name": "Google News - ai-creation",
+        "url": "https://news.google.com/rss/search?q=AI%E5%88%9B%E4%BD%9C+AI%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C%E8%80%85&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+        "enabled": true,
+        "category": "ai-creation"
+      },
+      {
+        "name": "sspai",
+        "url": "https://sspai.com/feed",
+        "enabled": true,
+        "category": "productivity"
+      },
+      {
+        "name": "36kr",
+        "url": "https://36kr.com/feed",
+        "enabled": true,
+        "category": "business"
+      },
+      {
+        "name": "Psychology Today",
+        "url": "https://www.psychologytoday.com/us/feeds/articles",
+        "enabled": true,
+        "category": "psychology"
+      },
+      {
+        "name": "Verywell Mind",
+        "url": "https://www.verywellmind.com/feed/",
+        "enabled": true,
+        "category": "psychology"
       }
     ],
     "reddit": {
       "enabled": true,
       "subreddits": [
         {
-          "subreddit": "Parenting",
+          "subreddit": "MachineLearning",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 10,
+          "min_score": 60
+        },
+        {
+          "subreddit": "LocalLLaMA",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 10,
+          "min_score": 60
+        },
+        {
+          "subreddit": "psychology",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
@@ -86,7 +196,7 @@
           "min_score": 50
         },
         {
-          "subreddit": "psychology",
+          "subreddit": "spirituality",
           "enabled": true,
           "sort": "hot",
           "time_filter": "day",
@@ -100,17 +210,40 @@
           "time_filter": "day",
           "fetch_limit": 10,
           "min_score": 50
+        },
+        {
+          "subreddit": "selfimprovement",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "day",
+          "fetch_limit": 10,
+          "min_score": 50
+        },
+        {
+          "subreddit": "TraditionalMedicine",
+          "enabled": true,
+          "sort": "hot",
+          "time_filter": "week",
+          "fetch_limit": 10,
+          "min_score": 20
         }
       ],
       "users": [],
-      "fetch_comments": 5
+      "fetch_comments": 10
     },
     "telegram": {
-      "enabled": false
+      "enabled": true,
+      "channels": [
+        {
+          "channel": "zaihuapd",
+          "enabled": true,
+          "fetch_limit": 20
+        }
+      ]
     }
   },
   "filtering": {
-    "ai_score_threshold": 7.0,
+    "ai_score_threshold": 7,
     "time_window_hours": 24
   },
   "webhook": {
@@ -121,6 +254,33 @@
     "platform": "feishu",
     "layout": "collapsible",
     "fallback_layout": "markdown",
-    "languages": ["zh"]
+    "languages": [
+      "zh"
+    ],
+    "request_body": {
+      "msg_type": "interactive",
+      "card": {
+        "schema": "2.0",
+        "config": {
+          "wide_screen_mode": true
+        },
+        "header": {
+          "title": {
+            "tag": "plain_text",
+            "content": "#{message_title}"
+          },
+          "template": "blue"
+        },
+        "body": {
+          "elements": [
+            {
+              "tag": "markdown",
+              "content": "#{summary}"
+            }
+          ]
+        }
+      }
+    },
+    "headers": ""
   }
 }
