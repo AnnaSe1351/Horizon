@@ -5,354 +5,381 @@ date: 2026-07-11
 lang: en
 ---
 
-> From 64 items, 16 important content pieces were selected
+> From 64 items, 17 important content pieces were selected
 
 ---
 
-1. [Einstein's relativity rules chemical bonds in heavy elements](#item-1) ⭐️ 9.0/10
-2. [Zhipu AI's 'GLM Moment' and Beyond: Tang Jie's Internal Letter](#item-2) ⭐️ 9.0/10
-3. [Humanoid Robots Perform First Live Pig Gallbladder Surgery](#item-3) ⭐️ 9.0/10
-4. [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell, Defaults Spec V2](#item-4) ⭐️ 8.0/10
-5. [Apple sues OpenAI over trade secret theft](#item-5) ⭐️ 8.0/10
-6. [LWN Examines Residential Proxies and Anti-Scraping Challenges](#item-6) ⭐️ 8.0/10
-7. [SpaceX plans 100,000 more Starlink satellites for 100x bandwidth](#item-7) ⭐️ 8.0/10
-8. [VultronRetriever Models Top MTEB with Efficiency Gains](#item-8) ⭐️ 8.0/10
-9. [U-Boot bootloader flaws enable code execution before OS boot](#item-9) ⭐️ 8.0/10
-10. [Patel: AR Glasses Inevitably Invade Privacy](#item-10) ⭐️ 7.0/10
-11. [SJTU PhD Founder's Flapping-Wing Robot Startup Secures Third Funding in Three Months](#item-11) ⭐️ 7.0/10
-12. [SK Hynix CEO Warns of Worst Memory Shortage by 2027](#item-12) ⭐️ 7.0/10
-13. [Grok 4.5 Free Trial Now Open to All Users](#item-13) ⭐️ 7.0/10
-14. [GPT-5.6 Codex context window rises to 353K, pricing doubles above 272K](#item-14) ⭐️ 7.0/10
-15. [ZhiPu Founder Launches 'Touch High' Plan to Pursue AGI](#item-15) ⭐️ 7.0/10
-16. [Google opposes EU site blocking as US pushes similar law](#item-16) ⭐️ 7.0/10
+1. [SpaceX Proposes 100,000 More Starlink Satellites for 100x Bandwidth](#item-1) ⭐️ 9.0/10
+2. [World's First Live Pig Gallbladder Surgery by Humanoid Robot](#item-2) ⭐️ 9.0/10
+3. [6 U-Boot flaws allow code execution before boot](#item-3) ⭐️ 9.0/10
+4. [SGLang v0.5.15 release boosts LLM inference performance](#item-4) ⭐️ 8.0/10
+5. [Apple Sues OpenAI Over Trade Secret Theft](#item-5) ⭐️ 8.0/10
+6. [Zhipu CEO Tang Jie's Internal Letter: Beyond Market Value to AGI](#item-6) ⭐️ 8.0/10
+7. [Circle Receives OCC Approval to Establish Trust Bank](#item-7) ⭐️ 8.0/10
+8. [VultronRetriever Models Achieve #1 on MTEB Leaderboard](#item-8) ⭐️ 8.0/10
+9. [Relativity governs chemical bonds in heavy elements, study confirms](#item-9) ⭐️ 7.0/10
+10. [Residential Proxies and Scraping: LWN Analysis and Community Debate](#item-10) ⭐️ 7.0/10
+11. [Soviet control rooms: vintage design meets modern observability](#item-11) ⭐️ 7.0/10
+12. [AR glasses require continuous recording, cloud processing, says Patel](#item-12) ⭐️ 7.0/10
+13. [SK Hynix Nasdaq Debut, CXMT IPO, ChatGPT Work Agent](#item-13) ⭐️ 7.0/10
+14. [SK Hynix CEO Warns of Worst Memory Shortage by 2027](#item-14) ⭐️ 7.0/10
+15. [GPT-5.6 Codex Boosts Context Window to 353K Tokens](#item-15) ⭐️ 7.0/10
+16. [Zhipu Founder Launches 'Touch High' AGI Plan](#item-16) ⭐️ 7.0/10
+17. [Google opposes EU site blocking, US anti-piracy bills advance](#item-17) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Einstein's relativity rules chemical bonds in heavy elements](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 9.0/10
+## [SpaceX Proposes 100,000 More Starlink Satellites for 100x Bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 9.0/10
 
-New research published in Science provides experimental confirmation that relativistic effects, as described by Einstein's theory of relativity, govern chemical bonding in heavy elements like mercury and gold. This work validates long-standing theoretical predictions and deepens our understanding of heavy element chemistry, explaining phenomena such as gold's color and mercury's liquid state at room temperature. The study directly measured spin-orbit coupling — a relativistic effect where electron spin and orbital motion are intertwined — and showed it alters sigma and pi bonds in heavy elements. For mercury, inner electrons travel at about 60% the speed of light.
+SpaceX has submitted a proposal to the US Federal Communications Commission (FCC) to launch up to 100,000 additional Starlink satellites, aiming to increase total system bandwidth by 100 times. If approved, this would be the largest satellite constellation ever proposed, potentially revolutionizing global internet access by providing high-speed, low-latency connectivity to underserved regions. However, it also raises serious concerns about space debris, light pollution, and the privatization of low Earth orbit. The proposal is a draft supplement to SpaceX's earlier application for Gen2 Starlink, which currently has authorization for about 30,000 satellites but has launched over 7,000. The new plan would bring the total to over 130,000 satellites, requiring advanced orbital management and debris mitigation measures.
 
-hackernews · hhs · Jul 10, 22:30 · [Discussion](https://news.ycombinator.com/item?id=48866134)
+hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
 
-**Background**: Relativistic quantum chemistry incorporates special relativity into quantum mechanics to accurately describe electrons in heavy atoms (atomic number >~70), where electrons near the nucleus move at relativistic speeds. The Dirac equation, which combines quantum mechanics with special relativity, provides the theoretical framework. Prior to this work, relativistic effects in chemical bonding were inferred indirectly; this experiment offers direct evidence.
+**Background**: Starlink is a satellite internet constellation operated by SpaceX, currently with thousands of active satellites in low Earth orbit, providing broadband to remote and rural areas. A mega-constellation is a large group of satellites working together, but it also contributes to space debris and light pollution. SpaceX's proposal faces scrutiny from regulators, astronomers, and environmental groups.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Dirac_equation">Dirac equation - Wikipedia</a></li>
+<li><a href="https://leosatnetwork.com/definitions/mega-constellation">What is Mega - constellation ? | Satellite & Space... | LeoSatNetwork</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Space_debris_mitigation">Space debris mitigation</a></li>
+<li><a href="https://orbitaldebris.jsc.nasa.gov/mitigation/">Debris Mitigation - ARES | Orbital Debris Program Office</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that the results confirm known relativistic effects such as gold's color and mercury's liquid state, with some expressing surprise that direct experimental proof was lacking until now. One user highlighted that this is a validation of Dirac's equations, which incorporate relativity into quantum physics.
+**Discussion**: Community members expressed mixed emotions: some lament the loss of a natural night sky and the commercialization of space, while others highlight the practical benefits of reliable internet in underserved areas. One commenter noted the transformative potential for newly middle-class populations in developing countries, and a user shared a positive experience in a rural area where Starlink replaced poor previous service.
 
-**Tags**: `#physics`, `#chemistry`, `#relativity`, `#quantum mechanics`, `#research`
+**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#broadband`, `#space infrastructure`
 
 ---
 
 <a id="item-2"></a>
-## [Zhipu AI's 'GLM Moment' and Beyond: Tang Jie's Internal Letter](https://36kr.com/p/3891132709206784?f=rss) ⭐️ 9.0/10
+## [World's First Live Pig Gallbladder Surgery by Humanoid Robot](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 9.0/10
 
-On July 11, 2026, Zhipu AI founder Tang Jie released an internal letter revealing that the company's strategic focus on AI coding capabilities since early 2025 led to a 10x increase in market capitalization and market leadership in China's AI race. This signals that AI coding is the most direct path to AI commercialization, as demonstrated by Zhipu's 60x revenue growth and positioning against OpenAI and Anthropic. It also defines the next frontier: long horizon tasks, autonomous agent systems, and self-evolving models. Zhipu's flagship GLM-5.2 model has matched or exceeded Claude Opus 4.8 and GPT-5.5 on core benchmarks. Their MaaS platform achieved 17 billion RMB ARR (60x growth), and the company plans to strategically invest in long horizon tasks, autonomous agent systems, and self-evolution under the 'Touch High' plan.
+Surgeons remotely operated a Unitree G1 humanoid robot to perform two minimally invasive gallbladder removal surgeries on live pigs, marking the first use of a general-purpose humanoid robot for live animal surgery. The results were published in Nature. This low-cost approach (G1 base price ~$13,500) could democratize access to robotic surgery, especially in rural, battlefield, or space settings where expensive specialized robots like da Vinci are impractical. It also shows humanoid robots' potential beyond factories into complex medical tasks. The Unitree G1 is 1.5 m tall, weighs 27 kg, and has 23 degrees of freedom. Its price, including a dexterous hand, is about $67,000, vastly cheaper than da Vinci systems (0.5–2.5 million USD). The robot was teleoperated by surgeons for the procedure.
 
-rss · 36kr · Jul 11, 11:28
+telegram · zaihuapd · Jul 11, 02:29
 
-**Background**: GLM (General Language Model) is a series of open-weight large language models developed by Zhipu AI, starting with GLM-130B in 2021. The company went public on the Hong Kong Stock Exchange in January 2026. The AI industry has seen a shift from chat-based models to coding capabilities, with Anthropic's Claude leading in code generation. MaaS (Model-as-a-Service) refers to cloud-based platforms that deliver AI model access via APIs without local installation.
+**Background**: Teleoperated robotic surgery enables surgeons to perform precise procedures from a distance using robotic arms controlled via a console. While systems like da Vinci have been the standard, they are expensive and bulky. Humanoid robots like the G1 offer a general-purpose, affordable alternative that can be deployed in diverse environments.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GLM_(AI)">GLM (AI) - Wikipedia</a></li>
-<li><a href="https://glm5.ai/">GLM-5 - Zhipu AI's Flagship Foundation Model</a></li>
-<li><a href="https://www.redhat.com/en/topics/ai/what-is-models-as-a-service">What is Model-as-a-Service?</a></li>
+<li><a href="https://www.unitree.com/g1/">Humanoid robot G1_Humanoid Robot Functions ... - Unitree G1</a></li>
+<li><a href="https://www.azorobotics.com/Article.aspx?ArticleID=732">Teleoperated Robotic Surgery : An Overview</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI Coding`, `#Large Language Models`, `#Zhipu AI`, `#GLM`, `#AI Commercialization`
+**Tags**: `#humanoid robots`, `#medical robotics`, `#remote surgery`, `#robotic surgery`, `#teleoperation`
 
 ---
 
 <a id="item-3"></a>
-## [Humanoid Robots Perform First Live Pig Gallbladder Surgery](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 9.0/10
+## [6 U-Boot flaws allow code execution before boot](https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/) ⭐️ 9.0/10
 
-Surgeons remotely controlled Unitree G1 humanoid robots to perform two minimally invasive gallbladder removals on live pigs, marking the first time a general-purpose humanoid robot has been used in live surgery. The results were published in Nature. This low-cost approach could democratize remote surgery, making it accessible in rural areas, battlefields, or even space. Unlike specialized systems like the Da Vinci robot, which costs millions, the G1 robot costs only $13,500 to $67,000. The Unitree G1 robot stands 1.5 meters tall, weighs 27 kg, and has a base price of $13,500. With optional dexterous hands, the price rises to around $67,000. The study was conducted by researchers at the University of California, San Diego.
+Security firm Binarly disclosed six vulnerabilities in U-Boot's FIT image signature verification, two of which can lead to arbitrary code execution and four to device crashes, affecting U-Boot versions since 2013.07. These vulnerabilities enable attackers to execute malicious code before the operating system boots, potentially disabling firmware security features or implanting persistent malware, impacting a wide range of embedded devices. The flaws reside in the signature verification of FIT images, can be exploited remotely on systems with remote firmware update capabilities like BMCs, and while patches have been accepted by upstream, they require integration by hardware vendors for distribution.
 
-telegram · zaihuapd · Jul 11, 02:29
+telegram · zaihuapd · Jul 11, 08:32
 
-**Background**: Traditional surgical robots like the Da Vinci system are specialized, expensive (hundreds of thousands to millions of dollars), and require dedicated hardware. Humanoid robots like the G1 are general-purpose, affordable, and can be teleoperated remotely. This experiment demonstrates that a low-cost humanoid robot can perform delicate surgery with sufficient precision.
+**Background**: U-Boot is a widely used bootloader for embedded systems, responsible for loading the operating system. FIT (Flattened Image Tree) is a format that packages the kernel, device tree, and other binaries with cryptographic signatures for secure boot. BMC (Baseboard Management Controller) is a specialized processor on server motherboards that enables remote monitoring and firmware updates.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.unitree.com/g1/">Humanoid robot G 1 _ Humanoid Robot ... | Unitree Robotics</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Da_Vinci_Surgical_System">da Vinci Surgical System - Wikipedia</a></li>
+<li><a href="https://docs.u-boot.org/en/latest/usage/fit/signature.html">U-Boot FIT Signature Verification — Das U-Boot unknown version documentation</a></li>
+<li><a href="https://thehackernews.com/2022/11/over-dozen-new-bmc-firmware-flaws.html">Over a Dozen New BMC Firmware Flaws Expose OT and IoT Devices...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#humanoid robots`, `#remote surgery`, `#medical robotics`, `#breakthrough`, `#Nature`
+**Tags**: `#security`, `#U-Boot`, `#firmware`, `#vulnerability`, `#embedded systems`
 
 ---
 
 <a id="item-4"></a>
-## [SGLang v0.5.15 Boosts GLM-5.2 on Blackwell, Defaults Spec V2](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
+## [SGLang v0.5.15 release boosts LLM inference performance](https://github.com/sgl-project/sglang/releases/tag/v0.5.15) ⭐️ 8.0/10
 
-SGLang released v0.5.15, which optimizes GLM-5.2 NVFP4 for Blackwell GPUs achieving over 500 tok/s per user on 8x B300, enables Speculative Decoding V2 by default with zero-overhead scheduling, and introduces IndexShare MTP for efficient multi-token prediction. This release delivers substantial performance gains for production LLM serving, with up to 11% end-to-end throughput improvement via Spec V2 and 1.9x reduction in draft-step cost using IndexShare. It also extends hardware support for Blackwell GPUs and new models, making SGLang more competitive in high-throughput inference. Spec V2 achieves zero-overhead scheduling via CUDA-graphable DSA draft-extend, removing D2H/H2D syncs and fusing metadata ops. IndexShare MTP reuses the indexer top-k across draft steps, reducing draft-step cost by up to 1.9x at long contexts. Additional optimizations include TopK V2 fusion and GEMM shape-specialized JIT routers.
+SGLang v0.5.15 introduces Spec V2 with zero-overhead scheduling via CUDA-graphable DSA draft-extend, and IndexShare MTP which reuses indexer top-k across draft steps, reducing draft-step costs up to 1.9x. It also tunes GLM-5.2 NVFP4 on Blackwell hardware, achieving over 500 tokens per second per user on 8x B300. These optimizations significantly improve the efficiency and throughput of large language model serving, particularly for production deployments on NVIDIA Blackwell GPUs. The Spec V2 and IndexShare MTP innovations reduce latency and computational overhead, enabling faster and more cost-effective inference for high-demand applications. Spec V2 achieves +11% end-to-end TPS by dropping host-to-device and device-to-host syncs and fusing metadata operations. IndexShare MTP reduces draft-step costs up to 1.9x at long context. GLM-5.2 NVFP4 on 8x B300 reaches 500+ tok/s/user, and on 4x GB300 reaches 450 tok/s/user at batch size 1.
 
 github · Fridge003 · Jul 10, 22:58
 
-**Background**: NVFP4 is NVIDIA's 4-bit floating-point precision used for efficient inference on Blackwell GPUs, balancing performance and model quality. Speculative decoding is a technique that uses a smaller draft model to generate candidate tokens, which are then verified by the main model, reducing latency. Multi-token prediction (MTP) further extends this by predicting multiple future tokens per step. IndexShare improves MTP efficiency by sharing attention index computations across layers.
+**Background**: SGLang is an open-source inference engine for large language models, known for its efficient serving capabilities. NVFP4 is a 4-bit floating point quantization format optimized for NVIDIA Blackwell GPUs, offering high throughput with reduced memory usage. Speculative decoding accelerates inference by using a smaller draft model to predict multiple tokens, which the main model then verifies. Multi-Token Prediction (MTP) is a technique where the model predicts multiple future tokens simultaneously, improving efficiency.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2605.18739">LongLive-2.0: An NVFP 4 Parallel Infrastructure for Long Video...</a></li>
-<li><a href="https://docs.sglang.io/docs/advanced_features/speculative_decoding">Speculative Decoding - SGLang Documentation</a></li>
-<li><a href="https://articles.phantom-byte.com/the-1m-context-mirage-what-indexshare-actually-delivers.html">1M Context Mirage: What IndexShare Delivers - PhantomByte</a></li>
+<li><a href="https://huggingface.co/nvidia/GLM-5.2-NVFP4">nvidia/GLM-5.2-NVFP4 · Hugging Face</a></li>
+<li><a href="https://cohere.com/blog/hardware-aware-dynamic-speculative-decoding">Hardware-Aware, Dynamic Speculative Decoding (DSD) | Cohere</a></li>
+<li><a href="https://arxiv.org/abs/2502.09419">[2502.09419] On multi-token prediction for efficient LLM ... Multi-Token Prediction (MTP) — Megatron Bridge Multi-Token Prediction (MTP) | Sebastian Raschka, PhD On multi-token prediction for efficient LLM inference - arXiv.org Multi-Token Prediction (MTP) — Megatron Core MTP (Multi-Token Prediction) - vLLM</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM serving`, `#inference optimization`, `#GPU`, `#sglang`, `#performance`
+**Tags**: `#LLM serving`, `#GPU optimization`, `#speculative decoding`, `#inference performance`
 
 ---
 
 <a id="item-5"></a>
-## [Apple sues OpenAI over trade secret theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
+## [Apple Sues OpenAI Over Trade Secret Theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
 
-Apple has filed a lawsuit against OpenAI, accusing former employees of stealing trade secrets and instructing new hires to hide their employment at OpenAI to stay at Apple longer. This lawsuit could have major repercussions for the AI industry, as it highlights tensions over intellectual property and could disrupt OpenAI's hardware partnerships and talent acquisition strategies. Apple alleges that OpenAI used confidential hardware information when approaching Apple suppliers, and that former employees emailed themselves trade secrets before leaving. The lawsuit also claims OpenAI instructed new hires to avoid telling Apple they had taken jobs at OpenAI.
+Apple has filed a lawsuit against OpenAI, accusing the company and several former employees of systematically stealing trade secrets, including confidential hardware information, and coaching new hires on how to avoid detection when leaving Apple. This lawsuit could have major repercussions for OpenAI, potentially crippling its hardware operations and setting a legal precedent for intellectual property protection in the AI industry. It underscores the growing tension between tech giants over AI talent and technology. According to the complaint, OpenAI recruits emailed themselves confidential information when leaving Apple, and used Apple hardware data to approach Apple suppliers. Apple alleges a pattern of deliberate trade secret misappropriation.
 
 hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
 
-**Background**: Trade secrets are confidential business information that gives a company a competitive edge. Apple has long guarded its proprietary technology and has strict policies against unauthorized disclosure. OpenAI, a leading AI research organization, has been recruiting heavily from major tech companies, leading to increased legal scrutiny over hiring practices.
+**Background**: Trade secret theft lawsuits are common in the tech industry, but this case is particularly significant due to the deep pockets and high stakes involved. Apple has a long history of aggressively protecting its intellectual property, and OpenAI is a leading AI company whose business model relies on large-scale data and hardware.
 
-**Discussion**: Commenters mostly side with Apple, calling the allegations 'damning' and comparing this to the Waymo vs. Uber lawsuit that ended Uber's self-driving car project. Some warn that businesses using OpenAI models should be cautious, as OpenAI may be looking at their code and IP.
+**Discussion**: Commenters largely criticize OpenAI, calling it a company built on copyright violation and predicting severe consequences for its hardware operations. Some advise businesses using OpenAI models to be cautious about their own IP, while others see the lawsuit as open-and-shut given Apple's resources.
 
-**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI industry`
+**Tags**: `#Apple`, `#OpenAI`, `#trade secrets`, `#lawsuit`, `#AI ethics`
 
 ---
 
 <a id="item-6"></a>
-## [LWN Examines Residential Proxies and Anti-Scraping Challenges](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/) ⭐️ 8.0/10
+## [Zhipu CEO Tang Jie's Internal Letter: Beyond Market Value to AGI](https://36kr.com/newsflashes/3891162734689031?f=rss) ⭐️ 8.0/10
 
-LWN published an article analyzing the impact of residential proxies on web scraping and the trade-offs faced by site operators in blocking such traffic while minimizing harm to legitimate readers. This discussion highlights the ongoing arms race between scrapers and website defenses, with implications for web openness, data accessibility, and the centralization of anti-bot services like Cloudflare. Residential proxies use IP addresses from real ISP-assigned devices, making them harder to detect than data center IPs. The article notes that scrapers can exploit millions of devices via apps or malware, and proof-of-work solutions like Anubis may be bypassed using those same devices.
+On July 11, 2026, Zhipu founder and CEO Tang Jie released an internal letter titled 'The Great Wave Has Come,' announcing the company will not pursue short-term application monetization but will focus on long-term AGI goals: long-horizon task capability, autonomous agent systems, self-evolution, and extreme safety governance. This strategic shift from a top Chinese AI company signals a commitment to foundational AGI research at a time when many peers race to commercialize, potentially resetting industry priorities. Zhipu's market value has already entered the 'trillion Hong Kong dollar club,' adding weight to its long-term vision. Zhipu's market value surged 10x in six months to over HK$1 trillion by June 2026, surpassing Baidu and Xiaomi. The company attributed its growth to a bet on coding (Coding) and reasoning (Reasoning) capabilities starting in 2025, leading to the open-source GLM-5.2 model that rivals GPT-5.5 and Claude Opus 4.8.
 
-hackernews · chmaynard · Jul 10, 19:38 · [Discussion](https://news.ycombinator.com/item?id=48864252)
+rss · 36kr · Jul 11, 11:35
 
-**Background**: Residential proxies route traffic through real user devices, masking scrapers as legitimate visitors. Anti-scraping measures often rely on IP reputation, but residential IPs are plentiful and dynamic. This creates a cat-and-mouse game where site operators must balance blocking aggressive scrapers with not inconveniencing real readers.
+**Background**: Zhipu AI, founded in 2019 as a spinout from Tsinghua University, develops the General Language Model (GLM) series. The company's open-weight models, including ChatGLM, have gained international attention. The internal letter outlines three technical mountains to climb for AGI: long-horizon tasks, autonomous agents, and self-evolution, drawing on progress from models like GLM-5.2 and industry trends.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://spur.us/blog/what-is-a-residential-proxy">What Is a Residential Proxy? Definition, Risks & Detection</a></li>
-<li><a href="https://brightdata.com/blog/proxy-101/what-is-a-residential-proxy">What are Residential Proxies? Definition, Use Cases, and More</a></li>
-<li><a href="https://www.reddit.com/r/NoStupidQuestions/comments/1mdkzjx/what_exactly_are_residential_proxies_used_for_and/">r/NoStupidQuestions on Reddit: What exactly are residential proxies used for, and why would someone need them?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GLM_(AI)">GLM (AI) - Wikipedia</a></li>
+<li><a href="https://www.businessinsider.com/what-is-glm-5-2-chinese-ai-coding-model-2026-6">What is GLM-5.2? Another open-source Chinese AI model has Silicon Valley's attention.</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters express concerns about the open web being harmed by aggressive anti-scraping tactics, with some advocating for a better common crawl to democratize data access. Others note the pervasiveness of residential proxies installed by mobile apps, and the difficulty of blocking them without centralizing control under companies like Cloudflare.
-
-**Tags**: `#web scraping`, `#residential proxies`, `#anti-bot`, `#open web`, `#cloudflare`
+**Tags**: `#AGI`, `#战略`, `#智谱`, `#AI发展`, `#内部信`
 
 ---
 
 <a id="item-7"></a>
-## [SpaceX plans 100,000 more Starlink satellites for 100x bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
+## [Circle Receives OCC Approval to Establish Trust Bank](https://36kr.com/newsflashes/3890740672838404?f=rss) ⭐️ 8.0/10
 
-SpaceX announced plans to deploy up to 100,000 additional Starlink satellites, aiming to increase total network bandwidth by 100 times. This expansion would dramatically scale the existing constellation of over 5,000 satellites. If realized, this would provide high-speed internet access to billions more people globally, especially in remote and underserved areas. However, it raises serious concerns about space debris, light pollution, and regulatory challenges for the space industry. The proposed satellites would likely be based on advanced V2 designs, offering four times the capacity of current V1 satellites. The plan depends on the successful development and launch of SpaceX's Starship for heavy-lift capability.
+Circle announced that the U.S. Office of the Comptroller of the Currency (OCC) approved its application to establish a trust bank, named Circle National Trust Bank, on Friday. This milestone allows Circle to directly manage reserve assets backing its USDC stablecoin, reducing reliance on third-party banks and enhancing trust in the stablecoin ecosystem. Circle National Trust Bank will hold cash and U.S. Treasury assets backing USDC, but the license does not permit commercial banking activities such as taking deposits or making loans.
 
-hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
+rss · 36kr · Jul 11, 05:10
 
-**Background**: Starlink is a satellite internet constellation operated by SpaceX, providing broadband service worldwide. Current V1 satellites have a capacity of about 20 Gbps per satellite, while V2 mini satellites launched in 2023 offer four times that capacity. SpaceX designs satellites to deorbit at end of life to mitigate space debris. The FCC has approved the current constellation but would need to approve any expansion beyond the licensed number.
+**Background**: A trust bank acts as a fiduciary managing assets on behalf of clients. Previously, Circle relied on third-party banks and custodians to hold USDC reserves. The OCC is the primary regulator for national banks in the U.S.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Starlink">Starlink - Wikipedia</a></li>
-<li><a href="https://mikepuchol.com/modeling-starlink-capacity-843b2387f501?gi=c2ddb5c53968">Modeling Starlink capacity</a></li>
-<li><a href="https://starlink.com/public-files/Starlink_Approach_to_Satellite_Demisability.pdf">STARLINK SATELLITE DEMISABILITY</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Trust_bank">Trust bank</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The comments show a divided sentiment: some users express sadness over the privatization of the night sky and visual pollution, while others highlight practical benefits for rural and mobile internet access. One user notes fiber became cheaper in their region, questioning Starlink's value in developed areas, while another emphasizes its importance for underserved regions.
-
-**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#broadband`, `#space pollution`
+**Tags**: `#stablecoin`, `#regulation`, `#Circle`, `#USDC`, `#blockchain`
 
 ---
 
 <a id="item-8"></a>
-## [VultronRetriever Models Top MTEB with Efficiency Gains](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
+## [VultronRetriever Models Achieve #1 on MTEB Leaderboard](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
 
-The VultronRetriever family of embedding models was released on HuggingFace, achieving the #1 spot on the MTEB leaderboard in each size class, with the 8B model being the global #1. It demonstrated fully offline Q&A and document embedding on an iPhone during the Raise Summit Paris. This breakthrough enables state-of-the-art retrieval quality with drastically reduced storage and higher throughput, making advanced AI search feasible on edge devices like phones. It challenges existing embedding models by combining top performance with practical deployability in resource-constrained environments. The VultronRetrieverPrime-8B offers up to 16x smaller index storage and 12x higher throughput than previous 9B-class leaders, while the 0.8B Flash model runs on edge devices and indexes up to 60 images per minute fully offline. All models were trained on datasets with 0% cross-dataset duplication and 0% eval contamination.
+The VultronRetriever family of models, including Prime-8B, Core-4.5B, and Flash-0.8B, has been released on Hugging Face, each ranking first in its class on the MTEB leaderboard, with VultronRetrieverPrime-8B as the global #1. The models were demonstrated running fully offline on an iPhone during the Raise Summit Paris. This release sets a new state-of-the-art for retrieval models, offering substantial improvements in speed, memory efficiency, and offline edge performance, which is critical for deploying AI on mobile and resource-constrained devices. VultronRetrieverPrime-8B has up to 16x smaller index storage footprint and 12x higher throughput compared to previous 9B-class leaders, while the Flash-0.8B model indexes up to 60 images per minute fully offline. The models leverage the Hydra architecture for late interaction retrieval and generation at half the memory of comparable models.
 
 reddit · r/MachineLearning · /u/madkimchi · Jul 11, 15:22
 
-**Background**: The MTEB (Massive Text Embedding Benchmark) is the standard public leaderboard for evaluating embedding models across tasks like retrieval, classification, and semantic similarity. Late interaction retrieval, used by the Hydra Architecture referenced in the announcement, enables multi-vector representations for more precise matching between queries and documents, though the exact details of Hydra were not available in the provided search results.
+**Background**: The MTEB (Massive Text Embedding Benchmark) is a standard public leaderboard for evaluating embedding models on tasks like retrieval, classification, and clustering. Late interaction retrieval, introduced by models like ColBERT, separates query and document processing until the final stages, enabling efficient and precise similarity computation. Hydra is a novel architecture that unifies document retrieval and generation within a single vision-language model, using bidirectional attention for retrieval and causal attention for generation.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB Leaderboard - a Hugging Face Space by mteb</a></li>
-<li><a href="https://www.codesota.com/benchmarks/mteb">MTEB Leaderboard 2026: Best Embedding Models for... | CodeSOTA</a></li>
-<li><a href="https://weaviate.io/blog/late-interaction-overview">An Overview of Late Interaction Retrieval Models: ColBERT, ColPali, and ColQwen | Weaviate</a></li>
+<li><a href="https://arxiv.org/html/2603.28554">Hydra: Unifying Document Retrieval and Generation in a Single Vision-Language Model</a></li>
+<li><a href="https://jina.ai/news/what-is-colbert-and-late-interaction-and-why-they-matter-in-search/">What is ColBERT and Late Interaction and Why They Matter in Search?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#embeddings`, `#MTEB`, `#retrieval`, `#HuggingFace`, `#edge AI`
+**Tags**: `#retrieval`, `#MTEB`, `#edge AI`, `#model release`, `#NLP`
 
 ---
 
 <a id="item-9"></a>
-## [U-Boot bootloader flaws enable code execution before OS boot](https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/) ⭐️ 8.0/10
+## [Relativity governs chemical bonds in heavy elements, study confirms](https://www.brown.edu/news/2026-07-09/chemical-bonds-relativity) ⭐️ 7.0/10
 
-Binarly disclosed six vulnerabilities in U-Boot's FIT image signature verification, including two that allow arbitrary code execution and four that cause denial of service. The flaws affect U-Boot versions since 2013.07, impacting over 50 stable releases and many downstream vendor forks. These vulnerabilities allow attackers to execute malicious code before the operating system boots, bypassing security measures and potentially installing persistent firmware malware. For systems like BMCs that support remote firmware updates, exploitation can occur without physical access, posing a widespread threat to embedded devices. The vulnerabilities are in the FIT image signature verification code, which is used to authenticate firmware updates. Two of the bugs can lead to arbitrary code execution, while four cause a crash. Binarly submitted patches which were accepted, but deployment depends on hardware vendors integrating them into firmware updates; end-of-life devices may never be patched.
+New research published in Science provides experimental confirmation that relativistic effects, including spin-orbit coupling, govern chemical bonding in heavy elements. This study validates long-standing theoretical predictions and deepens our understanding of chemical behavior in heavy elements like gold and mercury, with implications for materials science and quantum chemistry. The research uses advanced spectroscopic techniques to directly observe spin-orbit coupling's influence on chemical bonds. It underscores that non-relativistic quantum chemistry models are insufficient for accurately describing heavy elements.
 
-telegram · zaihuapd · Jul 11, 08:32
+hackernews · hhs · Jul 10, 22:30 · [Discussion](https://news.ycombinator.com/item?id=48866134)
 
-**Background**: U-Boot is a universal boot loader used in many embedded systems to initialize hardware and load the operating system kernel. FIT (Flattened Image Tree) is a format for bundling kernel, device tree, and other images with digital signatures to ensure authenticity. The vulnerabilities reside in the signature verification routine, allowing an attacker to bypass authentication and load unsigned images.
+**Background**: Relativistic effects become significant when electrons move at speeds close to the speed of light, which occurs in heavy elements due to high nuclear charge. Spin-orbit coupling is a relativistic interaction between an electron's spin and its orbital motion, affecting energy levels and bonding. This field is known as relativistic quantum chemistry.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Das_U-Boot">Das U-Boot - Wikipedia</a></li>
-<li><a href="https://www.binarly.io/advisories/brly-2026-041">Denial of service in U-Boot during FIT image signature verification ...</a></li>
-<li><a href="https://lists.denx.de/pipermail/u-boot/2026-May/619336.html">Multiple vulnerabilities in the U-Boot FIT image signature verification ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spin-orbit_coupling">Spin-orbit coupling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Relativistic_quantum_chemistry">Relativistic quantum chemistry</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#bootloader`, `#vulnerabilities`, `#embedded systems`, `#firmware`
+**Discussion**: Commenters note that relativistic effects on heavy elements were already known, but this study provides direct experimental confirmation. Some appreciate the validation of Einstein's theories, while others debate the novelty of the findings. Overall, the community engagement is high with 148 comments.
+
+**Tags**: `#physics`, `#chemistry`, `#relativity`, `#heavy elements`, `#quantum mechanics`
 
 ---
 
 <a id="item-10"></a>
-## [Patel: AR Glasses Inevitably Invade Privacy](https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything) ⭐️ 7.0/10
+## [Residential Proxies and Scraping: LWN Analysis and Community Debate](https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/) ⭐️ 7.0/10
 
-Nilay Patel, editor-in-chief of The Verge, argued that augmented reality glasses unavoidably require continuous camera recording and cloud processing, making privacy invasion inherent to the product category. This argument challenges the prevailing narrative that AR glasses are the next computing platform, forcing a societal debate on whether the privacy trade-offs are acceptable for the potential benefits. Patel highlights that no sufficiently powerful and energy-efficient on-device chip exists to process the camera data locally; therefore, data must be sent to the cloud, similar to Apple Vision Pro's approach with a separate battery pack.
+The LWN article discusses the challenge of blocking sophisticated web scrapers that use residential proxy networks, and considers proof-of-work solutions like Anubis, while noting their limitations. This matters because residential proxies enable large-scale scraping that drains server resources and threatens the open web, while solutions like proof-of-work may be bypassed by botnets and could harm legitimate users. The debate highlights the tension between protecting content and maintaining accessibility. Residential proxies route traffic through IPs assigned to real home devices, making bot detection difficult. Proof-of-work solutions like Anubis can be circumvented by botnets that use millions of devices to compute challenges, and they also introduce delays for legitimate visitors.
 
-rss · Simon Willison · Jul 10, 17:05
+hackernews · chmaynard · Jul 10, 19:38 · [Discussion](https://news.ycombinator.com/item?id=48864252)
 
-**Background**: Augmented reality glasses overlay digital information onto the real world, requiring sensors to understand the environment. Privacy advocates have long warned about always-on cameras capturing bystanders without consent. Current AR headsets like Meta's Ray-Ban Stories and Apple's Vision Pro face scrutiny over data collection practices. Patel's comment references the inherent technical constraints that make local-only processing infeasible for lightweight glasses.
+**Background**: Residential proxies are proxy servers that use IP addresses from real ISP-assigned residential devices, making them appear as legitimate users. They are commonly sold for web scraping, SEO, and multi-accounting. Proof-of-work (PoW) is a computational challenge that requires solving a puzzle before accessing a site, designed to deter automated scraping. Anubis is an open-source PoW tool used by some websites to combat aggressive AI scraping.
 
-**Tags**: `#augmented reality`, `#privacy`, `#technology ethics`, `#cloud computing`, `#commentary`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Anubis_(software)">Anubis (software) - Wikipedia</a></li>
+<li><a href="https://grokipedia.com/page/Residential_proxy">Residential proxy</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments express skepticism about proof-of-work effectiveness, advocate for a better common crawl as a solution, note the ease of installing proxies via apps, and argue that the issue is scraping intensity. Some also mention the need for archiving due to page deletion.
+
+**Tags**: `#web scraping`, `#residential proxies`, `#security`, `#bot detection`, `#common crawl`
 
 ---
 
 <a id="item-11"></a>
-## [SJTU PhD Founder's Flapping-Wing Robot Startup Secures Third Funding in Three Months](https://36kr.com/p/3889516712065799?f=rss) ⭐️ 7.0/10
+## [Soviet control rooms: vintage design meets modern observability](https://designyoutrust.com/2018/01/vintage-beauty-soviet-control-rooms/) ⭐️ 7.0/10
 
-Chinese startup 鹰瞰智翼 (EagleEye Intelligence Wing), founded by a Shanghai Jiao Tong University PhD student, has completed a tens of millions yuan Series A round, its third funding in three months. The company develops embodied intelligent biomimetic flapping-wing robots with a proprietary fluid simulation engine called Vortrix. This rapid funding signals strong investor interest in embodied AI for aerial robotics, a less crowded field compared to humanoid or quadruped robots. The technology could enable quieter, safer, and more biomimetic drones for consumer and industrial applications, potentially disrupting the drone market. The first consumer product, Eagle X, has undergone over 3,000 hours of flight testing and will launch on Kickstarter in Q3 2025. A second industrial-grade model with approximately 15 degrees of freedom is in development, using reinforcement learning trained in the Vortrix simulation engine for zero-shot transfer to real hardware.
+An article showcases the aesthetic and functional design of Soviet-era control rooms, sparking a discussion comparing them to modern software observability. The discussion bridges historical industrial design with current software engineering concepts, highlighting lessons for system observability that are still relevant today. Commenters note that similar control rooms existed in non-Soviet countries and praise the use of physical model-based displays and shadowless lighting for operator clarity.
 
-rss · 36kr · Jul 11, 01:00
+hackernews · mvdtnz · Jul 11, 05:19 · [Discussion](https://news.ycombinator.com/item?id=48868996)
 
-**Background**: Embodied AI refers to AI systems that interact with the physical world through a body, like robots. Flapping-wing flight differs from conventional rotary drones by leveraging airflow rather than fighting it, requiring complex aerodynamic modeling. Simulation engines like Vortrix enable virtual training of control policies via reinforcement learning, reducing reliance on costly physical prototyping.
+**Background**: Control rooms in the pre-digital era used large panels with lights, dials, and mimic diagrams to show system status. Observability in software refers to the ability to infer system state from outputs, often through metrics, logs, and traces.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.linkedin.com/posts/columbia-engineering_unlike-traditional-ai-which-works-with-structured-activity-7300192583245332480-hn0o">Embodied AI : A New Frontier in Robotics and AI | LinkedIn</a></li>
-<li><a href="https://medium.com/@adildhkh/exploring-the-wonders-of-flapping-wing-aerodynamics-an-introduction-b5d72bf1adda">Flapping Wing Aerodynamics and Aeroelasticity | by Adil... | Medium</a></li>
+<li><a href="https://www.geeksforgeeks.org/electrical-engineering/controllability-and-observability-in-control-system/">Controllability and Observability in Control System - GeeksforGeeks</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#robotics`, `#biomimetic`, `#startup`, `#funding`, `#embodied AI`
+**Discussion**: Commenters generally appreciate the design, with some arguing it is not unique to the Soviet Union. One highlights that physical modeling supported causal reasoning, contrasting with modern software's time-series focus. Another shares a related article on seafoam green control rooms.
+
+**Tags**: `#control rooms`, `#Soviet`, `#design`, `#history`, `#observability`
 
 ---
 
 <a id="item-12"></a>
-## [SK Hynix CEO Warns of Worst Memory Shortage by 2027](https://www.reuters.com/world/asia-pacific/sk-hynix-ceo-sees-worst-ever-memory-supply-shortage-2027-says-demand-outstrip-2026-07-10/) ⭐️ 7.0/10
+## [AR glasses require continuous recording, cloud processing, says Patel](https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything) ⭐️ 7.0/10
 
-SK Hynix CEO Kwak Noh-jung warned that the global memory industry will face its most severe supply shortage by 2027, with demand exceeding supply capacity even after 2030, despite aggressive expansion. The warning came on the company's Nasdaq debut day, where shares rose 13.3% to $168.85. This warning from a top memory manufacturer signals potential long-term price increases and supply constraints for critical components used in AI, data centers, and consumer electronics. It could pressure downstream industries to secure supply chains and accelerate investment in alternative memory technologies. SK Hynix is considering overseas fab locations in the US, Japan, and Southeast Asia, prioritizing land, power, and labor costs. The company reported a record operating profit of 47 trillion won ($31 billion) in 2025, with Q2 2026 expected to reach 65.5 trillion won.
+Nilay Patel argued that augmented reality glasses are technically impossible without continuously recording cameras and cloud processing, leading to inevitable privacy invasion, and questioned whether such products should be pursued. This argument challenges the core direction of AR development, highlighting a fundamental privacy trade-off that could hinder consumer adoption or require significant societal debate. Patel claims no chip small enough to fit in glasses stems is both powerful and power-efficient for real-time processing, necessitating cloud offloading, while on-device alternatives result in bulky headsets like the Apple Vision Pro.
 
-telegram · zaihuapd · Jul 11, 00:45
+rss · Simon Willison · Jul 10, 17:05
 
-**Background**: The memory industry is cyclical, with periods of oversupply followed by shortages. Demand from AI and high-performance computing has surged, straining production capacity. SK Hynix is a leading memory chipmaker, particularly strong in high-bandwidth memory (HBM) used in AI accelerators.
+**Background**: Augmented reality glasses aim to overlay digital information onto the real world, requiring cameras to understand the environment. On-device processing keeps data local and reduces latency but is limited by power and size constraints, while cloud processing offers more power but introduces privacy and latency issues. Recent advancements in on-device AI chips, like the AR1+ Gen 1, can handle simple tasks locally, but complex real-time AR remains challenging.
 
-**Tags**: `#semiconductors`, `#memory shortage`, `#SK Hynix`, `#industry news`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.evenrealities.com/blog/how-ai-glasses-work">How Do AI Glasses Work? The Complete Technology Guide 2025</a></li>
+<li><a href="https://dymesty.com/blogs/articles/smart-glasses-processor-chip-guide">Smart Glasses Processor Guide: Chips, NPU & On-Device AI Explained – Dymesty AI Glasses</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#augmented reality`, `#privacy`, `#tech ethics`, `#cloud computing`, `#surveillance`
 
 ---
 
 <a id="item-13"></a>
-## [Grok 4.5 Free Trial Now Open to All Users](https://x.com/grok/status/2075603491842859298) ⭐️ 7.0/10
+## [SK Hynix Nasdaq Debut, CXMT IPO, ChatGPT Work Agent](https://36kr.com/p/3890553690192384?f=rss) ⭐️ 7.0/10
 
-xAI has made Grok 4.5 available for free trial to all X and SuperGrok users via the Grok Build platform, as announced on February 17, 2025. This move lowers the barrier to experiencing xAI's most advanced model, potentially accelerating feedback and adoption in the AI community, especially for coding and agentic tasks. Grok 4.5 is built on a 1.5 trillion-parameter V9 foundation and was trained alongside Cursor. Free access is available through the Grok Build launch window and other methods like xAI console trial credits.
+SK Hynix made its Nasdaq debut on July 10, 2026, closing up nearly 13% from its IPO price of $149. Chinese memory chip maker CXMT (ChangXin Memory Technologies) revealed its underwriter lineup for its upcoming IPO. OpenAI launched ChatGPT Work, an AI agent powered by GPT-5.6 that can autonomously complete complex, multi-hour tasks across applications. SK Hynix's Nasdaq listing provides the world's second-largest memory chip maker with a new funding channel for AI infrastructure growth, attracting global investors. CXMT's IPO is a milestone for China's semiconductor self-sufficiency, as it is the leading domestic DRAM manufacturer. ChatGPT Work marks a significant advance in practical AI agents, capable of executing long-running, multi-step workflows autonomously. SK Hynix issued 177.9 million American Depositary Receipts (ADRs) at $149 each, raising about $26.5 billion; each ADR represents one-tenth of a common share on the Korea Exchange. CXMT's underwriter syndicate includes six major Chinese securities firms, notably China International Capital Corporation (CICC) and CITIC Securities, with several also being shareholders. ChatGPT Work is built on GPT-5.6, integrated into the ChatGPT desktop app with Codex, and can browse websites, run code, and generate slideshows and spreadsheets over hours of sustained effort.
 
-telegram · zaihuapd · Jul 11, 01:44
+rss · 36kr · Jul 11, 01:24
 
-**Background**: Grok is a series of large language models developed by xAI, Elon Musk's AI company. Grok 4.5 represents the latest version, optimized for coding, agentic tasks, and knowledge work. SuperGrok is a premium subscription tier offering enhanced access, while Grok Build is an autonomous platform on X that allows users to execute complex engineering tasks.
+**Background**: AI agents are intelligent systems that can use tools and take actions autonomously to achieve goals, often with varying degrees of autonomy. ChatGPT, originally launched by OpenAI in 2022, is a generative AI chatbot that uses large language models (LLMs). American Depositary Receipts (ADRs) are negotiable certificates that represent shares in a foreign company and trade on U.S. stock exchanges. CXMT is a leading Chinese DRAM manufacturer whose IPO is seen as part of China's push to reduce reliance on foreign memory chips.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Grok_(chatbot)">Grok (chatbot) - Wikipedia</a></li>
-<li><a href="https://x.ai/news/grok-4-5">Grok 4 . 5 is SpaceXAI's smartest model built for coding, agentic tasks...</a></li>
-<li><a href="https://apidog.com/blog/use-grok-4-5-free/">How to Use Grok 4.5 for Free ?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ChatGPT_agent">ChatGPT agent</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AI_agent">AI agent</a></li>
+<li><a href="https://openai.com/index/introducing-chatgpt-agent/">Introducing ChatGPT agent: bridging research and action | OpenAI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Grok`, `#xAI`, `#LLM`, `#free trial`
+**Tags**: `#semiconductor`, `#AI`, `#IPO`, `#memory`, `#tech news`
 
 ---
 
 <a id="item-14"></a>
-## [GPT-5.6 Codex context window rises to 353K, pricing doubles above 272K](https://www.reddit.com/r/codex/comments/1us14aj/gpt_56_has_larger_ctx_window/) ⭐️ 7.0/10
+## [SK Hynix CEO Warns of Worst Memory Shortage by 2027](https://www.reuters.com/world/asia-pacific/sk-hynix-ceo-sees-worst-ever-memory-supply-shortage-2027-says-demand-outstrip-2026-07-10/) ⭐️ 7.0/10
 
-GPT-5.6 Codex's effective context window has been increased from approximately 258K tokens to 353K tokens, and inputs exceeding 272K tokens now incur double the base input price and 1.5x the output price for the entire request. This change significantly expands the usable context for developers working with large codebases or lengthy conversations, but the steep pricing for long inputs may force users to optimize their prompts or rely on automatic compression to avoid higher costs. The three GPT-5.6 models (Sol, Terra, Luna) all follow the same pricing rules: Sol short-context input at $5/M tokens, output at $30/M, which double to $10 and $45 respectively for long-context requests; Terra and Luna scale proportionally. The community suggests reverting the effective window to ~258K to trigger compression earlier and reduce the chance of hitting the expensive pricing tier.
+SK Hynix CEO Kwak Noh-Jung warned that the global memory industry will face its worst-ever supply shortage by 2027, with customer demand expected to outstrip supply even after aggressive expansion. This prediction signals a major supply constraint for key technologies such as AI and cloud computing, potentially driving up prices and affecting the broader semiconductor supply chain. SK Hynix's 2025 operating profit reached a record 47 trillion won ($31 billion), and the CEO mentioned that the company is considering overseas fab locations in the US, Japan, and Southeast Asia, prioritizing cost advantages.
 
-telegram · zaihuapd · Jul 11, 13:34
+telegram · zaihuapd · Jul 11, 00:45
 
-**Background**: An effective context window refers to the portion of an LLM's advertised token limit where the model maintains coherent reasoning, often only 50-60% of the stated maximum. Automatic compression mechanisms can condense long inputs to reduce token usage while retaining key information. Pricing for AI models is typically per million tokens, with some providers tiering rates based on input length.
+**Background**: The memory industry is cyclical, with periods of oversupply and shortage driven by demand for DRAM and NAND flash used in data centers, PCs, and mobile devices. SK Hynix is a leading memory manufacturer alongside Samsung and Micron.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.ability.ai/blog/effective-context-window-truth">The truth about AI context windows | Ability. ai</a></li>
-<li><a href="https://www.morphllm.com/llm-context-window-comparison">LLM Context Window Comparison (2026): 20 Models From 200K to...</a></li>
-<li><a href="https://github.com/OfekAr/Long-Context-Compress-Mechanism-for-Efficient-LLM">GitHub - OfekAr/Long-Context- Compress - Mechanism -for-Efficient-LLM</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#GPT-5.6`, `#Codex`, `#context window`, `#AI pricing`
+**Tags**: `#memory shortage`, `#SK Hynix`, `#semiconductor industry`, `#supply chain`, `#hardware`
 
 ---
 
 <a id="item-15"></a>
-## [ZhiPu Founder Launches 'Touch High' Plan to Pursue AGI](https://mp.weixin.qq.com/s/3CQSkf_kBnXiCDgS4L-Cgg) ⭐️ 7.0/10
+## [GPT-5.6 Codex Boosts Context Window to 353K Tokens](https://www.reddit.com/r/codex/comments/1us14aj/gpt_56_has_larger_ctx_window/) ⭐️ 7.0/10
 
-ZhiPu founder Tang Jie announced the 'Touch High' plan via an internal letter, outlining four key challenges to reach AGI: long-horizon tasks, autonomous agent systems, complete self-training, and extreme safety governance. The company plans to invest billions in mechanistic interpretability to make black-box models transparent. This signals a major strategic shift for a leading Chinese AI company prioritizing long-term AGI research over short-term commercial gains. The emphasis on mechanistic interpretability and safety could influence global AI safety governance and open-source model development. The plan specifically references ZhiPu's GLM-5.2 model, which is considered close to frontier overseas models and is popular in the open-source community. The investment in mechanistic interpretability is at the 'hundreds of billions' level, though no specific timeline or milestones were disclosed.
+GPT-5.6 Codex's effective context window has increased from about 258K to roughly 353K tokens. Requests exceeding 272K tokens now incur double input pricing (2x) and 1.5x output pricing. This extension allows developers to handle larger codebases or documents without truncation, but the higher pricing for long contexts may impact cost-sensitive users. The pricing change encourages more efficient use of the context window. The GPT-5.6 series includes three models (Sol, Terra, Luna) with tiered pricing. For Sol, short-context input is $5 per million tokens and output $30; long-context input doubles to $10 and output to $45. The effective window is 353K, though the API spec advertises up to 1M tokens.
 
-telegram · zaihuapd · Jul 11, 13:59
+telegram · zaihuapd · Jul 11, 13:34
 
-**Background**: Mechanistic interpretability is a subfield of explainable AI that aims to reverse-engineer neural networks by analyzing their internal circuits and structures. AGI (Artificial General Intelligence) refers to AI systems that can perform any intellectual task that a human can. Long-horizon tasks require sequential decision-making over many steps, while autonomous agents operate with minimal human intervention.
+**Background**: GPT-5.6 is OpenAI's latest large language model iteration. The context window determines how much text the model can consider at once. Codex is an AI coding assistant that uses GPT models. The effective context window is often smaller than the maximum due to system overhead and compression. Pricing increases for longer contexts help manage computational costs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Mechanistic_interpretability">Mechanistic interpretability</a></li>
-<li><a href="https://www.ai21.com/glossary/ai-agent/what-are-long-horizon-tasks/">What are Long - Horizon Tasks ? | AI21</a></li>
+<li><a href="https://github.com/openai/codex/issues/31860">[Critical][Codex App] GPT-5.6 Sol is catalog-capped at 372K ...</a></li>
+<li><a href="https://github.com/openai/codex/discussions/21298">Codex automatic context compression always fails ! · openai codex ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AGI`, `#Chinese AI`, `#ZhiPu`, `#AI safety`, `#mechanistic interpretability`
+**Discussion**: The community suggests reverting the effective window to around 258K to leverage Codex's automatic compression earlier and avoid the higher pricing tier. Some users report that automatic compression has been unreliable in previous versions.
+
+**Tags**: `#GPT-5`, `#Codex`, `#context window`, `#pricing`, `#AI model`
 
 ---
 
 <a id="item-16"></a>
-## [Google opposes EU site blocking as US pushes similar law](https://torrentfreak.com/google-opposes-site-blocking-in-europe-as-u-s-piracy-blocking-plans-gain-momentum/) ⭐️ 7.0/10
+## [Zhipu Founder Launches 'Touch High' AGI Plan](https://mp.weixin.qq.com/s/3CQSkf_kBnXiCDgS4L-Cgg) ⭐️ 7.0/10
 
-Google filed a submission to the European Commission opposing expanded site blocking measures, calling DNS, IP, and VPN blocking ineffective and disproportionate. Meanwhile, the US Congress is advancing similar anti-piracy legislation, with Representative Issa planning to introduce a site blocking bill. This highlights a contentious policy debate where the same company opposes site blocking in one region while it may be affected by similar measures in another. The outcome could set precedents for internet governance, impacting how content is accessed and filtered globally. Google cited examples where Italy's anti-piracy system mistakenly blocked Google Drive subdomains and Cloudflare IP addresses hosting 42 million domains. Google has not publicly commented on the US legislation but argues in its EU filing that better legal alternatives, not blocking, should be used to combat piracy.
+Zhipu founder Tang Jie announced the 'Touch High' plan, outlining four peaks to AGI: long-term tasks, autonomous agents, self-training, and extreme safety governance, with a massive investment in mechanistic interpretability. This signals a major Chinese AI lab prioritizing AGI over short-term profit, with a strong focus on safety and interpretability, potentially influencing the global AGI race and open-source community. The plan includes heavy investment in mechanistic interpretability to open the black box, while Zhipu's GLM-5.2 model already approaches frontier capabilities; however, it remains a strategic roadmap rather than a breakthrough.
 
-telegram · zaihuapd · Jul 11, 15:10
+telegram · zaihuapd · Jul 11, 13:59
 
-**Background**: Site blocking often involves DNS filtering, where internet service providers or other entities block access to domain names at the DNS level, or IP blocking, which prevents traffic to specific IP addresses. These methods can be imprecise and inadvertently block legitimate services, as highlighted by Google's examples. The debate centers on balancing copyright enforcement against potential collateral damage to legal content and internet freedom.
+**Background**: Mechanistic interpretability reverse-engineers neural networks to understand their internal mechanisms, crucial for AI safety. Zhipu is known for its open-source GLM models. The 'Touch High' plan reflects a long-term commitment to AGI research.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://zipdo.co/best/blocking-websites-software/">Top 10 Best Blocking Websites Software | 2026 Expert Picks</a></li>
-<li><a href="https://worldmetrics.org/best/internet-website-blocker-software/">Top 10 Best Internet Website Blocker Software | 2026 Edition</a></li>
-<li><a href="https://www.hostinger.com/ng/tutorials/how-to-block-visitors-from-countries-using-htaccess/">How to block IP by country: restrict access to your website from...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mechanistic_interpretability">Mechanistic interpretability - Wikipedia</a></li>
+<li><a href="https://arxiv.org/abs/2404.14082">[2404.14082] Mechanistic Interpretability for AI Safety -- A ... AI Interpretability & Explainability: The Complete Guide (2026) What Is Mechanistic Interpretability and Why It Matters Inside AI’s Black Box: How Mechanistic Interpretability ... Understanding Mechanistic Interpretability in AI Models [2501.16496] Open Problems in Mechanistic Interpretability</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#internet policy`, `#copyright`, `#site blocking`, `#Google`, `#DNS`
+**Tags**: `#AGI`, `#Zhipu`, `#AI safety`, `#open-source`, `#GLM`
+
+---
+
+<a id="item-17"></a>
+## [Google opposes EU site blocking, US anti-piracy bills advance](https://torrentfreak.com/google-opposes-site-blocking-in-europe-as-u-s-piracy-blocking-plans-gain-momentum/) ⭐️ 7.0/10
+
+Google submitted a filing to the European Commission opposing expanded site-blocking measures, calling DNS, IP, and VPN blocking ineffective and disproportionate, while the U.S. Congress pushes forward anti-piracy legislation that includes site-blocking proposals. This contrast highlights a potential double standard in Google's stance on content regulation, and the U.S. legislative momentum could lead to significant changes in internet governance and online piracy enforcement. Google cited Italy's anti-piracy system mistakenly blocking Google Drive subdomains and Cloudflare IP addresses that host 42 million domains, and advocated for better legal alternatives over site blocking.
+
+telegram · zaihuapd · Jul 11, 15:10
+
+**Background**: Site blocking often involves DNS resolver blocking, IP address blocking, or VPN blocking to prevent access to pirated content. However, these techniques carry a high risk of overblocking—accidentally blocking legitimate services—as seen in the Italian case. The U.S. previously saw major backlash against similar proposals, such as SOPA/PIPA, over free speech concerns.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://torrentfreak.com/spain-piracy-crisis-cloudflare-says-laliga-knew-danger-blocked-ip-address-anyway-250211/">Piracy Crisis: Cloudflare Says LaLiga Knew Dangers, Blocked ...</a></li>
+<li><a href="https://legalblogs.wolterskluwer.com/copyright-blog/fighting-online-piracy-in-2025-expanding-copyright-enforcement-to-new-intermediaries/">Fighting online piracy in 2025: expanding copyright ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#internet governance`, `#anti-piracy`, `#site blocking`, `#tech policy`, `#Google`
 
 ---
