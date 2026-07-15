@@ -49,40 +49,74 @@ jobs:
               print(f"Actor {actor} timeout")
               return []
 
-          # X: Apify search actor, latest + top, capped for free-tier usage.
+          # X: seed accounts/posts supplied by the user. Profile and status URLs are both supported.
           try:
               x_rows = apify("maximedupre~twitter-scraper", {
                   "target":"searchPosts",
-                  "searchQuery":"(AI OR LLM OR 大模型 OR 人工智能 OR 中医 OR 养生 OR 气血 OR 玄学 OR 命理 OR 八字 OR 紫微斗数) -filter:replies",
+                  "postSearchUrls":[
+                      "https://x.com/Leobai825", "https://x.com/qihang_zeng6688",
+                      "https://x.com/gengdaJ", "https://x.com/CycleDecoded",
+                      "https://x.com/SjwEsther", "https://x.com/expertwith_AI",
+                      "https://x.com/Etudecn",
+                      "https://x.com/Leobai825/status/2077314850116542838",
+                      "https://x.com/gengdaJ/status/2077014826552037655",
+                      "https://x.com/expertwith_AI/status/2077221134051995773",
+                      "https://x.com/Etudecn/status/2077185361407836415"
+                  ],
                   "searchMode":"latestAndTop",
-                  "maxNbItemsToScrape":40
+                  "maxNbItemsToScrape":70
               })
               for r in x_rows:
                   text = r.get("fullText") or r.get("full_text") or r.get("text") or r.get("content") or ""
                   handle = r.get("username") or r.get("authorUsername") or (r.get("author") or {}).get("username") or "unknown"
                   tid = str(r.get("id") or r.get("tweetId") or r.get("postId") or "")
                   url = r.get("url") or r.get("tweetUrl") or r.get("postUrl")
+                  quoted = r.get("quotedTweet") or r.get("quoted_tweet") or {}
+                  mentions = r.get("mentions") or r.get("userMentions") or []
+                  context = str(text)
+                  if quoted:
+                      context += "\nQuoted: " + str(quoted)[:500]
+                  if mentions:
+                      context += "\nMentions: " + str(mentions)[:300]
                   if text and (url or tid):
-                      items.append({"source":"X", "title":text[:120], "text":text[:600],
-                          "url":url or f"https://x.com/{handle}/status/{tid}",
+                      items.append({"source":"X", "title":str(text)[:120], "text":context[:1000],
+                          "url":url or f"https://x.com/{handle}/status/{tid}", "author":handle,
                           "likes":int(r.get("likeCount") or r.get("favorite_count") or r.get("likes") or 0),
                           "shares":int(r.get("retweetCount") or r.get("retweet_count") or r.get("retweets") or 0),
                           "comments":int(r.get("replyCount") or r.get("reply_count") or r.get("replies") or 0)})
           except Exception as e:
               print("X collection failed:", e)
-          # Pinterest: keyword search, capped to 30 pins/day.
+          # Pinterest: user-provided board/pins plus closely related discovery searches.
           try:
               p_rows = apify("thirdwatch~pinterest-scraper", {
-                  "searchQueries":["AI tools artificial intelligence","traditional Chinese medicine wellness","astrology Chinese astrology"],
-                  "maxResults":30
+                  "boardUrls":["https://www.pinterest.com/food/nourishing-soup-and-tea-recipes/"],
+                  "pinUrls":[
+                      "https://www.pinterest.com/pin/911838255817587727/",
+                      "https://www.pinterest.com/pin/911838255817587754/",
+                      "https://www.pinterest.com/pin/911838255817587836/",
+                      "https://www.pinterest.com/pin/911838255817587809/",
+                      "https://www.pinterest.com/pin/911838255817587919/",
+                      "https://www.pinterest.com/pin/1146940230134787345/",
+                      "https://www.pinterest.com/pin/326651779246225317/"
+                  ],
+                  "searchQueries":[
+                      "nourishing soup and tea recipes",
+                      "Chinese food therapy wellness",
+                      "traditional Chinese medicine soup tea"
+                  ],
+                  "maxResults":60
               })
               for r in p_rows:
                   title = r.get("title") or r.get("description") or r.get("name") or ""
                   url = r.get("url") or r.get("pinUrl") or r.get("link")
+                  board = r.get("boardName") or r.get("board") or ""
+                  author = r.get("username") or r.get("pinnerUsername") or r.get("author") or ""
+                  context = str(r.get("description") or r.get("altText") or "")
+                  if board:
+                      context += "\nBoard: " + str(board)
                   if title and url:
                       items.append({"source":"Pinterest", "title":str(title)[:160],
-                          "text":str(r.get("description") or r.get("altText") or "")[:600],
-                          "url":url,
+                          "text":context[:800], "url":url, "author":str(author),
                           "likes":int(r.get("saveCount") or r.get("repinCount") or r.get("saves") or 0),
                           "shares":0, "comments":int(r.get("commentCount") or 0)})
           except Exception as e:
@@ -120,7 +154,7 @@ jobs:
           items.sort(key=lambda x: x["signal"], reverse=True)
           candidates = items[:80]
 
-          prompt = """你是跨平台趋势雷达。请从候选内容中筛选今天最值得关注的资讯，只保留三个主题：AI技术、中医养生、玄学命理。重点寻找刚出现、正在升温、可能继续扩散的内容，不要把普通常识、广告、情绪帖当热点。输出中文Markdown：先写3条趋势判断，再按三个主题分组；每条包含标题、平台、趋势理由、原链接。总计最多12条。不得编造候选列表外的信息。\n\n候选数据：\n""" + json.dumps(candidates, ensure_ascii=False)
+          prompt = """你是用户的个性化跨平台趋势雷达。X 和 Pinterest 候选内容来自用户主动提供的种子博主、帖子、画板与 Pin，请优先学习这些种子的主题、表达角度和审美偏好，再发现其中被转发、引用、提及的关联作者与相似内容。Reddit 用于补充正在升温的讨论。重点关注 AI 技术、中医养生、玄学命理，以及与种子内容明显相似的新趋势。排除泛新闻、广告、重复内容和只有高互动但与种子偏好无关的内容。输出中文 Markdown：先写3条个性化趋势判断，再按主题分组；每条包含标题、平台、作者、为什么与种子偏好相关、趋势信号、原链接。总计最多12条，不得编造候选数据之外的信息。\n\n候选数据：\n""" + json.dumps(candidates, ensure_ascii=False)
           ai_payload = {
               "model":"deepseek-v4-flash",
               "messages":[{"role":"user","content":prompt}],
@@ -144,3 +178,4 @@ jobs:
           print("Push result:", json.dumps(result, ensure_ascii=False))
           PY
           python /tmp/trend_push.py
+
