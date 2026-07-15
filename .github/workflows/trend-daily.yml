@@ -28,6 +28,16 @@ jobs:
           WEBHOOK = os.environ["HORIZON_WEBHOOK_URL"]
           items = []
           seed_items = []
+          seed_pin_urls = {
+              "https://www.pinterest.com/pin/911838255817587727/",
+              "https://www.pinterest.com/pin/911838255817587754/",
+              "https://www.pinterest.com/pin/911838255817587836/",
+              "https://www.pinterest.com/pin/911838255817587809/",
+              "https://www.pinterest.com/pin/911838255817587919/",
+              "https://www.pinterest.com/pin/1146940230134787345/",
+              "https://www.pinterest.com/pin/326651779246225317/"
+          }
+          seed_board_urls = ["https://www.pinterest.com/food/nourishing-soup-and-tea-recipes/"]
 
           def request(url, data=None, headers=None, timeout=60):
               body = None if data is None else json.dumps(data).encode("utf-8")
@@ -76,39 +86,79 @@ jobs:
                           "mentions":r.get("mentions") or [],
                           "quoted":r.get("quotedTweet") or {}
                       })
-              print("X seed rows learned:", len(seed_items))
+              # Audit coverage by account, then retry only accounts missing from the batch.
+              learned_handles = {}
+              for s in seed_items:
+                  h = str(s.get("author") or "").lstrip("@").lower()
+                  if h:
+                      learned_handles[h] = learned_handles.get(h, 0) + 1
+              missing = [h for h in seed_handles if learned_handles.get(h.lower(), 0) == 0]
+              for h in missing:
+                  retry_rows = apify("scrapesage~twitter-scraper", {
+                      "handles":[h], "includeProfile":False, "includeTweets":True,
+                      "includeReplies":False, "maxTweetsPerProfile":6,
+                      "onlyTweetsNewerThan":"90 days", "monitorMode":False
+                  })
+                  for r in retry_rows:
+                      text = r.get("text") or r.get("fullText") or ""
+                      if text:
+                          seed_items.append({"platform":"X", "author":r.get("authorHandle") or h,
+                              "text":str(text)[:1200], "url":r.get("url") or ""})
+                          learned_handles[h.lower()] = learned_handles.get(h.lower(), 0) + 1
+              audit = {h: learned_handles.get(h.lower(), 0) for h in seed_handles}
+              print("X seed coverage by handle:", json.dumps(audit, ensure_ascii=False))
+              still_missing = [h for h, n in audit.items() if n == 0]
+              if still_missing:
+                  print("WARNING - X seed accounts unavailable:", still_missing)
           except Exception as e:
               print("X seed learning failed:", e)
 
+          # Pinterest seeds also teach taste, but are excluded from final recommendations.
+          try:
+              p_seed_rows = apify("thirdwatch~pinterest-scraper", {
+                  "boardUrls":seed_board_urls, "pinUrls":list(seed_pin_urls), "maxResults":35
+              })
+              for r in p_seed_rows:
+                  title = r.get("title") or r.get("description") or r.get("name") or ""
+                  url = r.get("url") or r.get("pinUrl") or r.get("link") or ""
+                  if title:
+                      seed_items.append({"platform":"Pinterest", "author":r.get("username") or "",
+                          "text":str(title)[:700] + "\n" + str(r.get("description") or "")[:700],
+                          "url":url, "board":r.get("boardName") or r.get("board") or ""})
+              print("Pinterest seed rows learned:", len([s for s in seed_items if s["platform"] == "Pinterest"))
+          except Exception as e:
+              print("Pinterest seed learning failed:", e)
+
           # Build a discovery profile from seeds. Seeds describe taste, not final recommendations.
           fallback_discovery = {
-              "x_query":"(AI agent OR LLM OR 大模型 OR 人工智能 OR 中医养生 OR 食疗 OR 玄学 OR 命理 OR 八字 OR 紫微斗数) -filter:replies",
-              "pinterest_queries":["AI tools workflow","Chinese food therapy wellness","astrology metaphysics"],
-              "reddit_queries":["AI agent LLM","traditional Chinese medicine wellness","astrology metaphysics"],
-              "themes":["AI技术","中医养生","玄学命理"]
+              "AI技术":{"x_query":"(AI agent OR LLM OR 大模型 OR 人工智能) -filter:replies", "pinterest_queries":["AI tools workflow"], "reddit_queries":["AI agent LLM"]},
+              "中医养生":{"x_query":"(中医 OR 养生 OR 食疗 OR 经络 OR 气血) -filter:replies", "pinterest_queries":["Chinese food therapy nourishing soup tea"], "reddit_queries":["traditional Chinese medicine wellness"]},
+              "玄学命理":{"x_query":"(玄学 OR 命理 OR 八字 OR 紫微斗数 OR 风水 OR 占星) -filter:replies", "pinterest_queries":["astrology metaphysics feng shui"], "reddit_queries":["astrology metaphysics"]}
           }
           discovery = fallback_discovery
           if seed_items:
               try:
-                  profile_prompt = """分析以下用户主动提供的种子内容。种子只用于学习偏好，不是推荐结果。请提取：1）适合在X搜索的新资讯查询式；2）Pinterest相似内容搜索词3个；3）Reddit搜索词3个；4）细分主题。搜索目标是发现种子作者之外、刚出现或正在升温的行业资讯。只输出JSON，结构为 {\"x_query\":\"...\",\"pinterest_queries\":[...],\"reddit_queries\":[...],\"themes\":[...]}。\n种子：\n""" + json.dumps(seed_items[:50], ensure_ascii=False)
+                  profile_prompt = """分析以下用户主动提供的X与Pinterest种子。种子只用于学习偏好，不是推荐结果。必须分别为 AI技术、中医养生、玄学命理 建立独立发现画像，不能让一个主题吞并其他主题。每个主题输出一个X查询式、1到3个Pinterest搜索词、1到3个Reddit搜索词。目标是发现种子作者之外、最近出现或正在升温的新作者、新帖子和行业趋势。只输出JSON，严格结构为 {\"AI技术\":{\"x_query\":\"...\",\"pinterest_queries\":[...],\"reddit_queries\":[...]},\"中医养生\":{...},\"玄学命理\":{...}}。\n种子：\n""" + json.dumps(seed_items[:100], ensure_ascii=False)
                   profile_payload = {"model":"deepseek-v4-flash","messages":[{"role":"user","content":profile_prompt}],"temperature":0.1,"max_tokens":1600}
                   profile_resp = request("https://api.deepseek.com/chat/completions", profile_payload, {"Content-Type":"application/json","Authorization":f"Bearer {DEEPSEEK}"}, timeout=120)
                   raw_profile = profile_resp["choices"][0]["message"]["content"].strip().replace("```json","").replace("```","").strip()
                   parsed_profile = json.loads(raw_profile)
-                  if parsed_profile.get("x_query"):
+                  if all(parsed_profile.get(k, {}).get("x_query") for k in fallback_discovery):
                       discovery = parsed_profile
               except Exception as e:
                   print("Seed profile generation failed, using fallback:", e)
           print("Discovery profile:", json.dumps(discovery, ensure_ascii=False))
 
-          # Stage 2: discover NEW X posts from the learned query; exclude seed URLs/authors.
-          try:
+          # Stage 2: run three independent X searches so one topic cannot crowd out another.
+          blocked_authors = {h.lower() for h in seed_handles}
+          blocked_urls = {u.rstrip("/") for u in seed_urls}
+          for topic in fallback_discovery:
+            try:
               x_rows = apify("maximedupre~twitter-scraper", {
-                  "target":"searchPosts", "searchQuery":discovery["x_query"],
-                  "searchMode":"latestAndTop", "maxNbItemsToScrape":60
+                  "target":"searchPosts", "searchQuery":discovery[topic]["x_query"],
+                  "searchMode":"latestAndTop", "maxNbItemsToScrape":25
               })
-              blocked_authors = {h.lower() for h in seed_handles}
-              blocked_urls = {u.rstrip("/") for u in seed_urls}
+              before = len(items)
               for r in x_rows:
                   text = r.get("fullText") or r.get("full_text") or r.get("text") or r.get("content") or ""
                   handle = r.get("authorHandle") or r.get("username") or r.get("authorUsername") or (r.get("author") or {}).get("username") or "unknown"
@@ -121,19 +171,21 @@ jobs:
                   context = str(text)
                   if quoted: context += "\nQuoted: " + str(quoted)[:700]
                   if mentions: context += "\nMentions: " + str(mentions)[:300]
-                  items.append({"source":"X", "title":str(text)[:140], "text":context[:1200],
+                  items.append({"source":"X", "category_hint":topic, "title":str(text)[:140], "text":context[:1200],
                       "url":url, "author":handle,
                       "likes":int(r.get("favoriteCount") or r.get("likeCount") or r.get("favorite_count") or 0),
                       "shares":int(r.get("retweetCount") or r.get("retweet_count") or 0),
                       "comments":int(r.get("replyCount") or r.get("reply_count") or 0)})
-              print("X new discovery rows:", len([i for i in items if i["source"] == "X"]))
-          except Exception as e:
-              print("X discovery failed:", e)
-          # Pinterest: user-provided board/pins plus closely related discovery searches.
-          try:
+              print(f"X new discovery [{topic}]:", len(items) - before)
+            except Exception as e:
+              print(f"X discovery [{topic}] failed:", e)
+
+          # Pinterest also runs independently by topic; seed pins are blocked from output.
+          for topic in fallback_discovery:
+            try:
               p_rows = apify("thirdwatch~pinterest-scraper", {
-                  "searchQueries":discovery.get("pinterest_queries", fallback_discovery["pinterest_queries"]),
-                  "maxResults":60
+                  "searchQueries":discovery[topic].get("pinterest_queries", fallback_discovery[topic]["pinterest_queries"]),
+                  "maxResults":20
               })
               for r in p_rows:
                   title = r.get("title") or r.get("description") or r.get("name") or ""
@@ -143,17 +195,21 @@ jobs:
                   context = str(r.get("description") or r.get("altText") or "")
                   if board:
                       context += "\nBoard: " + str(board)
-                  if title and url:
-                      items.append({"source":"Pinterest", "title":str(title)[:160],
+                  if title and url and url.rstrip("/") not in {u.rstrip("/") for u in seed_pin_urls}:
+                      items.append({"source":"Pinterest", "category_hint":topic, "title":str(title)[:160],
                           "text":context[:800], "url":url, "author":str(author),
                           "likes":int(r.get("saveCount") or r.get("repinCount") or r.get("saves") or 0),
                           "shares":0, "comments":int(r.get("commentCount") or 0)})
-          except Exception as e:
-              print("Pinterest collection failed:", e)
+              print(f"Pinterest discovery [{topic}]:", len(p_rows))
+            except Exception as e:
+              print(f"Pinterest collection [{topic}] failed:", e)
           # Reddit: residential-proxy actor avoids GitHub Actions 403 blocks.
           try:
+              reddit_searches = []
+              for topic in fallback_discovery:
+                  reddit_searches.extend(discovery[topic].get("reddit_queries", fallback_discovery[topic]["reddit_queries"]))
               reddit_rows = apify("betterdevsscrape~reddit-scraper", {
-                  "searches":discovery.get("reddit_queries", fallback_discovery["reddit_queries"]),
+                  "searches":reddit_searches,
                   "searchPosts":True, "searchComments":False,
                   "sort":"rising", "time":"day",
                   "maxItems":30, "maxPostCount":10,
@@ -196,7 +252,8 @@ jobs:
           source_counts = {}
           for i in items:
               i["signal"] = i["likes"] + i["shares"] * 2 + i["comments"] * 1.5
-              i["pre_category"] = topic_of(i)
+              # Independent collection query is stronger than ambiguous keyword matching.
+              i["pre_category"] = i.get("category_hint") or topic_of(i)
               buckets[i["pre_category"]].append(i)
               source_counts[i["source"]] = source_counts.get(i["source"], 0) + 1
           for values in buckets.values():
@@ -205,7 +262,7 @@ jobs:
           print("Collected by source:", source_counts)
           print("Candidates by topic:", {k: len(v) for k, v in buckets.items()})
 
-          prompt = """你是用户的个性化跨平台趋势雷达。种子内容只用于偏好建模，严禁把种子链接或种子作者的原帖作为推荐结果。推荐必须是从种子偏好扩展发现的新作者、新帖子或新趋势。X 和 Pinterest 候选内容来自用户主动提供的种子博主、帖子、画板与 Pin，请优先学习这些种子的主题、表达角度和审美偏好，再发现其中被转发、引用、提及的关联作者与相似内容。Reddit 用于补充正在升温的讨论。重点关注 AI 技术、中医养生、玄学命理，以及与种子内容明显相似的新趋势。排除泛新闻、广告、重复内容和只有高互动但与种子偏好无关的内容。输出中文 Markdown：先写3条个性化趋势判断，再按主题分组；每条包含标题、平台、作者、为什么与种子偏好相关、趋势信号、原链接。三个主题必须分别输出，目标配额为 AI技术4条、中医养生4条、玄学命理4条。只能在某一主题确实没有合格候选时少于4条，并明确写出该主题候选不足，禁止用其他主题补位。总计最多12条，不得编造候选数据之外的信息。\n\n候选数据：\n""" + "\n偏好画像：\n" + json.dumps(discovery, ensure_ascii=False) + "\n候选数据：\n" + json.dumps(candidates, ensure_ascii=False)
+          prompt = """你是用户的个性化跨平台趋势雷达。X博主、X帖子、Pinterest画板和Pin都只是偏好种子，严禁把种子链接或种子作者原帖作为推荐结果。候选数据已经通过三个互相独立的主题管道发现，category_hint/pre_category 是硬分类，不得擅自跨类。推荐必须是新作者、新帖子或新趋势。重点筛选最近出现、刚升温或具有早期趋势信号的内容，排除泛新闻、广告和重复内容。输出中文 Markdown：先写3条个性化趋势判断，再按 AI技术、中医养生、玄学命理 分组；每条包含标题、平台、作者、与用户偏好的关联、趋势信号、原链接。每个主题目标4条，禁止拿AI内容填充中医或玄学；不足4条就明确写“本主题合格候选不足”，并说明实际数量。总计最多12条，只能引用候选数据，不得编造。\n\n偏好画像：\n""" + json.dumps(discovery, ensure_ascii=False) + "\n候选数据：\n" + json.dumps(candidates, ensure_ascii=False)
           ai_payload = {
               "model":"deepseek-v4-flash",
               "messages":[{"role":"user","content":prompt}],
