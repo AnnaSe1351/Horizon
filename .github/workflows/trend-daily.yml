@@ -125,7 +125,7 @@ jobs:
                       seed_items.append({"platform":"Pinterest", "author":r.get("username") or "",
                           "text":str(title)[:700] + "\n" + str(r.get("description") or "")[:700],
                           "url":url, "board":r.get("boardName") or r.get("board") or ""})
-              print("Pinterest seed rows learned:", len([s for s in seed_items if s["platform"] == "Pinterest"))
+              print("Pinterest seed rows learned:", len([s for s in seed_items if s["platform"] == "Pinterest"]))
           except Exception as e:
               print("Pinterest seed learning failed:", e)
 
