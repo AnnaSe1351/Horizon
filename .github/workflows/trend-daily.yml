@@ -1,0 +1,142 @@
+name: Trend Daily Push
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 0 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  trend-push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Collect trends and push to Feishu
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
+        run: |
+          cat > /tmp/trend_push.py <<'PY'
+          import json, os, time, urllib.parse, urllib.request
+          from datetime import datetime, timezone
+
+          APIFY = os.environ["APIFY_TOKEN"]
+          DEEPSEEK = os.environ["DEEPSEEK_API_KEY"]
+          WEBHOOK = os.environ["HORIZON_WEBHOOK_URL"]
+          items = []
+
+          def request(url, data=None, headers=None, timeout=60):
+              body = None if data is None else json.dumps(data).encode("utf-8")
+              req = urllib.request.Request(url, data=body, headers=headers or {})
+              with urllib.request.urlopen(req, timeout=timeout) as resp:
+                  return json.loads(resp.read().decode("utf-8"))
+
+          def apify(actor, payload):
+              url = f"https://api.apify.com/v2/acts/{actor}/runs?token={urllib.parse.quote(APIFY)}"
+              run = request(url, payload, {"Content-Type":"application/json"})["data"]
+              run_id, dataset_id = run["id"], run["defaultDatasetId"]
+              for _ in range(80):
+                  state = request(f"https://api.apify.com/v2/actor-runs/{run_id}?token={urllib.parse.quote(APIFY)}")["data"]["status"]
+                  if state == "SUCCEEDED":
+                      return request(f"https://api.apify.com/v2/datasets/{dataset_id}/items?token={urllib.parse.quote(APIFY)}&clean=true")
+                  if state in {"FAILED","ABORTED","TIMED-OUT"}:
+                      print(f"Actor {actor} ended: {state}")
+                      return []
+                  time.sleep(3)
+              print(f"Actor {actor} timeout")
+              return []
+
+          # X: one combined discovery query to control free-credit usage.
+          try:
+              x_rows = apify("altimis~scweet", {
+                  "source_mode":"search",
+                  "search_query":"(AI OR LLM OR 大模型 OR 人工智能 OR 中医 OR 养生 OR 气血 OR 玄学 OR 命理 OR 八字 OR 紫微斗数) -filter:replies",
+                  "search_sort":"Latest",
+                  "max_items":40
+              })
+              for r in x_rows:
+                  text = r.get("full_text") or r.get("text") or ""
+                  user = r.get("user") or {}
+                  handle = user.get("screen_name") or user.get("username") or r.get("handle") or "unknown"
+                  tid = str(r.get("id_str") or r.get("id") or "").replace("tweet-","")
+                  if text and tid:
+                      items.append({"source":"X", "title":text[:120], "text":text[:600],
+                          "url":r.get("url") or f"https://x.com/{handle}/status/{tid}",
+                          "likes":int(r.get("favorite_count") or 0), "shares":int(r.get("retweet_count") or 0),
+                          "comments":int(r.get("reply_count") or 0)})
+          except Exception as e:
+              print("X collection failed:", e)
+
+          # Pinterest: growing search/save trends, capped for free tier.
+          try:
+              p_rows = apify("automation-lab~pinterest-trends-scraper", {
+                  "countries":["US"], "trendTypes":["growing"],
+                  "maxResultsPerCountry":12, "lookbackWindow":"30D",
+                  "keywordsToInclude":["artificial intelligence","AI tools","traditional Chinese medicine","wellness","astrology","Chinese astrology"]
+              })
+              for r in p_rows:
+                  term = r.get("term") or r.get("keyword")
+                  if term:
+                      items.append({"source":"Pinterest", "title":str(term),
+                          "text":f"weeklyChange={r.get('weeklyChange')}, monthlyChange={r.get('monthlyChange')}, type={r.get('trendType')}",
+                          "url":r.get("pinterestTrendsUrl") or "https://trends.pinterest.com/",
+                          "likes":0, "shares":0, "comments":0})
+          except Exception as e:
+              print("Pinterest collection failed:", e)
+
+          # Reddit: new/rising/hot across the three target themes.
+          reddit_sources = [
+              ("MachineLearning","rising"),("LocalLLaMA","new"),("artificial","hot"),
+              ("ChineseMedicine","new"),("TraditionalMedicine","rising"),
+              ("astrology","rising"),("ChineseAstrology","new")
+          ]
+          for sub, sort in reddit_sources:
+              try:
+                  url = f"https://www.reddit.com/r/{sub}/{sort}.json?limit=10&raw_json=1"
+                  data = request(url, headers={"User-Agent":"HorizonTrendRadar/1.0"})
+                  for child in data.get("data",{}).get("children",[]):
+                      r = child.get("data",{})
+                      items.append({"source":"Reddit", "title":r.get("title","")[:180],
+                          "text":(r.get("selftext") or "")[:600],
+                          "url":"https://www.reddit.com" + r.get("permalink", ""),
+                          "likes":int(r.get("score") or 0), "shares":0,
+                          "comments":int(r.get("num_comments") or 0)})
+              except Exception as e:
+                  print(f"Reddit r/{sub} failed:", e)
+
+          if not items:
+              raise RuntimeError("No trend items collected from any source")
+
+          # Lightweight engagement pre-ranking before LLM filtering.
+          for i in items:
+              i["signal"] = i["likes"] + i["shares"] * 2 + i["comments"] * 1.5
+          items.sort(key=lambda x: x["signal"], reverse=True)
+          candidates = items[:80]
+
+          prompt = """你是跨平台趋势雷达。请从候选内容中筛选今天最值得关注的资讯，只保留三个主题：AI技术、中医养生、玄学命理。重点寻找刚出现、正在升温、可能继续扩散的内容，不要把普通常识、广告、情绪帖当热点。输出中文Markdown：先写3条趋势判断，再按三个主题分组；每条包含标题、平台、趋势理由、原链接。总计最多12条。不得编造候选列表外的信息。\n\n候选数据：\n""" + json.dumps(candidates, ensure_ascii=False)
+          ai_payload = {
+              "model":"deepseek-v4-flash",
+              "messages":[{"role":"user","content":prompt}],
+              "temperature":0.2,
+              "max_tokens":5000
+          }
+          ai = request("https://api.deepseek.com/chat/completions", ai_payload, {
+              "Content-Type":"application/json", "Authorization":f"Bearer {DEEPSEEK}"}, timeout=120)
+          summary = ai["choices"][0]["message"]["content"]
+          today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+          card = {
+              "msg_type":"interactive",
+              "card":{
+                  "schema":"2.0",
+                  "config":{"wide_screen_mode":True},
+                  "header":{"title":{"tag":"plain_text","content":f"跨平台趋势雷达 · {today}"},"template":"blue"},
+                  "body":{"elements":[{"tag":"markdown","content":summary}]}
+              }
+          }
+          result = request(WEBHOOK, card, {"Content-Type":"application/json"})
+          print("Push result:", json.dumps(result, ensure_ascii=False))
+          PY
+          python /tmp/trend_push.py
