@@ -49,41 +49,45 @@ jobs:
               print(f"Actor {actor} timeout")
               return []
 
-          # X: seed accounts/posts supplied by the user. Profile and status URLs are both supported.
+          # X: directly fetch the user-supplied profiles and exact tweet URLs.
           try:
-              x_rows = apify("maximedupre~twitter-scraper", {
-                  "target":"searchPosts",
-                  "postSearchUrls":[
-                      "https://x.com/Leobai825", "https://x.com/qihang_zeng6688",
-                      "https://x.com/gengdaJ", "https://x.com/CycleDecoded",
-                      "https://x.com/SjwEsther", "https://x.com/expertwith_AI",
-                      "https://x.com/Etudecn",
+              x_rows = apify("scrapesage~twitter-scraper", {
+                  "handles":["Leobai825","qihang_zeng6688","gengdaJ","CycleDecoded","SjwEsther","expertwith_AI","Etudecn"],
+                  "tweetUrls":[
                       "https://x.com/Leobai825/status/2077314850116542838",
                       "https://x.com/gengdaJ/status/2077014826552037655",
                       "https://x.com/expertwith_AI/status/2077221134051995773",
                       "https://x.com/Etudecn/status/2077185361407836415"
                   ],
-                  "searchMode":"latestAndTop",
-                  "maxNbItemsToScrape":70
+                  "includeProfile":False,
+                  "includeTweets":True,
+                  "includeReplies":False,
+                  "maxTweetsPerProfile":8,
+                  "onlyTweetsNewerThan":"7 days",
+                  "monitorMode":True,
+                  "monitorStoreName":"horizon-anna-seeds"
               })
               for r in x_rows:
-                  text = r.get("fullText") or r.get("full_text") or r.get("text") or r.get("content") or ""
-                  handle = r.get("username") or r.get("authorUsername") or (r.get("author") or {}).get("username") or "unknown"
-                  tid = str(r.get("id") or r.get("tweetId") or r.get("postId") or "")
-                  url = r.get("url") or r.get("tweetUrl") or r.get("postUrl")
+                  if r.get("type") and r.get("type") != "tweet":
+                      continue
+                  text = r.get("text") or r.get("fullText") or r.get("full_text") or ""
+                  handle = r.get("authorHandle") or r.get("username") or "unknown"
+                  tid = str(r.get("id") or r.get("tweetId") or "")
+                  url = r.get("url") or (f"https://x.com/{handle}/status/{tid}" if tid else None)
                   quoted = r.get("quotedTweet") or r.get("quoted_tweet") or {}
-                  mentions = r.get("mentions") or r.get("userMentions") or []
+                  mentions = r.get("mentions") or []
                   context = str(text)
                   if quoted:
-                      context += "\nQuoted: " + str(quoted)[:500]
+                      context += "\nQuoted: " + str(quoted)[:700]
                   if mentions:
                       context += "\nMentions: " + str(mentions)[:300]
-                  if text and (url or tid):
-                      items.append({"source":"X", "title":str(text)[:120], "text":context[:1000],
-                          "url":url or f"https://x.com/{handle}/status/{tid}", "author":handle,
-                          "likes":int(r.get("likeCount") or r.get("favorite_count") or r.get("likes") or 0),
-                          "shares":int(r.get("retweetCount") or r.get("retweet_count") or r.get("retweets") or 0),
-                          "comments":int(r.get("replyCount") or r.get("reply_count") or r.get("replies") or 0)})
+                  if text and url:
+                      items.append({"source":"X", "title":str(text)[:140], "text":context[:1200],
+                          "url":url, "author":handle,
+                          "likes":int(r.get("favoriteCount") or r.get("likeCount") or 0),
+                          "shares":int(r.get("retweetCount") or 0),
+                          "comments":int(r.get("replyCount") or 0)})
+              print("X direct seed rows:", len(x_rows))
           except Exception as e:
               print("X collection failed:", e)
           # Pinterest: user-provided board/pins plus closely related discovery searches.
@@ -200,5 +204,6 @@ jobs:
           print("Push result:", json.dumps(result, ensure_ascii=False))
           PY
           python /tmp/trend_push.py
+
 
 
