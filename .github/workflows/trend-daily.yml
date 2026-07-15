@@ -49,64 +49,68 @@ jobs:
               print(f"Actor {actor} timeout")
               return []
 
-          # X: one combined discovery query to control free-credit usage.
+          # X: Apify search actor, latest + top, capped for free-tier usage.
           try:
-              x_rows = apify("altimis~scweet", {
-                  "source_mode":"search",
-                  "search_query":"(AI OR LLM OR 大模型 OR 人工智能 OR 中医 OR 养生 OR 气血 OR 玄学 OR 命理 OR 八字 OR 紫微斗数) -filter:replies",
-                  "search_sort":"Latest",
-                  "max_items":40
+              x_rows = apify("maximedupre~twitter-scraper", {
+                  "target":"searchPosts",
+                  "searchQuery":"(AI OR LLM OR 大模型 OR 人工智能 OR 中医 OR 养生 OR 气血 OR 玄学 OR 命理 OR 八字 OR 紫微斗数) -filter:replies",
+                  "searchMode":"latestAndTop",
+                  "maxNbItemsToScrape":40
               })
               for r in x_rows:
-                  text = r.get("full_text") or r.get("text") or ""
-                  user = r.get("user") or {}
-                  handle = user.get("screen_name") or user.get("username") or r.get("handle") or "unknown"
-                  tid = str(r.get("id_str") or r.get("id") or "").replace("tweet-","")
-                  if text and tid:
+                  text = r.get("fullText") or r.get("full_text") or r.get("text") or r.get("content") or ""
+                  handle = r.get("username") or r.get("authorUsername") or (r.get("author") or {}).get("username") or "unknown"
+                  tid = str(r.get("id") or r.get("tweetId") or r.get("postId") or "")
+                  url = r.get("url") or r.get("tweetUrl") or r.get("postUrl")
+                  if text and (url or tid):
                       items.append({"source":"X", "title":text[:120], "text":text[:600],
-                          "url":r.get("url") or f"https://x.com/{handle}/status/{tid}",
-                          "likes":int(r.get("favorite_count") or 0), "shares":int(r.get("retweet_count") or 0),
-                          "comments":int(r.get("reply_count") or 0)})
+                          "url":url or f"https://x.com/{handle}/status/{tid}",
+                          "likes":int(r.get("likeCount") or r.get("favorite_count") or r.get("likes") or 0),
+                          "shares":int(r.get("retweetCount") or r.get("retweet_count") or r.get("retweets") or 0),
+                          "comments":int(r.get("replyCount") or r.get("reply_count") or r.get("replies") or 0)})
           except Exception as e:
               print("X collection failed:", e)
-
-          # Pinterest: growing search/save trends, capped for free tier.
+          # Pinterest: keyword search, capped to 30 pins/day.
           try:
-              p_rows = apify("automation-lab~pinterest-trends-scraper", {
-                  "countries":["US"], "trendTypes":["growing"],
-                  "maxResultsPerCountry":12, "lookbackWindow":"30D",
-                  "keywordsToInclude":["artificial intelligence","AI tools","traditional Chinese medicine","wellness","astrology","Chinese astrology"]
+              p_rows = apify("thirdwatch~pinterest-scraper", {
+                  "searchQueries":["AI tools artificial intelligence","traditional Chinese medicine wellness","astrology Chinese astrology"],
+                  "maxResults":30
               })
               for r in p_rows:
-                  term = r.get("term") or r.get("keyword")
-                  if term:
-                      items.append({"source":"Pinterest", "title":str(term),
-                          "text":f"weeklyChange={r.get('weeklyChange')}, monthlyChange={r.get('monthlyChange')}, type={r.get('trendType')}",
-                          "url":r.get("pinterestTrendsUrl") or "https://trends.pinterest.com/",
-                          "likes":0, "shares":0, "comments":0})
+                  title = r.get("title") or r.get("description") or r.get("name") or ""
+                  url = r.get("url") or r.get("pinUrl") or r.get("link")
+                  if title and url:
+                      items.append({"source":"Pinterest", "title":str(title)[:160],
+                          "text":str(r.get("description") or r.get("altText") or "")[:600],
+                          "url":url,
+                          "likes":int(r.get("saveCount") or r.get("repinCount") or r.get("saves") or 0),
+                          "shares":0, "comments":int(r.get("commentCount") or 0)})
           except Exception as e:
               print("Pinterest collection failed:", e)
-
-          # Reddit: new/rising/hot across the three target themes.
-          reddit_sources = [
-              ("MachineLearning","rising"),("LocalLLaMA","new"),("artificial","hot"),
-              ("ChineseMedicine","new"),("TraditionalMedicine","rising"),
-              ("astrology","rising"),("ChineseAstrology","new")
-          ]
-          for sub, sort in reddit_sources:
-              try:
-                  url = f"https://www.reddit.com/r/{sub}/{sort}.json?limit=10&raw_json=1"
-                  data = request(url, headers={"User-Agent":"HorizonTrendRadar/1.0"})
-                  for child in data.get("data",{}).get("children",[]):
-                      r = child.get("data",{})
-                      items.append({"source":"Reddit", "title":r.get("title","")[:180],
-                          "text":(r.get("selftext") or "")[:600],
-                          "url":"https://www.reddit.com" + r.get("permalink", ""),
-                          "likes":int(r.get("score") or 0), "shares":0,
-                          "comments":int(r.get("num_comments") or 0)})
-              except Exception as e:
-                  print(f"Reddit r/{sub} failed:", e)
-
+          # Reddit: residential-proxy actor avoids GitHub Actions 403 blocks.
+          try:
+              reddit_rows = apify("betterdevsscrape~reddit-scraper", {
+                  "searches":["artificial intelligence OR LLM OR AI agent","traditional Chinese medicine OR TCM OR wellness","astrology OR Chinese astrology OR metaphysics"],
+                  "searchPosts":True, "searchComments":False,
+                  "sort":"rising", "time":"day",
+                  "maxItems":30, "maxPostCount":10,
+                  "maxComments":0, "skipComments":True,
+                  "includeNSFW":False,
+                  "proxy":{"useApifyProxy":True,"apifyProxyGroups":["RESIDENTIAL"]}
+              })
+              for r in reddit_rows:
+                  title = r.get("title") or r.get("postTitle") or ""
+                  url = r.get("url") or r.get("permalink") or r.get("postUrl")
+                  if url and str(url).startswith("/"):
+                      url = "https://www.reddit.com" + str(url)
+                  if title and url:
+                      items.append({"source":"Reddit", "title":str(title)[:180],
+                          "text":str(r.get("selfText") or r.get("selftext") or r.get("body") or "")[:600],
+                          "url":url,
+                          "likes":int(r.get("score") or r.get("upvotes") or 0), "shares":0,
+                          "comments":int(r.get("numComments") or r.get("num_comments") or 0)})
+          except Exception as e:
+              print("Reddit collection failed:", e)
           if not items:
               raise RuntimeError("No trend items collected from any source")
 
