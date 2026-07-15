@@ -148,13 +148,35 @@ jobs:
           if not items:
               raise RuntimeError("No trend items collected from any source")
 
-          # Lightweight engagement pre-ranking before LLM filtering.
+          # Balance themes before LLM filtering so Pinterest saves cannot crowd out X/Reddit.
+          ai_words = ["ai", "llm", "agent", "model", "openai", "claude", "gemini", "deepseek", "人工智能", "大模型", "智能体", "模型", "提示词"]
+          tcm_words = ["中医", "养生", "气血", "经络", "食疗", "汤", "茶", "tcm", "chinese medicine", "wellness", "herbal", "nourish"]
+          meta_words = ["玄学", "命理", "八字", "紫微", "风水", "占星", "星盘", "astrology", "metaphysics", "fortune", "zodiac"]
+
+          def topic_of(item):
+              text = (str(item.get("title", "")) + " " + str(item.get("text", ""))).lower()
+              scores = {
+                  "AI技术": sum(1 for w in ai_words if w in text),
+                  "中医养生": sum(1 for w in tcm_words if w in text),
+                  "玄学命理": sum(1 for w in meta_words if w in text),
+              }
+              topic = max(scores, key=scores.get)
+              return topic if scores[topic] > 0 else "待识别"
+
+          buckets = {"AI技术": [], "中医养生": [], "玄学命理": [], "待识别": []}
+          source_counts = {}
           for i in items:
               i["signal"] = i["likes"] + i["shares"] * 2 + i["comments"] * 1.5
-          items.sort(key=lambda x: x["signal"], reverse=True)
-          candidates = items[:80]
+              i["pre_category"] = topic_of(i)
+              buckets[i["pre_category"]].append(i)
+              source_counts[i["source"]] = source_counts.get(i["source"], 0) + 1
+          for values in buckets.values():
+              values.sort(key=lambda x: x["signal"], reverse=True)
+          candidates = buckets["AI技术"][:25] + buckets["中医养生"][:25] + buckets["玄学命理"][:25] + buckets["待识别"][:10]
+          print("Collected by source:", source_counts)
+          print("Candidates by topic:", {k: len(v) for k, v in buckets.items()})
 
-          prompt = """你是用户的个性化跨平台趋势雷达。X 和 Pinterest 候选内容来自用户主动提供的种子博主、帖子、画板与 Pin，请优先学习这些种子的主题、表达角度和审美偏好，再发现其中被转发、引用、提及的关联作者与相似内容。Reddit 用于补充正在升温的讨论。重点关注 AI 技术、中医养生、玄学命理，以及与种子内容明显相似的新趋势。排除泛新闻、广告、重复内容和只有高互动但与种子偏好无关的内容。输出中文 Markdown：先写3条个性化趋势判断，再按主题分组；每条包含标题、平台、作者、为什么与种子偏好相关、趋势信号、原链接。总计最多12条，不得编造候选数据之外的信息。\n\n候选数据：\n""" + json.dumps(candidates, ensure_ascii=False)
+          prompt = """你是用户的个性化跨平台趋势雷达。X 和 Pinterest 候选内容来自用户主动提供的种子博主、帖子、画板与 Pin，请优先学习这些种子的主题、表达角度和审美偏好，再发现其中被转发、引用、提及的关联作者与相似内容。Reddit 用于补充正在升温的讨论。重点关注 AI 技术、中医养生、玄学命理，以及与种子内容明显相似的新趋势。排除泛新闻、广告、重复内容和只有高互动但与种子偏好无关的内容。输出中文 Markdown：先写3条个性化趋势判断，再按主题分组；每条包含标题、平台、作者、为什么与种子偏好相关、趋势信号、原链接。三个主题必须分别输出，目标配额为 AI技术4条、中医养生4条、玄学命理4条。只能在某一主题确实没有合格候选时少于4条，并明确写出该主题候选不足，禁止用其他主题补位。总计最多12条，不得编造候选数据之外的信息。\n\n候选数据：\n""" + json.dumps(candidates, ensure_ascii=False)
           ai_payload = {
               "model":"deepseek-v4-flash",
               "messages":[{"role":"user","content":prompt}],
@@ -178,4 +200,5 @@ jobs:
           print("Push result:", json.dumps(result, ensure_ascii=False))
           PY
           python /tmp/trend_push.py
+
 
